@@ -1,0 +1,45 @@
+2017.5.22  �޸ļ�¼
+
+#footer {height: 1.2rem !important;}
+#footer ul li {height: 100% !important;}
+#footer ul li a {line-height: 100% !important;}
+#footer span { display:inline-block; width:100%; height:100%;}
+#footer span:after { position:absolute; top:-10%;  left: 50% !important;  transform: translate(-50%,0) !important; dispaly:inline-block; width:100%; height:100%;background:white;}
+
+
+
+英文状态my,顶部文字
+#wrapper li span:after {     
+	height: 0.32rem;//高度由0.28改成0.32
+	line-height:0.32rem//增加行高
+}
+
+
+
+2017.5.23
+my_USA：56行开始
+全部订单    	 	61  	All orders
+待付款        	 	85		Pending payment
+ 待处理   	 	73   	To be processed/pending  
+ 待付邮费                   97   	Pending postage payment
+待发货	    109		To be delivered
+ 待收货		121		To be received
+ 已完成		133		Completed				
+ 
+pingtai.css  189，
+问题：就是一个li里面有三个图片，第一个要定位，后面的又要接着垂直往下拍在他的后面
+解决方法：在css里面判断当只有一个子元素的时候设置一定的优先级比较高的样式来解决问题。
+.pro-left ul li:only-child img {
+    position: relative !important;
+}
+
+Order_for.css  32  //马来文我的，布局样式修改
+.order-nav ul {  
+	    width: 11.8rem!important;//11.4改为11.8
+	    line-height: .3rem;//0.9改为0.3
+    	font-size: .15rem;//0.3改为0.15
+    	text-align: center;//文字居中
+    	padding: 0.08rem 0;//新加
+   	 	box-sizing: border-box;//新加
+}
+	    

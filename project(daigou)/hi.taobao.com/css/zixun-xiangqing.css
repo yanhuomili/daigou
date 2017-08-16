@@ -1,0 +1,43 @@
+#xiangqing-header { width: 100%; height: 0.87rem; background: #df463e; border-bottom: 1px solid #ee9c98; text-align: center; line-height: 0.87rem; font-size: 0.32rem; color: #fff; }
+#xiangqing-header .xq-left { width: 0.87rem; height: 100%; float: left; background: url("../img/other/fanhui@3x.png") no-repeat center; background-size: 0.35rem 0.4rem; }
+
+#xq-main { width: 100%; }
+#xq-main .xq-title { width: 6.98rem; height: .97rem; margin: .39rem .24rem .19rem .28rem; font-size: .36rem; color: #333; line-height: .5rem; word-break: break-all; }
+#xq-main .xq-time { width: 100%; height: .26rem; padding-left: .3rem; box-sizing: border-box; margin-bottom: .59rem; }
+#xq-main .xq-time span, #xq-main .xq-time time { font-size: .26rem; line-height: .26rem; color: #999; float: left; }
+#xq-main .xq-time span { width: .78rem; height: 100%; display: inline-block; border-right: 1px solid #d0d0d0; }
+#xq-main .xq-time time { width: 2.98rem; height: 100%; text-align: center; border-left: 1px solid #999; }
+
+#xq-new-content { width: 100%; font-size: .34rem; color: #666; overflow: hidden; }
+#xq-new-content p:nth-of-type(1) { width: 7.6rem; }
+#xq-new-content p { float: left; width: 100%; padding: 0 .34rem 0 .32rem; box-sizing: border-box; line-height: .5rem; }
+#xq-new-content img { width: 7.1rem; height: 3.52rem; margin: .4rem .2rem .44rem .2rem; }
+#xq-new-content .xq-zan { width: 100%; height: .5rem; margin: .43rem 0 .32rem 0; float: left; }
+#xq-new-content .xq-zan .xq-weiguan, #xq-new-content .xq-zan .xq-dianzan { float: right; height: 100%; line-height: .5rem; font-size: .26rem; color: #999; }
+#xq-new-content .xq-zan .xq-weiguan i, #xq-new-content .xq-zan .xq-dianzan i { float: left; width: .48rem; height: 100%; }
+#xq-new-content .xq-zan .xq-weiguan { margin-right: .66rem; }
+#xq-new-content .xq-zan .xq-weiguan i { background: url(../img/other/weiguan@3x.png) no-repeat center; background-size: .35rem .35rem; }
+#xq-new-content .xq-zan .xq-dianzan { margin-right: .34rem; }
+#xq-new-content .xq-zan .xq-dianzan i { background: url(../img/other/dianzan_kui@3x.png) no-repeat center; background-size: .35rem .35rem; }
+
+#xq-fill { width: 100%; height: .1rem; background: #ededed; }
+
+#xq-pinglun { width: 100%; overflow: hidden; }
+#xq-pinglun .xq-pinglunshu { width: 100%; height: 1.04rem; margin-bottom: .2rem; padding-left: .73rem; line-height: 1.04rem; background: url(../img/other/quanquan_pinglun@3x.png) no-repeat 0.34rem center; background-size: .27rem; font-size: .32rem; color: #333; }
+#xq-pinglun .xq-pinglunshu i { font-size: .28rem; color: #666; }
+#xq-pinglun .xq-topic-main { width: 100%; overflow: hidden; }
+#xq-pinglun .xq-topic-main .xq-pinglun-people { width: 100%; height: 2.51rem; padding-left: .3rem; box-sizing: border-box; }
+#xq-pinglun .xq-topic-main .xq-pinglun-people dt { float: left; width: .64rem; height: .64rem; border-radius: 100%; overflow: hidden; }
+#xq-pinglun .xq-topic-main .xq-pinglun-people dt img { width: 100%; height: 100%; float: left; }
+#xq-pinglun .xq-topic-main .xq-pinglun-people dd { float: right; width: 6.24rem; }
+#xq-pinglun .xq-topic-main .xq-pinglun-people .people-name { height: .32rem; line-height: .32rem; font-size: .3rem; color: #328fff; padding-right: .4rem; box-sizing: border-box; margin-bottom: .24rem; }
+#xq-pinglun .xq-topic-main .xq-pinglun-people .people-name i { float: right; font-size: .22rem; color: #999; }
+#xq-pinglun .xq-topic-main .xq-pinglun-people .people-topic { font-size: .3rem; color: #333; line-height: .42rem; border-bottom: 1px solid #e1e1e1; padding: 0 .42rem .32rem 0; box-sizing: border-box; word-break: break-all; }
+
+#xq-fabu-fill { width: 100%; height: .91rem; }
+
+#xq-fabu { width: 100%; height: .9rem; border-top: 1px solid #dadada; position: fixed; left: 0; bottom: 0; padding: .19rem 0 0 .21rem; box-sizing: border-box; background: #fff; }
+#xq-fabu input { width: 6.11rem; height: .57rem; border: 0; float: left; border-bottom: 1px solid #df463e; margin-right: .19rem; outline: none; }
+#xq-fabu .fabu-btn { width: .8rem; height: .53rem; background: #df463e; line-height: .53rem; text-align: center; font-size: .26rem; color: #fff; border-radius: 5px; float: left; }
+
+/*# sourceMappingURL=zixun-xiangqing.css.map */

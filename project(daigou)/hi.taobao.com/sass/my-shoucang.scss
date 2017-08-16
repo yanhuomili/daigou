@@ -1,0 +1,265 @@
+//头部公共
+.hoese-edit-head,
+.hoese-have-head,
+.hoese-null-head {
+    width: 100%;
+    height: 0.87rem;
+    border-bottom: 1px solid #ee9c98;
+    background: #df463e;
+    font-size: 0.32rem;
+    line-height: 0.87rem;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    left: 0;
+    top: 0;
+    span:nth-of-type(1) {
+        width: 0.87rem;
+        height: 0.87rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("../img/index/fanhui@3x.png") no-repeat center;
+        background-size: 0.45rem 0.45rem;
+    }
+    span:nth-of-type(2) {
+        width: 1.36rem;
+        height: 0.87rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        text-align: center;
+    }
+}
+//收藏为空
+#house-null {
+    display: none;
+    width: 100%;
+    .house-null-main {
+        width: 100%;
+        height: 5.58rem;
+        background: url("../img/my/wushoucang@3x.png") no-repeat 2.16rem 1.6rem;
+        background-size: 3.34rem 2.95rem;
+        padding-top: 5.05rem;
+        box-sizing: border-box;
+        font-size: 0.32rem;
+        color: #c6c6c6;
+        text-align: center;
+    }
+}
+//有收藏品
+#house-have {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #ededed;
+    .house-have-main {
+        width: 100%;
+        overflow: hidden;
+        dl {
+            width: 7.1rem;
+            overflow: hidden;
+            margin: 0.2rem auto 0;
+            background: #fff;
+            border-radius: 0.2rem;
+            padding: 0.2rem 0.39rem 0 0.17rem;
+            box-sizing: border-box;
+            dt {
+                width: 2.2rem;
+                height: 2.2rem;
+                float: left;
+                margin-right: 0.29rem;
+                background: #fff;
+                a {
+                    width: 100%;
+                    height: 100%;
+                    float: left;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        float: left;
+                    }
+                }
+            }
+            dd {
+                width: 4.05rem;
+                float: left;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .house-have-title {
+                height: 0.32rem;
+                line-height: 0.32rem;
+                font-size: 0.32rem;
+                color: #333;
+                margin: 0.19rem 0 0.2rem;
+            }
+            .house-have-edition {
+                height: 0.26rem;
+                line-height: 0.26rem;
+                font-size: 0.26rem;
+                color: #999;
+                margin-bottom: 0.31rem;
+            }
+            .have-last {
+                height: 0.4rem;
+                line-height: 0.4rem;
+                color: #666;
+                .have-show {
+                    //display:none;//如果不失效的话隐藏 
+                    width: 0.65rem;
+                    height: 0.33rem;
+                    border-radius: 0.1rem 0.1rem;
+                    float: left;
+                    font-size: 0.2rem;
+                    color: #fff;
+                    line-height: 0.33rem;
+                    text-align: center;
+                    margin-left: 0.09rem;
+                    margin-top: 0.04rem;
+                    background: #b7b7b7;
+                }
+                .have-rmb {
+                    float: right;
+                    font-size: 0.38rem;
+                    i {
+                        font-size: 0.26rem;
+                    }
+                }
+            }
+        }
+    }
+}
+//编辑收藏
+#house-edit {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #ededed;
+    .house-edit-main {
+        width: 100%;
+        overflow: hidden;
+        background:#ededed;
+        .house-edit-list {
+            padding: 0 0.2rem;
+            box-sizing: border-box;
+            #house-edit-checked {
+                float: left;
+                width: 0.4rem;
+                height: 0.56rem;
+                background: url("../img/other/gou_kui_gouwuche@3x.png") no-repeat center;
+                background-size: 0.35rem 0.35rem;
+                margin: 1.02rem 0.18rem 0 0;
+            }
+            //选中时的状态
+            .edit-action {
+                background: url("../img/other/gou_hong_gouwuche@3x.png") no-repeat center!important;
+                background-size: 0.35rem 0.35rem!important;
+            }
+            dl {
+                width: 6.5rem;
+                overflow: hidden;
+                margin-top: 0.2rem;
+                background: #fff;
+                border-radius: 0.2rem;
+                padding: 0.2rem 0.39rem 0 0.17rem;
+                box-sizing: border-box;
+                dt {
+                    width: 2.2rem;
+                    height: 2.2rem;
+                    float: left;
+                    margin-right: 0.29rem;
+                    background: #fff;
+                    a {
+                        width: 100%;
+                        height: 100%;
+                        float: left;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            float: left;
+                        }
+                    }
+                }
+                dd {
+                    width: 3.4rem;
+                    float: left;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .house-edit-title {
+                    height: 0.32rem;
+                    line-height: 0.32rem;
+                    font-size: 0.32rem;
+                    color: #333;
+                    margin: 0.19rem 0 0.2rem;
+                }
+                .house-edit-edition {
+                    height: 0.26rem;
+                    line-height: 0.26rem;
+                    font-size: 0.26rem;
+                    color: #999;
+                    margin-bottom: 0.31rem;
+                }
+                .edit-last {
+                    height: 0.4rem;
+                    line-height: 0.4rem;
+                    color: #666;
+                    .edit-show {
+                        //display:none;//如果失效的话隐藏 
+                        width: 0.65rem;
+                        height: 0.33rem;
+                        border-radius: 0.1rem 0.1rem;
+                        float: left;
+                        font-size: 0.2rem;
+                        color: #fff;
+                        line-height: 0.33rem;
+                        text-align: center;
+                        margin-left: 0.09rem;
+                        margin-top: 0.04rem;
+                        background: #b7b7b7;
+                    }
+                    .edit-rmb {
+                        float: right;
+                        font-size: 0.38rem;
+                        i {
+                            font-size: 0.26rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .house-edit-fill {
+        width: 100%;
+        height: 1rem;
+    }
+    .house-edit-footer {
+        width: 100%;
+        height: 1rem;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        ul {
+            width: 100%;
+            height: 100%;
+            li {
+                width: 50%;
+                height: 100%;
+                font-size: 0.36rem;
+                line-height: 1rem;
+                text-align: center;
+                color: #fff;
+                float: left;
+            }
+            li:nth-of-type(1) {
+                background: #5a5a5a;
+            }
+            li:nth-of-type(2) {
+                background: #df463e;
+            }
+        }
+    }
+}

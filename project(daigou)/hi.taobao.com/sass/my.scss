@@ -1,0 +1,342 @@
+html,body{
+    background:#ededed;
+}
+#my {
+    #my-header {
+        width: 100%;
+        height: 3.08rem;
+        background: url("../img/my/beijing_wode@3x.png") no-repeat;
+        background-size: 100% 3.08rem;
+        .user-img {
+            margin: 0.84rem 0.53rem 0 0.55rem;
+            float: left;
+            width: 1.46rem;
+            height: 1.46rem;
+            border: 3px solid #fff;
+            border-radius: 100%;
+            box-shadow: 0 0 0.13rem 0.08rem #7a1611;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .ziliao {
+            float: right;
+            width: 0.6rem;
+            height: 0.6rem;
+            background: url("../img/my/gerenziliao@3x.png") no-repeat center;
+            background-size: 0.6rem 0.6rem;
+            margin:.32rem .31rem 0 0;
+        }
+        .user-name,
+        .suer-money{
+            float:left;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            color:#fff;
+        }
+        .user-name{
+            margin-top:.15rem;
+            width:4rem;
+            height:.4rem;
+            font-size:.4rem;
+            line-height:.4rem;
+        }
+        .suer-money{
+            margin-top:.24rem;
+            width:4rem;
+            height:.3rem;
+            line-height:.3rem;
+            font-size:.3rem;
+        }
+    }
+    #wrapper{
+        width:100%;
+        height:1.58rem;
+        overflow:hidden;
+        border-bottom:1px solid #ddd;
+        background:#fff;
+        ul{
+            width:10rem;
+            height:100%;
+            padding:.22rem .18rem 0 .18rem;
+            overflow:hidden;
+            box-sizing:border-box;
+            li{
+                float:left;
+                width:1.2rem;
+                height:1.04rem;
+                padding-top:.8rem;
+                box-sizing:border-box;
+                font-size:.24rem;
+                line-height:.24rem;
+                color:#666;
+                text-align:center;
+                position:relative;
+            }
+            li:nth-of-type(1){
+                background:url(../img/my/dingdanxinxi_dingdan@3x.png) no-repeat center .1rem;
+                background-size:.51rem .52rem;
+            }
+            li:nth-of-type(2){
+                background:url(../img/my/daichuli_wode@3x.png) no-repeat center .1rem;
+                background-size:.51rem .52rem;
+            }
+            li:nth-of-type(3){
+                background:url(../img/my/daifukuan_wode@3x.png) no-repeat center .1rem;
+                background-size:.51rem .52rem;
+            }
+            li:nth-of-type(4){
+                background:url(../img/my/daifukuan_wode@3x.png) no-repeat center .1rem;
+                background-size:.51rem .52rem;
+            }
+            li:nth-of-type(5){
+                background:url(../img/my/daifahuo_wode@3x.png) no-repeat center .1rem;
+                background-size:.51rem .52rem;
+            }
+            li:nth-of-type(6){
+                background:url(../img/my/daishouhuo_wode@3x.png) no-repeat center .1rem;
+                background-size:.51rem .52rem;
+            }
+            li:nth-of-type(7){
+                background:url(../img/my/daichuli_wode@3x.png) no-repeat center .1rem;
+                background-size:.51rem .52rem;
+            }
+            
+            // 通知信息 添加类名
+            .my-nav-active{
+                position:absolute;
+                top:0;
+                right:.18rem;
+                display:block;
+                display: none;
+                width:.28rem;
+                height:.28rem;
+                border:2px solid #df463e;
+                font-size:.16rem;
+                line-height:.28rem;
+                text-align:center;
+                border-radius:100%;
+                color:#df463e;
+                background:#fff;
+            }
+        }
+    }
+    #my-other{
+        width:100%;
+        height:100%;
+        background:#fff;
+        ul{
+            width:100%;
+            height:100%;
+            li{
+                width:100%;
+                height:1rem;
+                border-top:1px solid #ededed;
+                padding-left:1.54rem;
+                box-sizing:border-box;
+                font-size:.32rem;
+                line-height:1rem;
+                color:#333;
+                position:relative;
+            }
+            li:nth-of-type(1){
+                background:url(../img/my/shoucang_wode@3x.png) no-repeat .44rem center;
+                background-size:.39rem .37rem;
+            }
+            li:nth-of-type(2){
+                background:url(../img/my/fenxiao_wode@3x.png) no-repeat .44rem center;
+                background-size:.39rem .37rem;
+            }
+            li:nth-of-type(3){
+                background:url(../img/my/qianbao_wode@3x.png) no-repeat .44rem center;
+                background-size:.39rem .37rem;
+            }
+            li:nth-of-type(4){
+                background:url(../img/my/youhuiquan_wode@3x.png) no-repeat .44rem center;
+                background-size:.39rem .37rem;
+            }
+            li:nth-of-type(5){
+                background:url(../img/my/dizhi_wode@3x.png) no-repeat .44rem center;
+                background-size:.39rem .37rem;
+            }
+            li:nth-of-type(6){
+                background:url(../img/my/erweima_wode@3x.png) no-repeat .44rem center;
+                background-size:.39rem .37rem;
+            }
+            li:nth-of-type(7){
+                background:url(../img/my/shezhi_wode@3x.png) no-repeat .44rem center;
+                background-size:.39rem .37rem;
+            }
+            
+        }
+    }
+}
+
+
+//我的二维码
+#my-share-scan{
+    display:none;//点击我的二维码显示  block
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:100;
+    ul{
+        width:4.54rem;
+        height:5.88rem;
+        background:#fff;
+        border-radius:.1rem;
+        position:relative;
+        margin:0 auto;
+        margin-top:2.88rem;
+        .my-scan-close{
+            float:right;
+            width:.54rem;
+            height:.54rem;
+            background:url(../img/other/guanbi_tankuang@3x.png) no-repeat;
+            background-size:.54rem .54rem;
+            position:absolute;
+            right:-.27rem;
+            top:-.27rem;
+        }
+        li:nth-of-type(1){
+            width:3.66rem;
+            height:3.66rem;
+            margin:.46rem .44rem .24rem;
+            float:left;
+            img{
+                width:100%;
+                height:100%;
+                float:left;
+            }
+        }
+        li:nth-of-type(2){
+            width:100%;
+            height:.24rem;
+            line-height:.24rem;
+            font-size:.24rem;
+            color:#999;
+            text-align:center;
+            margin-bottom:.22rem;
+            float:left;
+        }
+        li:nth-of-type(3){
+            width:100%;
+            height:1.06rem;
+            float:left;
+            line-height:1.06rem;
+            font-size:.3rem;
+            color:#fff;
+            padding-left:1.46rem;
+            box-sizing:border-box;
+            background:#df463e url(../img/my/fenxiang_wode@3x.png) no-repeat .88rem center;
+            background-size:.35rem;
+            border-radius:0 0 .1rem .1rem;
+        }
+    }
+}
+
+#share-link{             //分享链接
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    background:rgba(0,0,0,0.5);
+    z-index:100;
+    display:none;
+    overflow:hidden;
+    .share-condition{
+        width:100%;
+        height:4.55rem;
+        background:#fff;
+        position:absolute;
+        left:0;
+        bottom:0;
+        #wrapper{
+            width:100%;
+            height:2.45rem;
+            position:relative;
+            #scroller{
+                position:absolute;
+                transform: translate(0px,0px);
+            }
+        }
+        p{
+            width:100%;
+            height:1.09rem;
+            text-align:center;
+            line-height:1.09rem;
+            font-size:.4rem;
+            color:#333;
+        }
+        ul{
+            width:9rem;
+            height:2.45rem;
+            padding:0 .15rem 0 .08rem;
+            box-sizing:border-box;
+            float:left;
+            li{
+                width:16.66667%;
+                height:2.1rem;
+                text-align:center;
+                font-size:.22rem;
+                color:#999;
+                padding-top:1.83rem;
+                box-sizing:border-box;
+                float:left;
+            }
+            li:nth-of-type(1){
+                background:url(../img/index/weixinhaoyou_fenxiang@3x.png) no-repeat center;
+                background-size:1.1rem 1.1rem;
+            }
+            li:nth-of-type(2){
+                background:url(../img/index/pengyouquan_fenxiang@3x.png) no-repeat center;
+                background-size:1.1rem 1.1rem;
+            }
+            li:nth-of-type(3){
+                background:url(../img/index/QQ_fenxiang@3x.png) no-repeat center;
+                background-size:1.1rem 1.1rem;
+            }
+            li:nth-of-type(4){
+                background:url(../img/index/facebook_fenxiang@3x.png) no-repeat center;
+                background-size:1.1rem 1.1rem;
+            }
+            li:nth-of-type(5){
+                background:url(../img/index/Gjia_fenxiang@3x.png) no-repeat center;
+                background-size:1.1rem 1.1rem;
+            } 
+            li:nth-of-type(6){
+                background:url(../img/index/msn_fenxiang@3x.png) no-repeat center;
+                background-size:1.1rem 1.1rem;
+            }
+        }
+    }
+    .share-btn{
+        width:100%;
+        height:1rem;
+        border-top:1px solid #ededed;
+        font-size:.4rem;
+        color:#999;
+        text-align:center;
+        line-height:1rem;
+        float:left;
+    }
+}
+
+
+#footer{
+    .footer-my{
+        background: url("../img/index/wode_hong@3x.png") no-repeat center 0.13rem!important;
+        background-size: 0.54rem 0.48rem!important; 
+        .lang_index_17{
+            color:#df463e;
+        }
+    }  
+}
+

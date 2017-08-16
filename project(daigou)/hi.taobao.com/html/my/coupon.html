@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/coupon.css" />
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<script type="text/javascript" src="../../js/fx.js"></script>
+		<style type="text/css">
+			#coupon-content .user-coupon ul li p:nth-of-type(2) i{
+			    height: 0.28rem;
+			    width:auto;
+			    line-height: 0.28rem;
+			    font-size: 0.28rem;
+			    float: left;
+			    color: #999;
+			}
+			#coupon-content .null-yincang ul li p:nth-of-type(2) i{
+			    height: 0.28rem;
+			    width:auto;
+			    line-height: 0.28rem;
+			    font-size: 0.28rem;
+			    float: left;
+			    color: #999;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="coupon-top">
+			<header id="coupon-head">
+				<span class="coupon-back"></span> 
+				<i class="lang_coupon_1">我的优惠券</i>
+			</header>
+			<ul class="coupon-nav">
+				<li class="coupon-nav-action lang_coupon_2">可使用</li>
+				<li class="lang_coupon_3">已失效</li>
+			</ul>
+		</div>
+		<div id="coupon-fill"></div>
+		<div id="coupon-content" class="swiper-container">
+			<div class="swiper-wrapper">
+
+				<!--可使用-->
+				<div class="user-coupon swiper-slide">
+					<ul>
+						<li class="user-hong">
+							<i class="lang_coupon_4">&yen;</i>
+							<div class="user-shu">30</div>
+							<p><span class="lang_coupon_5">满</span>300元<span class="lang_coupon_6">使用</span></p>
+							<p><i class="lang_coupon_7">有效期至</i><span>2016-11-12</span></p>
+						</li>
+						
+						<li class="user-hong">
+							<i class="lang_coupon_4">&yen;</i>
+							<div class="user-shu">30</div>
+							<p><span class="lang_coupon_5">满</span>300元<span class="lang_coupon_6">使用</span></p>
+							<p><i class="lang_coupon_7">有效期至</i><span>2016-11-12</span></p>
+						</li>
+						<li class="user-hong">
+							<i class="lang_coupon_4">&yen;</i>
+							<div class="user-shu">30</div>
+							<p><span class="lang_coupon_5">满</span>300元<span class="lang_coupon_6">使用</span></p>
+							<p><i class="lang_coupon_7">有效期至</i><span>2016-11-12</span></p>
+						</li>
+						<li class="user-lan">
+							<i class="lang_coupon_8">&yen;</i>
+							<div class="user-shu">6</div>
+							<p><span class="lang_coupon_9">满</span>10元<span class="lang_coupon_10">使用</span></p>
+							<p><i class="lang_coupon_7">有效期至</i><span>2016-11-12</span></p>
+						</li>
+						<li class="user-lan">
+							<i class="lang_coupon_8">&yen;</i>
+							<div class="user-shu">4</div>
+							<p><span class="lang_coupon_9">满</span>3元<span class="lang_coupon_10">使用</span></p>
+							<p><i class="lang_coupon_7">有效期至</i><span>2016-11-12</span></p>
+						</li>
+						
+						<li class="user-lan">
+							<i class="lang_coupon_8">&yen;</i>
+							<div class="user-shu">30</div>
+							<p><span class="lang_coupon_9">满</span>300元<span class="lang_coupon_10">使用</span></p>
+							<p><i class="lang_coupon_7">有效期至</i><span>2016-11-12</span></p>
+						</li>
+					</ul>
+					<!--没有优惠券-->
+					<div id="kong-coupon">
+						<p class="lang_coupon_11">当前没有优惠券信息</p>
+					</div>
+				</div>
+				<!--已失效-->
+				<div class="null-coupon swiper-slide">
+					<div class="null-yincang">
+						<ul>
+							<li class="null-hong">
+								<i class="lang_coupon_4">&yen;</i>
+								<div class="null-shu">30</div>
+								<p><span class="lang_coupon_5">满</span>300元<span class="lang_coupon_6">使用</span></p>
+								<p><i class="lang_coupon_7">有效期至</i><span>2016-11-12</span></p>
+								<img class="yishiyong" src="../../img/my/yishiyong_quan@3x.png" />
+							</li>
+							
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/swiper.js"></script>
+	<script type="text/javascript" src="../../js/iscroll.js"></script>
+	<script type="text/javascript" src="../../js/main/myCoupon.js"></script>
+</html>

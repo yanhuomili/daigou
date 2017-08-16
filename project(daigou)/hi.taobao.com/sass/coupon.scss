@@ -1,0 +1,220 @@
+html {
+    background: #ededed;
+}
+.coupon-top {
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    #coupon-head {
+        width: 100%;
+        height: 0.87rem;
+        font-size: 0.32rem;
+        line-height: 0.87rem;
+        text-align: center;
+        position: relative;
+        left: 0;
+        top: 0;
+        background: #df463e;
+        color: #fff;
+        span {
+            float: left;
+            width: 0.87rem;
+            height: 0.87rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url("../img/index/fanhui@3x.png") no-repeat center;
+            background-size: 0.45rem 0.45rem;
+        }
+    }
+    .coupon-nav {
+        width: 100%;
+        height: 0.9rem;
+        padding: 0 0.93rem 0 0.78rem;
+        box-sizing: border-box;
+        background: #fff;
+        border-bottom: 1px solid #ededed;
+        li {
+            width: 50%;
+            height: 0.9rem;
+            float: left;
+            line-height: 0.9rem;
+            text-align: center;
+            font-size: 0.3rem;
+            color: #666;
+            position: relative;
+        }
+        .coupon-nav-action {
+            color: #df463e;
+        }
+        .coupon-nav-action:after {
+            display: block;
+            width: 0.44rem;
+            height: 0.04rem;
+            content: "";
+            background: #df463e;
+            margin-left: 50%;
+            position: absolute;
+            left: -.22rem;
+            bottom: 0;
+        }
+    }
+}
+#coupon-fill {
+    width: 100%;
+    height: 1.77rem;
+}
+#coupon-content {
+    width: 100%;
+    overflow: hidden;
+    .user-coupon {
+        width: 7.5rem;
+        padding-top: 0.2rem;
+        box-sizing: border-box;
+        ul {
+            width: 100%;
+            overflow: hidden;
+            li {
+                width: 7.1rem;
+                height: 2.1rem;
+                border-radius: 0.2rem;
+                margin: 0 auto 0.25rem;
+                padding: 0.6rem 0.34rem 0;
+                box-sizing: border-box;
+                i {
+                    float: left;
+                    font-size: 0.4rem;
+                    width: 0.45rem;
+                    height: 0.4rem;
+                    line-height: 0.4rem;
+                }
+                .user-shu {
+                    float: left;
+                    font-size: 1.1rem;
+                    width: 1.77rem;
+                    height: 0.87rem;
+                    line-height: 0.87rem;
+                }
+                p {
+                    float: right;
+                    text-align: right;
+                }
+                p:nth-of-type(1) {
+                    height: 0.36rem;
+                    line-height: 0.36rem;
+                    margin-bottom: 0.2rem;
+                    font-size: 0.36rem;
+                }
+                p:nth-of-type(2) {
+                    height: 0.28rem;
+                    line-height: 0.28rem;
+                    font-size: 0.28rem;
+                    float: right;
+                    color: #999;
+                    span {
+                        margin-left: 0.19rem;
+                    }
+                }
+            }
+            .user-hong {
+                color: #df463e;
+                background: url("../img/my/youhuiquan_hong@3x.png");
+                background-size: 7.1rem 2.1rem;
+            }
+            .user-lan {
+                color: #69b6ff;
+                background: url("../img/my/youhuiquan_lan@3x.png");
+                background-size: 7.1rem 2.1rem;
+            }
+        }
+    }
+    
+    .null-coupon {
+        ////////////////////////////////            右
+        overflow: hidden;
+        width: 7.5rem;
+        padding-top: 0.2rem;
+        box-sizing: border-box;
+        ul {
+            width: 100%;
+            overflow: hidden;
+            li {
+                width: 7.1rem;
+                height: 2.1rem;
+                border-radius: 0.2rem;
+                margin: 0 auto 0.25rem;
+                padding: 0.6rem 0.34rem 0;
+                box-sizing: border-box;
+                background: url("../img/my/youhuiquan_kui@3x.png");
+                background-size: 7.1rem 2.1rem;
+                color: #bfbfbf;
+                position: relative;
+                left: 0;
+                top: 0;
+                i {
+                    float: left;
+                    font-size: 0.4rem;
+                    width: 0.45rem;
+                    height: 0.4rem;
+                    line-height: 0.4rem;
+                }
+                .null-shu {
+                    float: left;
+                    font-size: 1.1rem;
+                    width: 1.77rem;
+                    height: 0.87rem;
+                    line-height: 0.87rem;
+                }
+                p {
+                    float: right;
+                    text-align: right;
+                }
+                p:nth-of-type(1) {
+                    height: 0.36rem;
+                    line-height: 0.36rem;
+                    margin-bottom: 0.2rem;
+                    font-size: 0.36rem;
+                }
+                p:nth-of-type(2) {
+                    height: 0.28rem;
+                    line-height: 0.28rem;
+                    font-size: 0.28rem;
+                    float: right;
+                    span {
+                        margin-left: 0.19rem;
+                    }
+                }
+            }
+        }
+    }
+    #kong-coupon {
+        //                       没有优惠券信息
+        display: none;
+        width: 100%;
+        height: 5.22rem;
+        background: url("../img/my/wudizhi@3x.png") no-repeat center 0.6rem;
+        background-size: 3.44rem 3.61rem;
+        padding-top: 4.22rem;
+        box-sizing: border-box;
+        p {
+            width: 100%;
+            height: 0.32rem;
+            font-size: 0.32rem;
+            line-height: 0.32rem;
+            text-align: center;
+            color: #c6c6c6;
+            margin-top:.2rem;
+        }
+    }
+}
+.yiguoqi, 
+.yishiyong {
+    width: 1.85rem;
+    height: 1.02rem;
+    position: absolute;
+    top: 0;
+    left: 2.36rem;
+}

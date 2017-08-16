@@ -1,0 +1,215 @@
+html,
+body {
+    background: #ededed;
+}
+//更多分类
+#more-classfily {
+    width: 100%;
+    height: 0.87rem;
+    line-height: 0.87rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: #fff;
+    background: #df463e;
+    span:nth-of-type(1) {
+        float: left;
+        width: 0.87rem;
+        height: 0.87rem;
+        background: url("../img/my/fanhui@3x.png") no-repeat center;
+        background-size: 0.45rem 0.45rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+#more-nav {
+    width: 100%;
+    height: 0.9rem;
+    box-sizing: border-box;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    top: 0;
+    .more-nav-ul {
+        width: 7.7rem;
+        height: 100%;
+        margin-left: 0.29rem;
+        font-size: 0.3rem;
+        color: #666;
+        line-height: 0.9rem;
+        li {
+            float: left;
+            line-height: 0.9rem;
+            text-align: center;
+            position:relative;
+            padding:0 .3rem;
+        }
+        .more-action {
+            //     分类导航 的 样式
+            color: #df463e;
+        }
+        .more-action:before {
+            display: block;
+            content: "";
+            width: 0.44rem;
+            height: .04rem;
+            background: #df463e;
+            margin-left: 50%;
+            position: absolute;
+            bottom:0;
+            left: -.22rem;
+        }
+    }
+    .more-xiala {
+        display: block;
+        width: 0.84rem;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #fff;
+        border-left: 2px solid #d4d4d4;
+        padding: 0.41rem 0 0 0.31rem;
+        box-sizing: border-box;
+        img {
+            width: 0.22rem;
+            height: 0.13rem;
+            float: left;
+        }
+    }
+}
+#more-list {
+    width: 100%;
+    overflow: hidden;
+    .more-list-pro {
+        width: 2.23rem;
+        height: 2.88rem;
+        margin: 0.12rem;
+        float: left;
+        li:nth-of-type(1) {
+            width: 2.33rem;
+            height: 2.33rem;
+            a {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        li:nth-of-type(2) {
+            width: 2.3rem;
+            height: 0.64rem;
+            border: 1px solid #cfcfcf;
+            border-top: 0;
+            font-size: 0.28rem;
+            color: #333;
+            text-align: center;
+            line-height: 0.64rem;
+        }
+    }
+}
+.pull-down {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    display: none;
+    ul {
+        width: 100%;
+        overflow: hidden;
+        background: #fff;
+        padding: 0.1rem 0 0 0.34rem;
+        box-sizing: border-box;
+        border-top: 1px solid #d4d4d4;
+        li {
+            font-size: 0.3rem;
+            color: #333;
+            float: left;
+            width: 33.33%;
+            height: 0.8rem;
+            line-height: 0.82rem;
+        }
+        .for-you {
+            color: #cf362e;
+        }
+    }
+}
+//特色惠购
+#more-classfily {
+    span:nth-of-type(2) {
+        float: right;
+        width: 0.87rem;
+        height: 0.87rem;
+        background: url("../img/index/fangdajing.png") no-repeat center;
+        background-size: 0.35rem 0.37rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+#feature {
+    width: 100%;
+    overflow: hidden;
+    background: #ededed;
+    .feature-ul{
+        padding-bottom: 0.97rem;
+        li {
+            width: 3.71rem;
+            height: 5.4rem;
+            margin-bottom: 0.08rem;
+            background: #fff;
+            float:left;
+            a{
+                width:3.71rem;
+                height:3.71rem;
+                float:left;
+                img {
+                   width:100%;
+                   height:100%;
+                }
+            }
+            p {
+                text-align: center;
+            }
+            .title {
+                width: 100%;
+                height: 0.53rem;
+                line-height: 0.53rem;
+                margin-top: 0.05rem;
+                font-size: 0.3rem;
+                color: #333;
+                float:left;
+            }
+            .model {
+                width: 100%;
+                height: 0.22rem;
+                line-height: 0.22rem;
+                font-size: 0.24rem;
+                color: #666;
+                font-family: "Hiragino Sans"; //英文的字体
+                float:left;
+            }
+            .price {
+                width: 100%;
+                height: 0.79rem;
+                line-height: 0.79rem;
+                font-size: 0.26rem;
+                color: #ff4844;
+                span {
+                    width: 1.35rem;
+                    height: 100%;
+                    display: inline-block;
+                    line-height: 0.79rem;
+                    font-size: 0.38rem;
+                    text-align: center;
+                }
+            }
+        }
+        li:nth-of-type(even){
+            float:right;
+        }
+    }
+}

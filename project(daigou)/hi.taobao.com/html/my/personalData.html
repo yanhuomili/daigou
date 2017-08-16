@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/oneselfData.css" />
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<style type="text/css">
+			.time {position: absolute;right: .22rem;top: .15rem;display: none;width: 1.78rem;height: .7rem;font-size: .28rem;color: #fff;background: #df463e;line-height: .7rem;text-align: center;border-radius: .1rem;}
+			
+			.two-new {position: relative;}
+		</style>
+	</head>
+
+	<body>
+		<!--个人资料的修改-->
+		<section id="oneself-revise">
+			<header class="oneself-head">
+				<span class="oneself-back my-back"></span>
+				<i class="lang_personal_1">个人资料修改</i>
+				<span class="oneself-save lang_personal_2">保存</span>
+			</header>
+			<dl class="oneself-content">
+				<dt class="lang_personal_8">头像 <span><img id="preview" src="../../img/oneself.png"  alt="个人头像"/></span></dt>
+				<dd class="lang_personal_9">昵称 <input type="text" value="特丽丝" /></dd>
+				<dd class="revise-phone lang_personal_10">手机号码<span>134845648</span></dd>
+				<dd class="lang_personal_11">身份证件号码（选填）<input class="userID" type="tel" value="440199511060036" /></dd>
+				<dd class="revise-password lang_personal_12">账户安全<span class="lang_personal_13">密码修改</span></dd>
+			</dl>
+			<div class="photoChoose">
+				<ul>
+					<li style="position:relative;"><span class="lang_personal_3">进入相册</span><input type="file" name="file_head" id="file_head" onchange="javascript:setImagePreview();" style="width:100%;height:100%;position:absolute;left:0;top:0;z-index: 100;opacity:0;filter:alpha(opacity=0);" /></li>
+					<li class="lang_personal_4">取消</li>
+				</ul>
+			</div>
+		</section>
+		<!--修改密码-->
+		<section id="oneself-password">
+			<header class="pwd-head">
+				<span class="pwd-back"></span>
+				<i class="lang_personal_5">修改密码</i>
+			</header>
+			<ul class="change-pwd">
+				<li class="lang_personal_18">旧密码<input type="password" placeholder="请输入旧密码" /></li>
+				<li class="lang_personal_19">新密码<input type="password" placeholder="请输入新密码，6-20位数" /></li>
+				<li class="lang_personal_20">确认密码<input type="password" placeholder="请再次输入密码" /></li>
+			</ul>
+			<div class="fact-oneself lang_personal_6">确认修改</div>
+		</section>
+		<!--修改手机-->
+		<section id="change-phone">
+			<header class="phone-head">
+				<span class="phone-back"></span>
+				<i class="lang_personal_7">修改手机</i>
+			</header>
+
+			<div class="original-two">
+				<p class="two-original lang_personal_14">旧手机号码<input type="text" placeholder="请输入旧号码" /></p>
+				<p class="two-conuntry"><i>国家(区号)</i><span>选择您所在的国家  (区号)</span></p>
+				<p class="two-new lang_personal_15">新手机号码<span class="lang_personal_17" onclick="time(this)">发送验证码</span><i class="time">60</i><input type="tel" placeholder="请输入新号码" /></p>
+				<p class="two-yanzhengma lang_personal_16">验证码<input type="text" placeholder="请填写验证码" /></p>
+				<div class="fact-oneself lang_personal_6">确认修改</div>
+			</div>
+			<div id="choose-country">
+				<ul>
+					<li class="lang_action_12">选择国家</li>
+					<li class="choose-btn lang_action_13">中国</li>
+					<li class="choose-btn lang_action_14">马来西亚</li>
+				</ul>
+			</div>
+		</section>
+
+	</body>
+	<script type="text/javascript" src="../../js/main/myPersonal.js"></script>
+	<script type="text/javascript">
+		//头像
+		var imgSrc = $("#imghead").attr("src")
+		$(".oneself-content dt img").on("tap", function() {
+			$(".photoChoose").show();
+		})
+		$(".photoChoose ul li:nth-of-type(2)").on("tap", function() {
+			$(".photoChoose").hide();
+		})
+
+		function setImagePreview() {
+			var preview, img_txt, localImag, file_head = document.getElementById("file_head"),
+				picture = file_head.value;
+			if(!picture.match(/.jpg|.gif|.png|.bmp/i)) return alert("您上传的图片格式不正确，请重新选择！"), !1;
+			if(preview = document.getElementById("preview"), file_head.files && file_head.files[0])
+				preview.src = window.navigator.userAgent.indexOf("Chrome") >= 1 || window.navigator.userAgent.indexOf("Safari") >= 1 ? window.webkitURL.createObjectURL(file_head.files[0]) : window.URL.createObjectURL(file_head.files[0]);
+			else {
+				file_head.select(),
+					file_head.blur(),
+					img_txt = document.selection.createRange().text,
+					localImag = document.getElementById("localImag");
+
+				try {
+					localImag.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)",
+						localImag.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = img_txt
+				} catch(f) {
+					return alert("您上传的图片格式不正确，请重新选择！"), !1
+				}
+			}
+			$(".photoChoose").hide();
+		}
+		//验证码
+		var wait = 60;
+		function time(o) {
+			$(".forget-send-code").hide();
+			$(".time").show();
+			if(wait == 0) {
+				o.removeAttribute("disabled");
+				/* o.value="获取验证码";*/
+				if(localStorage.getItem("language") == 0) {
+					o.innerHTML = "发送验证码";
+				} else if(localStorage.getItem("language") == 1) {
+					o.innerHTML = "Send code";
+				} else if(localStorage.getItem("language") == 2) {
+					o.innerHTML = "Hantar kod";
+				}
+
+				$(".forget-send-code").show();
+				$(".time").hide();
+				wait = 60;
+			} else {
+				o.setAttribute("disabled", true);
+				/* o.value="重新发送(" + wait + ")";*/
+				if(localStorage.getItem("language") == 0) {
+					$(".time").text("重新发送(" + wait + ")")
+				} else if(localStorage.getItem("language") == 1) {
+					$(".time").text("Resend(" + wait + ")")
+				} else if(localStorage.getItem("language") == 2) {
+					$(".time").text("Hantar(" + wait + ")")
+				}
+				wait--;
+				setTimeout(function() {
+					time(o)
+				}, 1000)
+			}
+		}
+		//修改手机
+		$(".revise-phone").on("tap", function() {
+			$("#oneself-revise").hide();
+			$("#oneself-password").hide();
+			$("#change-phone").show();
+		});
+		$(".phone-back").on("tap", function() {
+			$("#change-phone").hide();
+			$("#oneself-revise").show();
+		})
+		//选择区号
+		$(".two-conuntry").on("tap",function(){
+			$("#choose-country").show();
+		})
+		$("#choose-country ul .choose-btn").on("tap",function(){
+			$(".two-conuntry span").text($(this).text())
+			$("#choose-country").hide();
+		})
+	</script>
+
+</html>

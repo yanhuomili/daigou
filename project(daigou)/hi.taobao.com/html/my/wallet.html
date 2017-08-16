@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/fenxiao.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/my-wallet.css" />
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<style type="text/css">
+			.wallet-1{
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+		</style>
+	</head>
+		
+	<body> 
+		<section id="my-wallet">
+			<div class="wallet-background">
+				<header class="wallet-head">
+					<span class="wallet-back"></span>
+					<i class="lang_wallet_1">我的钱包</i>
+				</header>
+				<p class="lang_wallet_4">人民币  (元)</p>
+				<p class="wallet-money">365.12</p>
+			</div>
+			<div class="wallet-bg">
+				<ul>
+					<li><p class="lang_wallet_5">美元  (美元)</p><p>50.16</p></li>
+					<li class="wallet-malai"><p class="lang_wallet_6">马来西亚币  (令吉)</p><p>120.52</p></li>
+				</ul>
+			</div>
+		</section>
+		<ul id="wallet-list-title">
+			<li class="wallet-1 lang_wallet_7">实时汇率</li>
+			<li class="wallet-2 lang_wallet_8">买进</li>
+			<li class="wallet-3 lang_wallet_9">卖出</li>
+		</ul>
+		<section id="wallet-list">
+			<ul class="wallet-list-peo">
+				<li class="wallet-1 malai lang_wallet_10">马来西亚币</li>
+				<li class="wallet-2">0.6545</li>
+				<li class="wallet-3">1.6059</li>
+			</ul>
+			
+			<ul class="wallet-list-peo">
+				<li class="wallet-1 meiyuan lang_wallet_11">美元</li>
+				<li class="wallet-2">5.1457</li>
+				<li class="wallet-3">20.1457</li>
+			</ul>
+		</section>
+		<p class="chongzhi lang_wallet_2">充值</p>
+		<p class="duihuan lang_wallet_3">兑换货币</p>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			//返回d4页
+			$(".wallet-back").on("tap",function(){
+				window.location.href = "../../my.html";
+			});
+			//点击充值
+			$(".chongzhi").on("tap",function(){
+				window.location.href = "recharge.html";
+			})
+			//点击兑换
+			$(".duihuan").on("tap",function(){
+				window.location.href = "exchange.html";
+			})
+			//语言
+			autoLanguage();
+			function autoLanguage(){
+				var getItem = localStorage.getItem("language");
+				if(localStorage.getItem("language") == "0"){
+					$(".lang_wallet_1").text("我的钱包");
+					$(".lang_wallet_2").text("充值");
+					$(".lang_wallet_3").text("兑换");
+					$(".lang_wallet_4").text("人民币(元)");
+					$(".lang_wallet_5").text("美元(美元)");
+					$(".lang_wallet_6").text("马来西亚币(令吉)");
+					$(".lang_wallet_7").text("实时汇率");
+					$(".lang_wallet_8").text("买进");
+					$(".lang_wallet_9").text("卖出");
+					$(".lang_wallet_10").text("马来西亚币");
+					$(".lang_wallet_11").text("美元");
+					
+				}else if(localStorage.getItem("language") == "1"){
+					$(".lang_wallet_1").text("My wallet");
+					$(".lang_wallet_2").text("Recharge");
+					$(".lang_wallet_3").text("Exchange");
+					$(".lang_wallet_4").text("RMB");
+					$(".lang_wallet_5").text("Dollar");
+					$(".lang_wallet_6").text("Malaysian currency");
+					$(".lang_wallet_7").text("Real Time Exchange Rates");
+					$(".lang_wallet_8").text("Buy");
+					$(".lang_wallet_9").text("To sell");
+					$(".lang_wallet_10").text("Malaysian currency");
+					$(".lang_wallet_11").text("The dollar");
+				}else if(localStorage.getItem("language") == "2"){
+					$(".lang_wallet_1").text("Dompet saya");
+					$(".lang_wallet_2").text("Recharge");
+					$(".lang_wallet_3").text("Pertukaran");
+					$(".lang_wallet_4").text("Renminbi (RMB)");
+					$(".lang_wallet_5").text("Dollar");
+					$(".lang_wallet_6").text("Ringgit Malaysia");
+					$(".lang_wallet_7").text("Kadar Pertukaran masa nyata");
+					$(".lang_wallet_8").text("Membeli");
+					$(".lang_wallet_9").text("Jual");
+					$(".lang_wallet_10").text("Ringgit Malaysia");
+					$(".lang_wallet_11").text("Dolar AS");
+				}
+			};
+		});
+	</script>
+</html>

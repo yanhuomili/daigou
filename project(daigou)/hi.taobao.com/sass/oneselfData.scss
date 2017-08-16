@@ -1,0 +1,237 @@
+.phone-head,
+.pwd-head,
+.oneself-head{
+    width:100%;
+    height:.87rem;
+    background:#df463e;
+    border-bottom:1px solid #ee9c98;
+    font-size:.34rem;
+    color:#fff;
+    line-height:.87rem;
+    text-align:center;
+    position:relative;
+    left:0;
+    top:0;
+    .phone-back,
+    .pwd-back,
+    .oneself-back{
+        width:.87rem;
+        height:.87rem;
+        background:url(../img/index/fanhui@3x.png) no-repeat center;
+        background-size:.45rem;
+        position:absolute;
+        left:0;
+        top:0;
+    }
+    .oneself-save{
+        width:1.46rem;
+        height:.87rem;
+        position:absolute;
+        right:0;
+        top:0;
+    }
+}
+
+.fact-oneself{
+    width:100%;
+    height:1rem;
+    background:#df463e;
+    font-size:.34rem;
+    line-height:1rem;
+    text-align:center;
+    color:#fff;
+    position:fixed;
+    left:0;
+    bottom:0;
+}
+
+#oneself-revise{
+    display: block;//个人资料修改时显示
+    width:100%;
+    height:100%;
+    background:#ededed;
+    .oneself-content{
+        width:100%;
+        overflow:hidden;
+        background:#fff;
+        dt,dd{
+            width:100%;
+            border-bottom:2px solid #ededed;
+            padding:0 .5rem 0 .43rem;
+            box-sizing:border-box;
+            font-size:.3rem;
+            color:#666;
+            span{
+                float:right;
+                color:#333;
+                font-size:.32rem;
+            }
+        }
+        dt{
+            height:1.6rem;
+            line-height:1.6rem;
+            span{
+                width:1.1rem;
+                height:1.1rem;
+                border-radius:100%;
+                margin-top:.25rem;
+                overflow:hidden;
+                img{
+                    width:100%;
+                    height:100%;
+                    float:left;
+                }
+            }
+        }
+        dd{
+            height:1rem;
+            line-height:1rem;
+            input{
+                text-align:right;
+                float:right;
+                font-size:.32rem;
+                outline:none;
+                margin-top:.25rem;
+                color:#333;
+                border:0;
+            }
+            .userID{
+                width:3.4rem;
+            }
+        }
+        dd:nth-of-type(2),
+        dd:nth-of-type(4){
+            background:url(../img/other/mianbaoxie_xi_tianziliao@3x.png) no-repeat 7.14rem center;
+            background-size:.11rem .21rem;
+        }
+    }
+    .photoChoose{
+        width:100%;
+        height:100%;
+        display: none;
+        position:fixed;
+        left:0;
+        top:0;
+        background:rgba(0,0,0,.5);
+        ul{
+            width:100%;
+            height:3.4rem;
+            padding: 0 .4rem;
+            box-sizing: border-box;
+            position:absolute;
+            bottom:0;
+            left:0;
+            li{
+                width:100%;
+                height:.94rem;
+                border-radius:.2rem;
+                background:#fff;
+                color:dodgerblue;
+                text-align: center;
+                font-size:.36rem;
+                line-height: .94rem;
+                margin-top:.2rem;
+            }
+        }
+    }
+}
+
+//////////////////////////修改密码
+#oneself-password{
+    display:none;//修改密码是显示
+    width:100%;
+    height:100%;
+    background:#ededed;
+    .change-pwd{
+        width:100%;
+        overflow:hidden;
+        background:#fff;
+        li{
+            width:100%;
+            height:1rem;
+            border-bottom:2px solid #ededed;
+            line-height:1rem;
+            font-size:.28rem;
+            color:#666;
+            padding:0 .43rem 0 ;
+            box-sizing:border-box;
+            input{
+                width:4.97rem;
+                height:.9rem;
+                border:0;
+                outline:none;
+                color:#999;
+                padding-left:.1rem;
+                box-sizing:border-box;
+                float:right;
+                font-size:.3rem;
+                margin-top:.05rem;
+            }
+        }
+    }
+}
+//修改手机号码
+#change-phone{
+    display:none;///////////////////修改手机号码
+    width:100%;
+    height:100%;
+    background:#ededed;
+    .original-two{
+        width:100%;
+        overflow:hidden;
+        .two-new{
+            width:100%;
+            height:1rem;
+            padding:0 .22rem 0 .43rem;
+            box-sizing:border-box;
+            font-size:.28rem;
+            color:#666;
+            line-height:1rem;
+            background:#fff;
+            border-bottom:2px solid #ededed;
+            input{
+                width:3.3rem;
+                height:.9rem;
+                margin-top:.05rem;
+                color:#999;
+                font-size:.3rem;
+                float:right;
+                border:0;
+                outline:none;
+            }
+            span{
+                float:right;
+                width:1.78rem;
+                height:.7rem;
+                background:#df463e;
+                font-size:.26rem;
+                line-height:.7rem;
+                text-align:center;
+                color:#fff;
+                border-radius:.1rem;
+                margin-top:.15rem;
+            }
+        }
+        .two-original,
+        .two-yanzhengma{
+            width:100%;
+            height:1rem;
+            padding:0 2rem 0 .43rem;
+            box-sizing:border-box;
+            font-size:.28rem;
+            color:#666;
+            line-height:1rem;
+            background:#fff;
+            input{
+                width:3.3rem;
+                height:.9rem;
+                margin-top:.05rem;
+                color:#999;
+                font-size:.3rem;
+                float:right;
+                border:0;
+                outline:none;
+            }
+        }
+    }
+}

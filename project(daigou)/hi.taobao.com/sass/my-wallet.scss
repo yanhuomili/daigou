@@ -1,0 +1,88 @@
+#wallet-list-title{
+    width:100%;
+    height:.83rem;
+    font-size:.26rem;
+    color:#999;
+    border-bottom:1px solid #e1e1e1;
+    padding:0 .13rem 0 .41rem;
+    box-sizing:border-box;
+    float:left;
+    li{
+        height:100%;
+        line-height:.83rem;
+        float:left;
+    }
+}
+#wallet-list{
+    width:100%;
+    overflow:hidden;
+    .wallet-list-peo{
+        width:100%;
+        height:.99rem;
+        border-bottom:1px solid #e1e1e1;
+        padding:0 .13rem 0 .41rem;
+        box-sizing:border-box;
+        color:#333;
+        float:left;
+        li{
+            height:100%;
+            line-height:.99rem;
+            float:left;
+            overflow:hidden;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+        }
+        .wallet-1{
+            font-size:.28rem;
+            padding-left:.51rem;
+            box-sizing:border-box;
+        }
+        .wallet-2{
+            font-size:.26rem;
+        }
+        .wallet-3{
+            font-size:.26rem;
+        }
+        .malai{
+            background:url(../img/index/malaixiya_guoqi@3x.png) no-repeat left center;
+            background-size:.4rem .25rem;
+        }
+        .meiyuan{
+            background:url(../img/index/meiguo_guoqi@3x.png) no-repeat left center;
+            background-size:.4rem .25rem;
+        }
+    }
+}
+.wallet-1{
+    width:2.37rem;
+}
+.wallet-2{
+    width:2.67rem;
+    text-align: center;
+}
+.wallet-3{
+    text-align: center;
+    width:1.9rem;
+}
+
+.duihuan,
+.chongzhi{
+    width:7.06rem;
+    height:.96rem;
+    border:2px solid #df463e;
+    font-size:.34rem;
+    line-height:.98rem;
+    text-align:center;
+    margin-left:.2rem;
+    float:left;
+    border-radius:.2rem;
+}
+.chongzhi{
+    color:#fff;
+    background:#df463e;
+    margin-top:2.11rem;
+}
+.duihuan{
+    color:#df463e;
+    margin-top:.21rem;
+}

@@ -1,0 +1,70 @@
+.lang_active_1:after{
+	content:"Login";
+	display: block;
+	position:absolute;
+	top:0;
+	left:45%;
+	background:#DF463E;
+	width:1.2rem;
+}
+.lang_active_2:after{
+	content:"Register" ;
+	display: block;
+	position:absolute;
+	top:0;
+	background:#DE463E;
+}
+.lang_active_3:after{
+	content:"Number" ;
+	display: block;
+	position:absolute;
+	top:0;
+	background:#fff;
+}
+.lang_active_4:after{
+	content:"Password" ;
+	display: block;
+	position:absolute;
+	top:0;
+	background:#fff;
+}
+.lang_active_5{
+	float: left;
+	width:2.4rem;
+	height:100%;
+	position:relative;
+}
+.lang_active_5:after{
+	content:"Forget Password" ;
+	display: block;
+	position:absolute;
+	top:0;
+	background:#EDEDED;
+}
+.lang_active_6{
+	position: relative;
+}
+.lang_active_6:after{
+	content: "Login";
+	display: block;
+	position:absolute;
+	background:#DF463E;
+	top:0;
+	left:45%;
+}
+.lang_active_0{
+	position:relative;
+	
+}
+.lang_active_0:after{
+	content:"USA";
+	display: block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	background:#DE463E;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

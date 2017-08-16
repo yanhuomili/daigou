@@ -1,0 +1,124 @@
+#shouye #header { width: 100%; height: 0.87rem; padding: 0.14rem 0 0 0.31rem; box-sizing: border-box; background: #df463e; position: relative; }
+#shouye #header .language { width: 0.98rem; height: 0.52rem; float: left; }
+#shouye #header .language p { width: 0.58rem; height: 100%; float: left; font-size: 0.28rem; color: #fff; line-height: 0.52rem; margin-top: 0.04rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#shouye #header .language i { width: 0.16rem; height: 100%; text-align: right; float: left; background: url("../img/index/xiala_shouye@3x.png") no-repeat 0 center; background-size: 0.14rem 0.08rem; }
+#shouye #header .sousou { width: 5.8rem; height: 0.52rem; float: left; }
+#shouye #header .sousou .text { width: 5.8rem; height: 100%; border: 0; float: left; border-radius: 6px; font-size: 0.22rem; color: #999; background: #fff url("../img/index/sousuo_shouye@3x.png") no-repeat 0.17rem center; background-size: 0.24rem 0.24rem; padding-left: 0.54rem; box-sizing: border-box; outline: none; line-height: 0.52rem; }
+/*#shouye #header img { padding: 0.09rem 0 0 0.36rem; float: left; width: 0.4rem; height: 0.37rem; }*/
+#shouye #header .xiala { position: absolute; top: 0.86rem; left: 0.2rem; z-index: 100; width: 2.1rem; height: 2.7rem; background: rgba(26, 23, 23, 0.9); color: #fff; font-size: 0.3rem; padding-left: 0.36rem; box-sizing: border-box; display: none; }
+#shouye #header .xiala li { width: 100%; height: 0.9rem; line-height: 0.9rem; }
+#shouye #header .action { background: url("../img/index/gou_bai_shouye@3x.png") no-repeat 1.3rem center; background-size: 0.28rem 0.18rem; }
+#shouye .swiper-wrapper { width: 100%; height: 3.2rem; }
+#shouye .swiper-wrapper a { float: left; width: 100%; height: 100%; }
+#shouye .swiper-wrapper img { float: left; width: 100%; height: 100%; }
+#shouye .daigoupingtai { width: 100%; height: 2.55rem;  box-sizing: border-box; border-bottom: 0.1rem solid #ededed; background: #fff; }
+#shouye .daigoupingtai p { width: 100%; height: 0.78rem; background: url("../img/index/daigoupingtai_shouye@3x.png") no-repeat 0.25rem center; background-size: 0.34rem 0.4rem; padding-left: 0.68rem; box-sizing: border-box; line-height: 0.78rem; font-size: 0.26rem; color: #649ce0; }
+#shouye .daigoupingtai ul { width: 100%; height: 100%;margin-left:0.7rem;margin-top:.05rem; }
+#shouye .daigoupingtai ul li { width: 28%; height: 1.74rem; float: left; padding-left: 0.3rem; box-sizing: border-box; }
+#shouye .daigoupingtai ul li a { width: 1.3rem; height: 1.3rem; float: left; }
+#shouye .daigoupingtai ul li a img { width: 100%; height: 100%; float: left; }
+#shouye .huilv { width: 100%; background: #fff url("../img/index/huilv_shouye@3x.png") no-repeat 0.21rem 0.28rem; background-size: 0.45rem 0.45rem; }
+#shouye .huilv p { width: 100%; height: 1rem; padding-left: 0.7rem; box-sizing: border-box; font-size: 0.26rem; color: #649ce0; background: url("../img/index/mianbaoxie_lan_shouye@3x.png") no-repeat 1.8rem center; background-size: 0.23rem 0.13rem; line-height: 1rem; }
+#shouye .huilv .huilv-ul { display: none; width: 100%; height: 2.81rem; }
+#shouye .huilv .huilv-ul .huilv-dl { overflow: hidden; }
+#shouye .huilv .huilv-ul .huilv-dl dd { height: 100%; font-size: 0.26rem; color: #999; float: left; }
+#shouye .huilv .huilv-ul .huilv-dl dd:nth-of-type(1) { width: 3.07rem; line-height: 0.8rem; }
+#shouye .huilv .huilv-ul .huilv-dl dd:nth-of-type(2) { width: 1.15rem; margin-right: 1.03rem; line-height: 1rem; text-align: center; }
+#shouye .huilv .huilv-ul .huilv-dl dd:nth-of-type(3) { width: 1.33rem; line-height: 1rem; text-align: center; }
+#shouye .huilv .huilv-ul .huilv-dl img { width: 0.4rem; height: 0.24rem; margin-right: 0.11rem; }
+#shouye .huilv .huilv-ul li { padding-left: 0.41rem; width: 100%; box-sizing: border-box; border-top: 1px solid #ededed; }
+#shouye .huilv .huilv-ul li:nth-of-type(1) { height: 0.8rem; }
+#shouye .huilv .huilv-ul li:nth-of-type(2), #shouye .huilv .huilv-ul li:nth-of-type(3) { height: 1rem; }
+#shouye .huilv .huilv-ul li:nth-of-type(2) dd:nth-of-type(1), #shouye .huilv .huilv-ul li:nth-of-type(2) dd:nth-of-type(2), #shouye .huilv .huilv-ul li:nth-of-type(2) dd:nth-of-type(3), #shouye .huilv .huilv-ul li:nth-of-type(3) dd:nth-of-type(1), #shouye .huilv .huilv-ul li:nth-of-type(3) dd:nth-of-type(2), #shouye .huilv .huilv-ul li:nth-of-type(3) dd:nth-of-type(3) { font-size: 0.3rem; color: #333; }
+#shouye #classify { width: 100%; padding: 0 0.06rem 0.2rem 0.09rem; /*background: #69b6ff;*/ box-sizing: border-box; border-top: 0.1rem solid #ededed; }
+#shouye #classify .classify-p { width: 100%; height: 0.79rem; background: url("../img/index/remenfenlei_shouye@3x.png") no-repeat 0.25rem center; background-size: 0.34rem 0.42rem; font-size: 0.26rem; color: #649ce0; padding-left: 0.78rem; box-sizing: border-box; line-height: 0.79rem; }
+#shouye #classify .classify-p span { float: right;width: 0.87rem;height: 100%;margin-right: 0.24rem;background: url(../img/index/gengduo.png) no-repeat right center;background-size: 0.27rem 0.13rem;font-size: 0.24rem;color:#999; padding-right: 0.3rem; box-sizing: border-box; }
+#shouye #classify .classify-ul { width: 100%; height: 3.52rem; }
+#shouye #classify .classify-ul li { width: 2.39rem; height: 1.68rem; float: left; border: 1px solid #69b6ff; }
+#shouye #classify .classify-ul li a { width: 100%; height: 100%; float: left; }
+#shouye #classify .classify-ul li a img { width: 100%; height: 100%; }
+#shouye #feature { width: 100%; overflow: hidden; /*background: #ededed;*/ }
+#shouye #feature .feayure-p { width: 100%; height: 0.84rem; background: #fff url("../img/index/tesehuigou@3x.png") no-repeat 0.25rem center; background-size: 0.34rem 0.42rem; font-size: 0.26rem; color: #649ce0; padding-left: 0.68rem; box-sizing: border-box; line-height: 0.84rem; }
+#shouye #feature .feayure-p span { float: right; width: 0.87rem; height: 100%; margin-right: 0.24rem; background: url("../img/index/gengduo.png") no-repeat right center; background-size: 0.27rem 0.13rem; font-size: 0.24rem; padding-right: 0.3rem; box-sizing: border-box; color: #999; }
+#shouye #feature .feature-ul { padding-bottom: 0.3rem; }
+#shouye #feature .feature-ul li { width: 100%; height: 2.3rem; /*margin-top: 0.08rem; */background: #fff;  }
+#shouye #feature .feature-ul li a { width: 2.5rem; height: 2.3rem; float: left; }
+#shouye #feature .feature-ul li a img { width: 100%; height: 100%; float: left; }
+#shouye #feature .feature-ul li p { /*text-align: center;*/display:block;padding-left:2.8rem; }
+#shouye #feature .feature-ul li .title { /*width: 100%;*/ height: 0.53rem; line-height: 0.53rem; margin-top: 0.05rem; font-size: 0.3rem; color: #333; /*float: left;*/ }
+#shouye #feature .feature-ul li .model { /*width: 100%;*/ height: 0.22rem; line-height: 0.22rem; font-size: 0.24rem; color: #666; font-family: "Hiragino Sans";     margin-top: .48rem;/*float: left;*/ }
+#shouye #feature .feature-ul li .price { /*width: 100%;*/ height: 1rem; /*line-height: 0.79rem;*/ font-size: 0.26rem; color: #ff4844;}
+#shouye #feature .feature-ul li .price span {display: inline-block;width:100%;height:50%;  line-height: 0.5rem;}
+#shouye #feature .feature-ul li .price span s{color:#999;margin-left: 0.3rem;}
+#shouye #feature .feature-ul li .price .shopCar{color: #ccc; padding-left: 0.6rem;box-sizing: border-box;background: url(../img/shopCar.png) no-repeat 0 center;}
+#shouye #feature .feature-ul li .price .shopCar{background-size: 0.5rem;}
+
+
+/*#shouye #feature .feature-ul li .price span { width: 1.35rem; height: 100%; display: inline-block; line-height: 0.79rem; font-size: 0.38rem; text-align: center; }*/
+#shouye #feature .feature-ul li:nth-of-type(even) { /*float: right;*/ }
+#shouye #feature .feature-ul li:not(last-child){padding-top: .28rem;}
+#shouye #feature .feature-ul li h3{float:right;height: .6rem;width:1.6rem;margin:0;margin-top:-0.8rem;margin-right:.2rem;font-weight: normal;}
+#shouye #feature .feature-ul li h3 a{display:block;height: .6rem;;width:1.6rem;line-height:.6rem;font-size:.3rem;text-align: center;color:#fff;background-color:#df463e;border-radius:.12rem;}
+
+#shouye-scan { width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5) url(../img/index/baikuang_saoyisao@3x.png) no-repeat 1.35rem 2.16rem; background-size: 4.8rem 4.8rem; display: none; }
+#shouye-scan .scan-content { width: 4.8rem; height: 4.8rem; float: left; margin: 2.16rem 0 0.5rem 1.35rem; position: relative; overflow: hidden; }
+#shouye-scan .scan-content .scan-tiao { width: 4.8rem; height: .43rem; background: url(../img/index/saomiaotiao@3x.png) no-repeat center; background-size: 4.8rem .43rem; position: absolute; animation: move 1s linear  infinite; }
+#shouye-scan p { width: 4.8rem; height: 0.28rem; color: #b5b5b5; font-size: 0.28rem; text-align: center; line-height: 0.28rem; float: left; margin-left: 1.3rem; }
+@keyframes move { from { transform: translateY(0); }
+  to { transform: translateY(4.8rem); } }
+#search-header { width: 100%; height: 0.88rem; background: #fff; position: relative; }
+#search-header span:nth-of-type(1) { float: left; margin-right: 4px; width: 0.69rem; height: 100%; background: url("../img/index/fanhui_kui_fanhui@3x.png") no-repeat center; background-size: 0.45rem 0.45rem; }
+#search-header span:nth-of-type(2) { float: right; margin-right: 0.24rem; margin-top: 0.17rem; font-size: 0.28rem; color: #fff; text-align: center; line-height: 0.53rem; width: 0.8rem; height: 0.53rem; background: #df463e; border-radius: 0.1rem; }
+#search-header input { border: 0; float: left; margin-top: 0.15rem; width: 5.55rem; height: 0.57rem; font-size: 0.26rem; color: #999; border-bottom: 2px solid #df463e; outline: none; }
+#search-header input:-moz-placeholder { color: #999; }
+#search-header input::-moz-placeholder { color: #999; }
+#search-header input:-ms-input-placeholder { color: #999; }
+#search-header input::-webkit-input-placeholder { color: #999; }
+#search-header .search-clear { position: absolute; top: 0.15rem; right: 1.15rem; width: 0.56rem; height: 0.57rem; display: block; background: #fff url("../img/index/guanbii_fanhu@3x.png") no-repeat center; background-size: 0.3rem 0.3rem; }
+
+#shouye-search { width: 100%; height: 100%; display: block; }
+#shouye-search .search-history .search-btn { width: 100%; height: 0.28rem; padding: 0 0.44rem 0 0.31rem; box-sizing: border-box; margin: 0.58rem 0 0.11rem; }
+#shouye-search .search-history .search-btn p { width: 2.62rem; height: 0.24rem; line-height: 0.24rem; font-size: 0.24rem; color: #999; float: left; }
+#shouye-search .search-history .search-btn span { float: right; width: 0.28rem; height: 100%; background: url("../img/index/shanchujilui_fanhu@3x.png") no-repeat center; background-size: 0.34rem 0.34rem; }
+#shouye-search .search-history ul { width: 100%; padding: 0.08rem 0 0 0.24rem; box-sizing: border-box; }
+#shouye-search .search-history ul li { width: 2.2rem; height: 0.56rem; border: 1px solid #cecece; margin: 0.05rem 0.06rem; float: left; font-size: 0.28rem; color: #333; line-height: 0.56rem; text-align: center; background: #fff; overflow: hidden; }
+
+#search-result { display: none; }
+#search-result .feature-ul-left { float: left; }
+#search-result .feature-ul-right { float: right; }
+#search-result .feature-ul-left, #search-result .feature-ul-right { padding-bottom: 0.97rem; }
+#search-result .feature-ul-left li, #search-result .feature-ul-right li { width: 3.71rem; height: 5.4rem; margin-bottom: 0.08rem; background: #fff; }
+#search-result .feature-ul-left li a, #search-result .feature-ul-right li a { width: 3.71rem; height: 3.71rem; float: left; }
+#search-result .feature-ul-left li a img, #search-result .feature-ul-right li a img { width: 100%; height: 100%; float: left; }
+#search-result .feature-ul-left li p, #search-result .feature-ul-right li p { text-align: center; }
+#search-result .feature-ul-left li .title, #search-result .feature-ul-right li .title { width: 100%; height: 0.53rem; line-height: 0.53rem; margin-top: 0.05rem; font-size: 0.3rem; color: #333; float: left; }
+#search-result .feature-ul-left li .model, #search-result .feature-ul-right li .model { width: 100%; height: 0.22rem; line-height: 0.22rem; font-size: 0.24rem; color: #666; font-family: "Hiragino Sans"; float: left; }
+#search-result .feature-ul-left li .price, #search-result .feature-ul-right li .price { width: 100%; height: 0.79rem; line-height: 0.79rem; font-size: 0.26rem; color: #ff4844; }
+#search-result .feature-ul-left li .price span, #search-result .feature-ul-right li .price span { width: 1.35rem; height: 100%; display: inline-block; line-height: 0.79rem; font-size: 0.38rem; text-align: center; }
+
+#search-no { display: none; width: 100%; height: 100%; background: white url("../img/index/zhaobudaoi_sousuo@3x.png") no-repeat 2.24rem 2.56rem; background-size: 3.09rem 3.22rem; position: fixed; left: 0; top: 0; z-index: -1; }
+#search-no p { margin-top: 5.92rem; width: 100%; height: 0.34rem; font-size: 0.34rem; color: #c6c6c6; line-height: 0.34rem; text-align: center; }
+
+#footer .footer-shouye { background: url("../img/index/shouye_hong@3x.png") no-repeat center 0.13rem !important; background-size: 0.54rem 0.48rem !important; }
+#footer .footer-shouye .lang_index_14 { color: #df463e !important; }
+
+/*# sourceMappingURL=index.css.map */
+
+
+
+
+/* menu */
+.flex>.cell{-webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1;width: 20%;-webkit-flex-basis: 0;-ms-flex-preferred-size: 0;flex-basis: 0;max-width: 100%;display:block;padding: 0!important;    margin-top: -0.25rem;position: relative;}
+.flex .cell img{-webkit-transform: scale(0.6);-moz-transform: scale(0.6);-ms-transform: scale(0.6);-o-transform: scale(0.6);transform: scale(0.6);}
+.flex {display: -webkit-box!important;display: -webkit-flex!important;display: -ms-flexbox!important;display: flex!important;-webkit-flex-wrap: wrap;-ms-flex-wrap: wrap;flex-wrap: wrap;color:#333333;padding: 0 0.1rem;}
+.flex p{margin-bottom:.1rem;text-align: center;font-size: 0.26rem;}
+.flex .cell a{display:block;    height: 1.6rem;text-align: center;justify-content: center;}
+.flex .cell a img{display: block;margin:0 auto;    margin-left: -.17rem;}
+
+
+.line{width:100%;height:0.1rem;background-color:#ebebeb;}
+
+
+.fixWrap{
+	overflow: hidden;
+}

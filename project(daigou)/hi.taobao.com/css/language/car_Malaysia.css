@@ -1,0 +1,141 @@
+.lang_car_1:after{
+	content:"Troli Membeli-belah";
+	display: block;
+	position:absolute;
+	width:3.8rem;
+	top:0;
+	left:26%;
+	background:#DE463E;
+}
+.lang_car_2:after{
+	content:"Pilih";
+	position:absolute;
+	width:1rem;
+	top:0;
+	right:0;
+	background:#DE463E;
+}
+.lang_car_3{
+	position:relative;
+}
+.lang_car_3:after{
+	content:"Jumlah (tidak termasuk pos)";
+	position:absolute;
+	width:1.8rem;
+	left:0;
+	top:0;
+	background:#fff;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.lang_car_4{
+	position:relative;
+}
+.lang_car_4:after{
+	content:"Penyelesaian";
+	position:absolute;
+	width:1.4rem;
+	top:0;
+	left:0;
+	background:#DE463E;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.lang_car_5{
+	position:relative;
+}
+.lang_car_5:after{
+	content:"Meningkatkan maklumat peribadi";
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0 .5rem;
+	box-sizing: border-box;
+}
+.lang_car_6{
+	position:relative;
+}
+.lang_car_6:after{
+	content:"Kita perlu meningkatkan maklumat peribadi untuk membeli-belah oh ~";
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0 .5rem;
+	box-sizing: border-box;
+}
+.lang_car_7{
+	position:relative;
+}
+.lang_car_7:after{
+	content:"Untuk Menyempurnakan";
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+	background:#DE463E;
+	border-radius: 0 0 0.2rem 0.2rem;
+}
+.lang_index_14{
+	position:relative;
+}
+.lang_index_14:after{
+	content:"Rumah";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+}
+.lang_index_15{
+	position:relative;
+}
+.lang_index_15:after{
+	content:"Maklumat";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lang_index_16{
+	position:relative;
+}
+.lang_index_16:after{
+	content:"Kereta";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+	color:#DF463E;
+}
+.lang_index_17{
+	position:relative;
+}
+.lang_index_17:after{
+	content:"Saya";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+}

@@ -1,0 +1,80 @@
+#order { width: 100%; overflow: hidden; position: fixed; left: 0; top: 0; z-index: 10; }
+#order .order-head { width: 100%; height: .87rem; background: #df463e; line-height: .87rem; text-align: center; color: #fff; position: relative; font-size: .34rem; }
+#order .order-head .order-back { width: .87rem; height: .87rem; position: absolute; left: 0; top: 0; background: url(../img/index/fanhui@3x.png) no-repeat center; background-size: .45rem; }
+#order .order-nav { width: 100%; height: .9rem; border-bottom: 1px solid #ededed; background: #fff; }
+#order .order-nav ul { width: 100%; height: 100%; padding-left: .25rem; box-sizing: border-box; }
+#order .order-nav ul li { height: 100%; line-height: .9rem; font-size: .3rem; color: #666; text-align: center; float: left; position: relative; }
+#order .order-nav ul li:first-child { width: 1.22rem; }
+#order .order-nav ul li:last-child { width: 1.37rem; }
+#order .order-nav ul .nav-same { width: 1.52rem; }
+#order .order-nav ul .order-action { color: #df463e; }
+#order .order-nav ul .order-action:after { display: block; content: ""; width: .44rem; height: .04rem; background: #df463e; margin-left: 50%; position: absolute; left: -.22rem; bottom: 0; }
+
+#order-fill { width: 100%; height: 1.77rem; }
+
+#order-null { width: 100%; height: 100%; display: none; }
+#order-null .order-null-content { width: 100%; padding-top: 4.54rem; background: url(../img/my/wudingdan@3x.png) no-repeat center 1.08rem; background-size: 3.23rem 3.38rem; }
+#order-null .order-null-content p { width: 100%; height: .32rem; line-height: .32rem; text-align: center; font-size: .32rem; color: #999; }
+
+#order-has { width: 100%; overflow: hidden; background: #ededed; }
+#order-has .order-has { width: 100%; overflow: hidden; padding-bottom: .87rem; }
+#order-has .order-has dl { width: 7.1rem; margin: 0 auto; margin-top: .19rem; overflow: hidden; border-radius: .15rem; background: #fff; }
+#order-has .order-has dl dt { width: 100%; height: .86rem; line-height: .86rem; font-size: .28rem; padding: 0 .27rem 0 .25rem; border-bottom: 1px solid #ededed; box-sizing: border-box; color: #666; }
+#order-has .order-has dl dt span { float: right; font-size: .24rem; color: #df463e; }
+#order-has .order-has dl dd { width: 100%; overflow: hidden; padding: .22rem 0 0 .19rem; box-sizing: border-box; }
+#order-has .order-has dl dd ul { width: 100%; height: 1.76rem; padding-top: .01rem; overflow: hidden; padding-right: .48rem; box-sizing: border-box; }
+#order-has .order-has dl dd ul .product-img { width: 1.52rem; height: 1.52rem; float: left; margin-right: .31rem; }
+#order-has .order-has dl dd ul .product-img img { width: 100%; height: 100%; float: left; }
+#order-has .order-has dl dd ul .product-title { width: 4.6rem; height: .28rem; font-size: .28rem; line-height: .28rem; color: #333; float: left; margin: .08rem 0 .12rem 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#order-has .order-has dl dd ul .product-edition { width: 4.6rem; height: .26rem; font-size: .24rem; line-height: .26rem; color: #999; float: left; margin-bottom: .47rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#order-has .order-has dl dd ul .product-price { width: 4.6rem; height: .26rem; font-size: .24rem; line-height: .26rem; color: #666; float: left; }
+#order-has .order-has dl dd ul .product-price span:nth-of-type(2) { float: right; }
+#order-has .order-has dl dd .aggregate-price { width: 100%; height: 1.76rem; overflow: hidden; padding: 0 .25rem 0 .09rem; box-sizing: border-box; }
+#order-has .order-has dl dd .aggregate-price P:nth-of-type(1) { width: 100%; height: .84rem; line-height: .84rem; border-top: 1px solid #ededed; text-align: right; }
+#order-has .order-has dl dd .aggregate-price P:nth-of-type(1) .price-first { font-size: .24rem; color: #333; float: right; }
+#order-has .order-has dl dd .aggregate-price P:nth-of-type(1) .gongji { font-size: .3rem; color: #df463e; float: right; }
+#order-has .order-has dl dd .aggregate-price P:nth-of-type(1) .price-i { font-size: .2rem; color: #df463e; float: right; }
+#order-has .order-has dl dd .aggregate-price .daiChuLi { width: 100%; height: .64rem; padding-top: .01rem; box-sizing: border-box; }
+#order-has .order-has dl dd .aggregate-price .daiChuLi .why-pay { float: left; background: url(../img/other/wenhao_hong@3x.png) no-repeat left center; background-size: .31rem; font-size: .2rem; color: #999; padding-left: .4rem; box-sizing: border-box; margin-top: .16rem; }
+#order-has .order-has dl dd .aggregate-price .daiChuLi .right-away, #order-has .order-has dl dd .aggregate-price .daiChuLi .remove-dingdan { width: 1.56rem; height: .6rem; line-height: .6rem; font-size: .26rem; text-align: center; float: right; }
+#order-has .order-has dl dd .aggregate-price .daiChuLi .right-away { background: #a4a4a4; border: 1px solid #a4a4a4; color: #fff; }
+#order-has .order-has dl dd .aggregate-price .daiChuLi .remove-dingdan { border: 1px solid #cecece; color: #333; margin-right: .2rem; }
+#order-has .order-has dl dd .aggregate-price .daiFuKuan { width: 100%; height: .64rem; padding-top: .01rem; box-sizing: border-box; }
+#order-has .order-has dl dd .aggregate-price .daiFuKuan .FuKuan-right-away, #order-has .order-has dl dd .aggregate-price .daiFuKuan .FuKuan-remove-dingdan { width: 1.56rem; height: .6rem; line-height: .6rem; font-size: .26rem; text-align: center; float: right; }
+#order-has .order-has dl dd .aggregate-price .daiFuKuan .FuKuan-right-away { background: #de463e; border: 1px solid #df463e; color: #fff; }
+#order-has .order-has dl dd .aggregate-price .daiFuKuan .FuKuan-remove-dingdan { border: 1px solid #cecece; color: #333; margin-right: .2rem; }
+#order-has .order-has dl dd .aggregate-price .daiFaHuo { width: 100%; height: .64rem; padding-top: .01rem; box-sizing: border-box; }
+#order-has .order-has dl dd .aggregate-price .daiFaHuo .FaHuo-dingdan { width: 1.56rem; height: .6rem; line-height: .6rem; font-size: .26rem; text-align: center; float: right; }
+#order-has .order-has dl dd .aggregate-price .daiFaHuo .FaHuo-dingdan { border: 1px solid #cecece; color: #333; margin-right: .2rem; }
+#order-has .order-has dl dd .aggregate-price .daiShouHuo { width: 100%; height: .64rem; padding-top: .01rem; box-sizing: border-box; }
+#order-has .order-has dl dd .aggregate-price .daiShouHuo .ShouHuo-right-away, #order-has .order-has dl dd .aggregate-price .daiShouHuo .ShouHuo-remove-dingdan { width: 1.56rem; height: .6rem; line-height: .6rem; font-size: .26rem; text-align: center; float: right; }
+#order-has .order-has dl dd .aggregate-price .daiShouHuo .ShouHuo-right-away { background: #de463e; border: 1px solid #df463e; color: #fff; }
+#order-has .order-has dl dd .aggregate-price .daiShouHuo .ShouHuo-remove-dingdan { border: 1px solid #cecece; color: #333; margin-right: .2rem; }
+#order-has .order-has dl dd .aggregate-price .daiPingJia { width: 100%; height: .64rem; padding-top: .01rem; box-sizing: border-box; }
+#order-has .order-has dl dd .aggregate-price .daiPingJia .PingJia-right-away, #order-has .order-has dl dd .aggregate-price .daiPingJia .PingJia-remove-dingdan { width: 1.56rem; height: .6rem; line-height: .6rem; font-size: .26rem; text-align: center; float: right; }
+#order-has .order-has dl dd .aggregate-price .daiPingJia .PingJia-right-away { border: 1px solid #cecece; color: #333; }
+#order-has .order-has dl dd .aggregate-price .daiPingJia .PingJia-remove-dingdan { border: 1px solid #cecece; color: #333; margin-right: .2rem; }
+
+#order-has .order-has dl dd .aggregate-price .commentNow{
+	float: right;
+	font-size: 0.26rem;
+	width:1.56rem;
+	height:0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+	border: 0.01rem solid #cecece;
+	margin-right: 0.2rem;
+}
+
+
+
+
+#daigou-instruction { display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; left: 0; top: 0; z-index: 1000; }
+#daigou-instruction ul { width: 5.36rem; height: 5.8rem; background: #FFF; margin: 0 auto; margin-top: 2.49rem; border-radius: .2rem; position: relative; }
+#daigou-instruction ul span { float: right; width: .54rem; height: .54rem; background: url(../img/other/guanbi_tankuang@3x.png) no-repeat center; background-size: .53rem .53rem; position: absolute; right: -.27rem; top: -.27rem; }
+#daigou-instruction ul li:nth-of-type(1) { width: 100%; height: 2.94rem; background: url(../img/my/daigoudingdantu@3x.png) no-repeat center 0.52rem; background-size: 2.05rem 2.02rem; }
+#daigou-instruction ul li:nth-of-type(2) { width: 100%; height: .38rem; color: #333; font-size: .38rem; line-height: .38rem; text-align: center; }
+#daigou-instruction ul li:nth-of-type(3) { width: 100%; height: .8rem; line-height: .4rem; font-size: .28rem; color: #666; padding: 0 .55rem 0 .52rem; box-sizing: border-box; margin: .16rem 0 .51rem; }
+#daigou-instruction ul li:nth-of-type(4) { width: 100%; height: 1rem; background: #DF463E; line-height: 1rem; font-size: .36rem; color: #fff; text-align: center; border-radius: 0 0 .2rem .2rem; }
+
+/*# sourceMappingURL=order-for.css.map */

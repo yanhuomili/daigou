@@ -1,0 +1,56 @@
+#zixun { width: 100%; height: 100%; background: #fff; overflow: hidden; }
+#zixun .head-nav { width: 100%; overflow: hidden; position: fixed; }
+#zixun .head-nav #zixun-header { width: 100%; height: 0.86rem; background: #df463e; font-size: 0.32rem; color: #fff; border-bottom: 1px solid #ee9c98; line-height: 0.86rem; text-align: center; }
+#zixun .head-nav #zixun-nav { width: 100%; height: 0.82rem; background: #fff; }
+#zixun .head-nav #zixun-nav ul { height: 100%; }
+#zixun .head-nav #zixun-nav ul li { height: 100%; float: left; font-size: 0.3rem; color: #2b363c; line-height: 0.82rem; text-align: center; padding: 0 .3rem; }
+#zixun .head-nav #zixun-nav ul .nav-action { border-bottom: 5px solid #df463e; box-sizing: border-box; color: #df463e; }
+#zixun #xixun-nav::before { display: block; width: 100%; height: 1px; background: #dfdfdf; content: ""; position: relative; top: 0.81rem; left: 0; z-index: -1; }
+#zixun #zixun-content { width: 100%; height: 100%; overflow: hidden; position: relative; }
+#zixun #zixun-content .content-img { width: 100%; height: 3.18rem; position: relative; background: #fff; }
+#zixun #zixun-content .content-img a { float: left; width: 100%; height: 100%; }
+#zixun #zixun-content .content-img a img { width: 100%; height: 100%; }
+#zixun #zixun-content .content-img p { width: 100%; height: 0.36rem; font-size: 0.36rem; line-height: 0.36rem; color: white; text-align: center; position: absolute; bottom: 0.26rem; left: 0; z-index: 100; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; text-shadow: #000 3px 0; }
+#zixun #zixun-content .zixun-list { width: 100%; height: 2.21rem; padding: 0.14rem 0.14rem 0 0.28rem; box-sizing: border-box; overflow: hidden; background: #fff; }
+#zixun #zixun-content .zixun-list dt { width: 2.78rem; height: 2.06rem; float: right; }
+#zixun #zixun-content .zixun-list dt a { width: 100%; height: 100%; float: right; }
+#zixun #zixun-content .zixun-list dt a img { width: 100%; height: 100%; }
+#zixun #zixun-content .zixun-list dd:nth-of-type(1) { width: 3.85rem; float: left; line-height: 0.46rem; font-size: 0.34rem; }
+#zixun #zixun-content .zixun-list dd:nth-of-type(1) a { color: #333; }
+#zixun #zixun-content .zixun-list dd:nth-of-type(2) { width: 3.85rem; height: 0.43rem; line-height: 0.43rem; font-size: 0.24rem; color: #999; float: left; margin-top: 0.54rem; }
+#zixun #zixun-content .zixun-list dd:nth-of-type(2) time { margin-right: 0.55rem; }
+#zixun #zixun-content .zixun-list dd:nth-of-type(2) span { height: 100%; padding-left: 0.32rem; box-sizing: border-box; background: url("../img/other/pinglun_zixun@3x.png") no-repeat left center; background-size: 0.21rem 0.19rem; }
+
+#footer .footer-zixun { background: url("../img/index/zixun_hong@3x.png") no-repeat center 0.13rem !important; background-size: 0.54rem 0.48rem !important; }
+#footer .footer-zixun .lang_index_15 { color: #df463e; }
+
+.head-nav { position: fixed; top: 0; width: 100%; overflow: hidden; z-index: 1000; }
+
+.swiper-container { width: 100%; height: 100%; }
+
+.swiper-slide { width: 100%; height: 100%; }
+
+#left-wrapper { position: absolute; overflow: hidden; width: 100%; z-index: 100; background: #aaaaaa; }
+
+#scroller { position: absolute; width: 100%; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent; padding: 0; }
+
+#thelist { width: 100%; overflow: hidden; }
+
+#pullDown, #pullUp {  height: 1rem; line-height: 1rem; width: 100%; box-sizing: border-box; padding: 5px 10px; border-bottom: 1px solid #ccc; font-weight: bold; font-size: 14px; color: #888; }
+
+#pullDown .pullDownIcon, #pullUp .pullUpIcon { display: block; float: left; width: 40px; height: 40px; background: url("../img/pull-icon@2x.png") 0 0 no-repeat; background-size: 40px 80px; background-size: 40px 80px; transition-property: transform; transition-duration: 250ms; }
+
+#pullDown .pullDownIcon { transform: rotate(0deg) translateZ(0); }
+
+#pullUp .pullUpIcon { transform: rotate(-180deg) translateZ(0); }
+
+#pullDown.flip .pullDownIcon { transform: rotate(-180deg) translateZ(0); }
+
+#pullUp.flip .pullUpIcon { transform: rotate(0deg) translateZ(0); }
+
+#pullDown.loading .pullDownIcon, #pullUp.loading .pullUpIcon { background-position: 0 100%; transform: rotate(0deg) translateZ(0); transition-duration: 0; animation-name: loading; animation-duration: 2s; animation-iteration-count: infinite; animation-timing-function: linear; }
+
+@-webkit-keyframes loading { from { transform: rotate(0deg) translateZ(0); }
+  to { transform: rotate(360deg) translateZ(0); } }
+
+/*# sourceMappingURL=zixun.css.map */

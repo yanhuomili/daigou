@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/denglu.css" />
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<style type="text/css">
+			.time {
+				position: absolute;
+				right: .22rem;
+				top: .15rem;
+				display: none;
+				width: 1.78rem;
+				height: .7rem;
+				font-size: .28rem;
+				color: #fff;
+				background: #df463e;
+				line-height: .7rem;
+				text-align: center;
+				border-radius: .1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="zhuce-header">
+			<span class="lang_action_1">注册</span>
+			<div class="zhuce-right"><span class="lang_action_2">登录</span></div>
+		</header>
+		<div id="zhuc-infor">
+			<ul>
+				<li class="zhuce-country"><i class="lang_action_3">国家(区号)</i><span class="lang_action_4">选择您所在的国家  (区号)</span></li>
+				<li><span class="lang_action_5">手机号</span><input id="user-tell" type="number" placeholder="输入您的手机号" /><span class="send-code lang_action_6" onclick="time(this)">发送验证码</span><i class="time">60</i></li>
+				<li><span class="lang_action_7">验证码</span><input type="text" placeholder="输入验证码" /></li>
+				<li><span class="lang_action_8">密码</span><input id="user-psw" type="password" placeholder="输入登录密码" /></li>
+			</ul>
+		</div>
+		<div id="zhuce-btn"><span class="lang_action_9">注册</span></div>
+		<p id="user-notes"><i class="zhuce-checkbox" flag="true"></i><span class="lang_action_10">我已阅读并接受</span>
+			<a href="#" class="lang_action_11">《用户协议》</a>
+		</p>
+
+		<div id="choose-country">
+			<ul>
+				<li class="lang_action_12">选择国家</li>
+				<li class="choose-btn lang_action_13">中国</li>
+				<li class="choose-btn lang_action_14">马来西亚</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/main/register.js"></script>
+	<script type="text/javascript">
+		//发送验证码
+		var wait = 60;
+
+		function time(o) {
+			$(".forget-send-code").hide();
+			$(".time").show();
+			if(wait == 0) {
+				o.removeAttribute("disabled");
+				/* o.value="获取验证码";*/
+				o.innerHTML = "获取验证码";
+				$(".forget-send-code").show();
+				$(".time").hide();
+				wait = 60;
+			} else {
+				o.setAttribute("disabled", true);
+				/* o.value="重新发送(" + wait + ")";*/
+				$(".time").text("重新发送(" + wait + ")")
+				wait--;
+				setTimeout(function() {
+					time(o)
+				}, 1000)
+			}
+		}
+		//注册
+		$("#zhuce-btn").on("touchstart", function() {
+			if($(".zhuce-checkbox").attr("flag") == 'true') {
+				window.location.href = "login.html";
+			} else {
+				return;
+			}
+		});
+
+		//阅读
+		$(".zhuce-checkbox").on("tap", function() {
+			var flag1 = $(".zhuce-checkbox").attr("flag");
+			click(flag1);
+		})
+
+		function click(flag1) {
+			if(flag1 == 'true') {
+				$(".zhuce-checkbox").attr("flag", "false");
+				register('false');
+			} else if(flag1 == 'false') {
+				$(".zhuce-checkbox").attr("flag", "true");
+				register('true');
+			}
+			
+		}
+		function register(flag2) {
+			if(flag2 == 'true') {
+				$(".zhuce-checkbox").css({ "background": "url(../../img/other/gou_hong_gouwuche@3x.png) no-repeat .02rem .02rem;", "background-size": ".47rem" })
+				$("#zhuce-btn").removeClass("zhuce-btn-error");
+			} else if(flag2 == 'false') {
+				$(".zhuce-checkbox").css({ "background": "url(../../img/other/gou_kui_gouwuche@3x.png) no-repeat  .02rem .02rem;", "background-size": ".47rem" })
+				$("#zhuce-btn").addClass("zhuce-btn-error");
+			}
+		}
+	</script>
+
+</html>

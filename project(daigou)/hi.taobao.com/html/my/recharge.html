@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html style="background:#ededed;">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/chongzhi-duihuan.css" />
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<style type="text/css">
+			.main-minute p:nth-of-type(2){
+				position:relative;
+			}
+			.main-minute p:nth-of-type(2) input{
+				margin-left:1rem!important;
+			}
+			.main-minute p:nth-of-type(2) span:nth-of-type(1){
+				position:absolute;
+				float:left;
+				width:.9rem;
+				left:.08rem;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space:nowrap;
+			}
+			.change-list{
+				position:absolute;
+				font-size: .4rem;
+				left:1rem;
+				line-height: .9rem;
+				color:#999;
+				transform:rotate(90deg);
+				-ms-transform:rotate(90deg); 	/* IE 9 */
+				-moz-transform:rotate(90deg); 	/* Firefox */
+				-webkit-transform:rotate(90deg); /* Safari 和 Chrome */
+				-o-transform:rotate(90deg); 
+			}
+			.change-choose{
+				display: none;
+				position:absolute;
+				top:5rem;
+				width:3rem;
+				background:rgba(0,0,0,.7);
+				z-index: 1000;
+			}
+			.change-choose li{
+				width:100%;
+				height:.8rem;
+				font-size:.3rem;
+				line-height:.8rem;
+				color:#fff;
+				padding-left:.2rem;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--充值-->
+		<div id="chongzhi-main">
+			<header class="chongzhi-head">
+				<span class="chongzhi-back lang_recharge_1"></span> 钱包充值
+				<span class="chongzhi-ruler lang_recharge_2">充值说明</span>
+			</header>
+			<div class="duihuan-main-fill"></div>
+
+			<div class="main-minute">
+				<p><span class="lang_recharge_9">账户：</span><span class="main-name">13525465410</span></p>
+				<p><span class="choose-btn lang_recharge_10">人民币</span><span class="change-list">&gt;</span><input type="number" placeholder="请输入充值金额" />元</p>
+				<p class="lang_recharge_11"><i>充值满1000元赠送</i><span class="lang_recharge_21">20元优惠券</span></p>
+				<ul class="change-choose">
+					<li class="lang_recharge_18">人民币</li>
+					<li class="lang_recharge_19">美元</li>
+					<li class="lang_recharge_20">马来西亚币</li>
+				</ul>
+			</div>
+			<p class="pay-p lang_recharge_13">付款方式</p>
+			<ul class="pay-way">
+				<li class="lang_recharge_14">我的钱包<span class="span-action"></span></li>
+				<li class="lang_recharge_15">马来西亚网银支付<span></span></li>
+				<li class="lang_recharge_16">支付宝支付<span></span></li>
+				<li class="lang_recharge_17">微信支付<span></span></li>
+			</ul>
+			<div class="chongzhi-fill"></div>
+			<div class="chongzhi-over">
+				<i class="lang_recharge_3">完成充值  ￥ </i><span>0</span>
+			</div>
+		</div>
+		<!--充值成功-->
+		<div id="chongchai-success">
+			<header class="success-head lang_recharge_4">
+				<span class="success-back"></span> 充值成功
+			</header>
+			<div class="duihuan-main-fill"></div>
+			<div class="success-info">
+				<div class="success-info-main">
+					<img class="success-img" src="../../img/other/zhifuchenggong@3x.png" />
+					<p class="lang_recharge_5">恭喜您, 充值成功!</p>
+				</div>
+				<p class="success-shuoming lang_recharge_6">充值成功</p>
+				<p class="success-shuoming-content">
+					<i class="lang_rechange_22">您充值的</i>
+					<span class="success-qianbao">[<i>200</i>元人民币]</span>
+					<i class="lang_rechange_23">已成功存入我的钱包，并曾送了</i>
+					<span class="success-youhuiquan">[<i>20</i>元优惠券]
+					</span>
+					<i class="lang_rechange_24">，请前往查看。</i>
+				</p>
+			</div>
+			<div id="success-souye" class="lang_recharge_7">查看我的钱包</div>
+			<div id="success-dingdan" class="lang_recharge_8">查看优惠券</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			//返回我的钱包 
+			$(".chongzhi-back,#success-souye").on("tap", function() {
+				window.location.href = "wallet.html";
+			})
+			//选择充值形式
+			$(".pay-way li").on("tap", function() {
+				choosePay()
+				$(this).siblings().find("span").removeClass("span-action")
+				if($(this).attr("flag") == "true") { //所选中的付款方式
+					$(this).find("span").addClass("span-action");
+				}
+			})
+			//完成充值
+			$(".chongzhi-over").on("tap", function() {
+				$("#chongchai-success").show();
+				$("#chongzhi-main").hide();
+			})
+			//完成充值返回
+			$(".success-back").on("tap", function() {
+				$("#chongchai-success").hide();
+				$("#chongzhi-main").show();
+			})
+			//查看优惠券
+			$("#success-dingdan").on("tap", function() {
+				window.location.href = "coupon.html"
+			})
+			//充值的币种
+			$(".choose-btn,.change-list").on("tap",function(){
+				$(".change-choose").show();
+			})
+			$(".change-choose li").on("tap",function(){
+				var lang = $(this).index();
+				var text = $(this).text();
+					$(".choose-btn").text(text)
+				
+				choosePay(lang)
+				$(".change-choose").hide()
+			})
+			//显示充值金额
+			$(".main-minute p:nth-of-type(2) input").blur(function(){
+				$(".chongzhi-over span").text($(this).val())
+			})
+			//充值方式
+			var lan = localStorage.getItem("language");
+			choosePay(lan);
+			//不同的国家选择不同的充值方式
+			function choosePay(lang) {
+				if(lang == 0) {
+					$(".pay-way li").eq(0).attr("flag", "true");
+					$(".pay-way li").eq(1).attr("flag", "false");
+					$(".pay-way li").eq(2).attr("flag", "true");
+					$(".pay-way li").eq(3).attr("flag", "true");
+				} else if(lang == 1) {
+					$(".pay-way li").eq(0).attr("flag", "true");
+					$(".pay-way li").eq(1).attr("flag", "false");
+					$(".pay-way li").eq(2).attr("flag", "false");
+					$(".pay-way li").eq(3).attr("flag", "false");
+				} else if(lang == 2) {
+					$(".pay-way li").eq(0).attr("flag", "true");
+					$(".pay-way li").eq(1).attr("flag", "true");
+					$(".pay-way li").eq(2).attr("flag", "false");
+					$(".pay-way li").eq(3).attr("flag", "false");
+				}
+				$(".pay-way li").each(function() {
+					if($(this).attr("flag") == 'true') {
+						$(this).css("color", "#333")
+					} else if($(this).attr("flag") == "false") {
+						$(this).css("color", "#D3D3D3")
+					}
+				})
+			}
+			//语言
+			autoLanguage();
+
+			function autoLanguage() {
+				var getItem = localStorage.getItem("language");
+				if(localStorage.getItem("language") == "0") {
+					$("head link:last-child").remove();
+					$(".lang_recharge_3").text("完成充值  ￥ ")
+					$(".lang_recharge_5").text("恭喜您, 充值成功!")
+					$(".lang_recharge_10").text("人民币");
+					$(".lang_recharge_18").text("人民币");
+					$(".lang_recharge_19").text("美元");
+					$(".lang_recharge_20").text("马来西亚币");
+					$(".lang_rechange_22").text("您充值的");
+					$(".lang_rechange_23").text("已成功存入我的钱包，并曾送了");
+					$(".lang_rechange_24").text("，请前往查看。");
+				} else if(localStorage.getItem("language") == "1") {
+					$("head link:last-child").remove();
+					$(".lang_recharge_3").text("Complete recharge  $ ")
+					$(".lang_recharge_5").text("Congratulations, success!")
+					$(".lang_recharge_10").text("Dollar");
+					$(".lang_recharge_18").text("RMB");
+					$(".lang_recharge_19").text("Dollar");
+					$(".lang_recharge_20").text("RM");
+					$(".lang_rechange_22").text("You have recharged ");
+					$(".lang_rechange_23").text(" has been successfully deposited into my wallet, and had sent ");
+					$(".lang_rechange_24").text(", please go to view.");
+					myUSA()
+				} else if(localStorage.getItem("language") == "2") {
+					$("head link:last-child").remove();
+					$(".lang_recharge_3").text("caj semula lengkap  RM ")
+					$(".lang_recharge_5").text("Tahniah, caj semula yang berjaya!")
+					$(".lang_recharge_10").text("RM");
+					$(".lang_recharge_18").text("RMB");
+					$(".lang_recharge_19").text("Dollar");
+					$(".lang_recharge_20").text("RM");
+					$(".lang_rechange_22").text("Top");
+					$(".lang_rechange_23").text(" anda telah berjaya ke dalam beg tangan saya, dan telah menghantar");
+					$(".lang_rechange_24").text(", pergi melihat.");
+					myMalaysia()
+				}
+			};
+
+			function myUSA() {
+				var link = '<link rel="stylesheet" type="text/css" href="../../css/language/recharge_SUA.css"/>';
+				$("head").append(link)
+			}
+
+			function myMalaysia() {
+				var link = '<link rel="stylesheet" type="text/css" href="../../css/language/recharge_Malaysia.css"/>';
+				$("head").append(link)
+			}
+		})
+	</script>
+
+</html>

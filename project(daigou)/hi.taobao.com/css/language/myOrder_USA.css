@@ -1,0 +1,262 @@
+
+.shop-tit01{
+	position:relative;
+}
+.shop-tit01:after{
+	content:"Taobao Mall";
+	position:absolute;
+	left:0.25rem;
+	background:#fff;
+}
+.shop-tit02{
+	position:relative;
+}
+.shop-tit02:after{
+	content:"Only goods will mall";
+	position:absolute;
+	left:0.25rem;
+	background:#fff;
+}
+.shop-tit03{
+	position:relative;
+}
+.shop-tit03:after{
+	content:"Jingdong Mall";
+	position:absolute;
+	left:0.25rem;
+	background:#fff;
+}
+.shop-tit04{
+	position:relative;
+}
+.shop-tit04:after{
+	content:"Platform goods";
+	position:absolute;
+	left:0.25rem;
+	background:#fff;
+}
+.lang_myOrder_11{
+	position:relative;
+}
+.lang_myOrder_11:after{
+	content:"Deal with";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_12{
+	position:relative;
+}
+.lang_myOrder_12:after{
+	content:"Total：";
+	position:absolute;
+	right:0;
+	width:3rem;
+	background:#fff;
+}
+.lang_myOrderinfor_12{
+	position:relative;
+}
+.lang_myOrderinfor_12:after{
+	content:"Total:(Exclude freight)";
+	position:absolute;
+	right:0;
+	width:3rem;
+	background:#fff;
+}
+.lang_myOrder_13{
+	position:relative;
+}
+.lang_myOrder_13:after{
+	content:"Why can not pay now?";
+	position:absolute;
+	left:0.4rem;
+	width:2.7rem;
+	background:#fff;
+}
+.lang_myOrder_hui_14{
+	position:relative;
+}
+.lang_myOrder_hui_14:after{
+	content:"Buy Now";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#a4a4a4;
+}
+.lang_myOrder_14{
+	position:relative;
+}
+.lang_myOrder_14:after{
+	content:"Buy Now";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DF463E;
+}
+.lang_myOrder_15{
+	position:relative;
+}
+.lang_myOrder_15:after{
+	content:"Cancel order";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
+}
+.lang_myOrder_17{
+	position:relative;
+}
+.lang_myOrder_17:after{
+	content:"Payment";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_19{
+	position:relative;
+}
+.lang_myOrder_19:after{
+	content:"Delivered";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_20{
+	position:relative;
+}
+.lang_myOrder_20:after{
+	content:"Pick up delivery";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_22{
+	position:relative;
+}
+.lang_myOrder_22:after{
+	content:"Receipt";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_23{
+	position:relative;
+}
+.lang_myOrder_23:after{
+	content:"Receipt";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DF463E;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_24{
+	position:relative;
+}
+.lang_myOrder_24:after{
+	content:"Logistics";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_25{
+	position:relative;
+}
+.lang_myOrder_25:after{
+	content:"Be evaluated";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_26{
+	position:relative;
+}
+.lang_myOrder_26:after{
+	content:"Come again";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_27{
+	position:relative;
+}
+.lang_myOrder_27:after{
+	content:"Completed";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_28{
+	position:relative;
+}
+.lang_myOrder_28:after{
+	content:"Postage";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_29{
+	position:relative;
+}
+.lang_myOrder_29:after{
+	content:"Purchase order instructions";
+	position:absolute;
+	left:0;
+	width:100%;
+	background:#fff;
+}
+
+.lang_myOrder_30{
+	position:relative;
+}
+.lang_myOrder_30:after{
+	content:"Purchase orders to confirm the postage and tariffs to pay, processing takes 1 to 3 working days.";
+	position:absolute;
+	left:0.55rem;
+	top:0;
+	width:80%;
+	background:#fff;
+}
+.lang_myOrder_31{
+	position:relative;
+	z-index:100;
+}
+.lang_myOrder_31:after{
+	content:"I know";
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	background:#DF463E;
+	border-radius: 0 0 .2rem .2rem;
+}
+#detail-main .dingdan-info li span.infor{margin:0;width: 2.44rem;display: inline-block;}

@@ -1,0 +1,77 @@
+.lang_affirmOrderForm_1{
+	position:relative;
+}
+.lang_affirmOrderForm_1:after{
+	content:"Confirm Order";
+	width:100%;
+	left:0;
+	position: absolute;
+	background:#DE463E;
+}
+.lang_affirmOrderForm_2{
+	position:relative;
+}
+.lang_affirmOrderForm_2:after{
+	content:"Submit Order";
+	width:100%;
+	height:100%;
+	left:0;
+	position: absolute;
+	background:#DE463E;
+}
+.lang_affirmOrderForm_3{
+	position:relative;
+}
+.lang_affirmOrderForm_3:after{
+	content:"Orders submitted successfully";
+	width:100%;
+	left:0;
+	position: absolute;
+	background:#DE463E;
+}
+.lang_affirmOrderForm_5{
+	position:relative;
+}
+.lang_affirmOrderForm_5:after{
+	content:"Purchasing instructions";
+	width:100%;
+	left:0;
+	position: absolute;
+	background:#fff;
+}
+.lang_affirmOrderForm_6{
+	position:relative;
+}
+.lang_affirmOrderForm_6:after{
+	content:"Purchase orders to confirm postage and related taxes to pay, processing takes 1 to 3 working days.";
+	width:100%;
+	top:0;
+	left:0;
+	position: absolute;
+	background:#fff;
+	padding: 0 0.44rem;
+	box-sizing:border-box;
+	
+}
+.lang_affirmOrderForm_7{
+	position:relative;
+}
+.lang_affirmOrderForm_7:after{
+	content:"Back Home";
+	width:100%;
+	left:0;
+	position: absolute;
+	background:#fff;
+	border-radius:.2rem;
+}
+.lang_affirmOrderForm_8{
+	position:relative;
+}
+.lang_affirmOrderForm_8:after{
+	content:"Check Order";
+	width:100%;
+	left:0;
+	position: absolute;
+	background:#fff;
+	border-radius:.2rem;
+}

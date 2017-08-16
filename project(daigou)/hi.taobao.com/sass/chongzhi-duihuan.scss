@@ -1,0 +1,515 @@
+//充值 充值成功  兑换 兑换成功  样式
+.duihuan-head,
+.success-head,
+.chongzhi-head {
+    width: 100%;
+    height: 0.87rem;
+    border-bottom: 1px solid #e69490; 
+    background: #df463e;
+    font-size: 0.34rem;
+    line-height: 0.87rem;
+    text-align: center;
+    color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    .duihuan-back,
+    .success-back,
+    .chongzhi-back {
+        float: left;
+        width: 0.87rem;
+        height: 0.87rem;
+        background: url("../img/index/fanhui@3x.png") no-repeat center;
+        background-size: 0.45rem 0.45rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+    }
+    .duihuan-ruler,
+    .chongzhi-ruler {
+        float: right;
+        width: 1.87rem;
+        height: 0.87rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+    }
+}
+.duihuan-main-fill{
+    width:100%;
+    height:.87rem;
+}
+//                充值样式
+#chongzhi-main {
+    width: 100%;
+    overflow: hidden;
+    display: block; //     充值显示默认；
+    .main-minute {
+        width: 7.1rem;
+        height: 5.1rem;
+        margin: 0.2rem auto 0;
+        padding: 2.08rem 0.25rem 0;
+        box-sizing: border-box;
+        background: #fff url("../img/my/chongzhi_icon@3x.png") no-repeat center 0.51rem;
+        background-size: 1.33rem 1.33rem;
+        p:nth-of-type(1) {
+            width: 100%;
+            height: 0.36rem;
+            margin-bottom: 0.66rem;
+            line-height: 0.36rem;
+            font-size: 0.36rem;
+            text-align: center;
+            color: #333;
+        }
+        p:nth-of-type(2) {
+            width: 100%;
+            height: 0.9rem;
+            line-height: 0.9rem;
+            font-size: 0.3rem;
+            color: #333;
+            background: #eee;
+            padding-left: 0.51rem;
+            box-sizing: border-box;
+            margin-bottom: 0.32rem;
+            input {
+                width: 4.22rem;
+                height: 0.3rem;
+                color: #999;
+                margin-left: 0.34rem;
+                border: 0;
+                outline: none;
+                background: #eee;
+                font-size: 0.3rem;
+            }
+        }
+        p:nth-of-type(3) {
+            width: 100%;
+            height: 0.28rem;
+            line-height: 0.28rem;
+            font-size: 0.28rem;
+            color: #999;
+            span {
+                color: #df463e;
+            }
+        }
+    }
+    .pay-p {
+        width: 100%;
+        height: 0.26rem;
+        line-height: 0.26rem;
+        font-size: 0.26rem;
+        color: #929292;
+        padding-left: 0.2rem;
+        box-sizing: border-box;
+        margin: 0.38rem 0 0.27rem;
+    }
+    .pay-way {
+        width: 7.1rem;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0.25rem 0.09rem 0.26rem 0.33rem;
+        box-sizing: border-box;
+        border-radius: 0.2rem;
+        background: #fff;
+        li {
+            width: 100%;
+            height: 1.02rem;
+            line-height: 1.02rem;
+            font-size: 0.32rem;
+            color: #333;
+            padding-left: 0.87rem;
+            box-sizing: border-box;
+            span {
+                float: right;
+                width: 1.02rem;
+                height: 1.02rem;
+                background: url("../img/other/gou_kui_gouwuche@3x.png") no-repeat center;
+                background-size: 0.45rem 0.45rem;
+            }
+            .span-action {
+                background: url("../img/other/gou_hong_gouwuche@3x.png") no-repeat center;
+                background-size: 0.45rem 0.45rem;
+            }
+        }
+        li:nth-of-type(1) {
+            background: url("../img/other/qianbao@3x.png") no-repeat left center;
+            background-size: 0.64rem 0.64rem;
+        }
+        li:nth-of-type(2) {
+            background: url("../img/other/malaiwangyin@3x.png") no-repeat left center;
+            background-size: 0.64rem 0.64rem;
+        }
+        li:nth-of-type(3) {
+            background: url("../img/other/zhifubao@3x.png") no-repeat left center;
+            background-size: 0.64rem 0.64rem;
+        }
+        li:nth-of-type(4) { 
+            background: url("../img/other/weixin@3x.png") no-repeat left center;
+            background-size: 0.64rem 0.64rem;
+        }
+    }
+    .chongzhi-fill {
+        width: 100%;
+        height: 1rem;
+    }
+    .chongzhi-over {
+        width: 100%;
+        height: 1rem;
+        background: #df463e;
+        line-height: 1rem;
+        font-size: 0.34rem;
+        text-align: center;
+        color: #fff;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+}
+//               兑换货币样式   
+#duihuan-main {
+    display:block;////////////////////货币兑换显示
+    width: 100%;
+    overflow: hidden;
+    .duihuan-choose {
+        width: 100%;
+        overflow: hidden;
+        padding-top: 0.2rem;
+        box-sizing: border-box;
+        .have-money,
+        .money-duihuan {
+            width: 7.1rem;
+            height: 2.24rem;
+            border-radius: 0.2rem;
+            padding: 0.33rem 0 0 0.44rem;
+            box-sizing: border-box;
+            background: #fff;
+            margin: 0 auto;
+            color: #333;
+            .title {
+                width: 100%;
+                height: 0.26rem;
+                line-height: 0.26rem;
+                font-size: 0.26rem;
+                margin-bottom: 0.34rem;
+            }
+            span {
+                float: left;
+            }
+            span:nth-of-type(1) {
+                height: 0.42rem;
+                font-size: 0.42rem;
+                line-height: 0.42rem;
+            }
+            i {
+                float:left;
+                width: 0.57rem;
+                height: 0.42rem;
+                background: url("../img/my/xuanze_hong@3x.png") no-repeat center 0.1rem;
+                background-size: 0.35rem 0.35rem;
+            }
+            span:nth-of-type(2) {
+                width: 1.33rem;
+                height: 0.38rem;
+                font-size: 0.38rem;
+                line-height: 0.38rem;
+            }
+            input{
+                width: 2.6rem;
+                height: 0.42rem;
+                float:left;
+                font-size: 0.42rem;
+                line-height: 0.42rem;
+                border:0;
+                outline: none;
+                padding-left:.1rem;
+                box-sizing: border-box;
+            }
+        }
+        .have-money {
+            span:nth-of-type(2) {
+                text-align: center;
+            }
+        }
+        .money-duihuan {
+            span:nth-of-type(2) {
+                padding-left: 0.6rem;
+                box-sizing: border-box;
+            }
+        }
+        .duihuan-action {
+            background: #df463e;
+            p {
+                color: #f6d3d2;
+            }
+            span {
+                color: #fff;
+            }
+            i {
+                width:.35rem;
+                height:.42rem;
+                float:left;
+                background: url("../img/my/xuanze_bai@3x.png") no-repeat center ;
+                background-size: 0.35rem 0.35rem;
+            }
+            }
+        
+    }
+    .duihuan-all {
+        width: 100%;
+        height: 0.31rem;
+        line-height: 0.31rem;
+        font-size: 0.26rem;
+        color: #999;
+        padding-left: 0.86rem;
+        background: url("../img/my/tanhao_kui@3x.png") no-repeat 0.44rem center;
+        background-size: 0.31rem 0.31rem;
+        margin: 0.32rem 0 0.69rem;
+        span {
+            color: #df463e;
+        }
+    }
+    .duihuan-list {
+        width:7.1rem;
+        overflow:hidden;
+        background:#fff;
+        margin:0 auto;
+        padding:.11rem 0 .01rem .35rem;
+        box-sizing:border-box;
+        border-radius:.2rem;
+        #wallet-list-title {
+            width: 100%;
+            height: 0.81rem;
+            font-size: 0.26rem;
+            color: #999;
+            float: left; 
+            li{
+                height: 100%;
+                line-height: 0.81rem;
+                float: left;
+            } 
+        }
+        #wallet-list {
+            width: 100%;
+            overflow: hidden;
+            .wallet-list-peo {
+                width: 100%;
+                height: 1rem;
+                color: #333;
+                float: left;
+                li {
+                    height: 100%;
+                    line-height: 1rem;
+                    float: left;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+                .wallet-1 {
+                    font-size: 0.28rem;
+                    padding-left: 0.51rem;
+                    box-sizing: border-box;
+                }
+                .wallet-2 {
+                    font-size: 0.26rem;
+                }
+                .wallet-3 {
+                    font-size: 0.26rem;
+                }
+                .malai {
+                    background: url("../img/index/malaixiya_guoqi@3x.png") no-repeat left center;
+                    background-size: 0.4rem 0.25rem;
+                }
+                .meiyuan {
+                    background: url("../img/index/meiguo_guoqi@3x.png") no-repeat left center;
+                    background-size: 0.4rem 0.25rem;
+                }
+            }
+        }
+        .wallet-1 {
+            width: 2.16rem;
+        }
+        .wallet-2 {
+            width: 2.65rem;
+            text-align: center;
+        }
+        .wallet-3 {
+            text-align: center;
+            width: 1.94rem;
+        }
+    }
+    .duhuan-fill{
+        width:100%;
+        height:1rem;        
+    }
+    .over-duihuan{
+        width:100%;
+        height:1rem;
+        background:#df463e;
+        font-size:.34rem;
+        line-height:1rem;
+        color:#fff;
+        text-align:center;
+        position:fixed;
+        left:0;
+        bottom:0;
+    }
+    
+    //选择币种
+    .xuanze {
+        display:none;/////////////选择币种显示
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: rgba(0,0,0,.5); 
+        ul{
+            width:6.6rem;
+            overflow: hidden;
+            background:#fff;
+            border-radius:.2rem;
+            margin:0 auto;
+            margin-top:3.43rem;
+            padding:.27rem .53rem 0 .5rem;
+            box-sizing:border-box;
+            li{
+                width:100%;
+                height:1.22rem;
+                padding-left:.87rem;
+                box-sizing:border-box;
+                line-height:1.22rem;
+                font-size:.32rem;
+                color:#333;
+                p{
+                    float:left;
+                }
+                span{
+                    float:right;
+                    width:.54rem;
+                    height:.54rem;
+                    margin-top:.34rem;
+                    background:url(../img/other/gou_kui_gouwuche@3x.png) no-repeat center;
+                    background-size:.34rem .34rem;
+                }
+                .xuanze-action{
+                    background:url(../img/other/gou_hong_gouwuche@3x.png) no-repeat center;
+                    background-size:.34rem .34rem;
+                }
+                i{
+                    display: none;
+                }
+            }
+            li:nth-of-type(1){
+                background:url(../img/my/zhongguo_yuan@3x.png) no-repeat left center;
+                background-size:.68rem .68rem;
+            }
+            li:nth-of-type(2){
+                background:url(../img/my/malaixiya_yuan@3x.png) no-repeat left center;
+                background-size:.68rem .68rem;
+            }
+            li:nth-of-type(3){
+                background:url(../img/my/meiguo_yuan@3x.png) no-repeat left center;
+                background-size:.68rem .68rem;
+            }
+        }
+    }
+}
+
+//       充值成功样式      兑换成功样式
+#duihuan-success,
+#chongchai-success {
+    display: none;//////////////////////成功选择
+    overflow:hidden;
+    .duihuan-info,
+    .success-info {
+        width: 7.1rem;
+        height: 5.69rem;
+        margin: 0.2rem auto 0;
+        background: #fff;
+        border-radius: 0.2rem;
+        .duihuan-info-main,
+        .success-info-main {
+            width: 7.1rem;
+            height: 3.47rem;
+            border-radius: 0.2rem;
+            background: url("../img/my/beijing_wode@3x.png") no-repeat center;
+            background-size: 7.1rem 3.47rem;
+            img {
+                width: 1.44rem;
+                height: 1.44rem;
+                margin: 0.58rem 0 0.34rem 2.87rem;
+            }
+            .duihuan-img,
+            .success-img {
+                width: 1.78rem;
+                height: 1.37rem;
+                margin: 0.57rem 0 0.34rem 2.73rem;
+            }
+            p {
+                width: 100%;
+                height: 0.42rem;
+                font-size: 0.42rem;
+                color: #fff;
+                line-height: 0.42rem;
+                text-align: center;
+            }
+        }
+        .duihuan-shuoming,
+        .success-shuoming {
+            width: 100%;
+            height: 0.38rem;
+            font-size: 0.38rem;
+            line-height: 0.38rem;
+            color: #484848;
+            margin: 0.42rem 0 0.21rem;
+            padding-left: 0.44rem;
+            box-sizing: border-box;
+        }
+    }
+    .duihuan-shuoming-content,
+    .duihuan-shuoming,
+    .success-shuoming-content,
+    .success-shuoming {
+        width: 100%;
+        height: 0.84rem;
+        line-height: 0.4rem;
+        font-size: 0.28rem;
+        color: #333;
+        padding: 0 0.44rem;
+        box-sizing: border-box;
+        .duihuan-qianbao,
+        .success-qianbao {
+            color: #df463e;
+        }
+        .success-youhuiquan {
+            color: #7daae4;
+        }
+    }
+    #duihuan-souye,
+    #success-souye,
+    #success-dingdan {
+        width: 7.08rem;
+        height: 0.88rem;
+        border-radius: 0.2rem;
+        font-size: 0.3rem;
+        line-height: 0.88rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #duihuan-souye,
+    #success-souye {
+        color: #df463e;
+        border: 2px solid #df463e;
+        margin-top: 3.04rem;
+        margin-bottom: 0.22rem;
+    }
+    #success-dingdan {
+        color: #649ce0;
+        border: 2px solid #649ce0;
+    }
+    #duihuan-souye{
+        margin-top:4.67rem;
+    }
+}

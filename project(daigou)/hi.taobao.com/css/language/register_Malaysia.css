@@ -1,0 +1,148 @@
+.lang_action_1:after{
+	content:"Pendaftaran";
+	position:absolute;
+	width:2rem;
+	top:0;
+	left:38%;
+	background:#DE463E;
+}
+.lang_action_2:after{
+	content:"LogMasuk";
+	position:absolute;
+	top:0;
+	right:.3rem;
+	background:#DE463E;
+}
+/*.lang_action_3:after{
+	content:"Negara";
+	display: block;
+	width:1.4rem;
+	position:absolute;
+	top:0;
+	left:0.43rem;
+	background:#fff;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}*/
+/*.lang_action_4{
+	position:relative;
+}
+.lang_action_4:after{
+	content:"Sila Pilih";
+	display: block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	line-height: .5rem;
+	top:0;
+	left:0;
+	background:#fff;
+}*/
+.lang_action_5{
+	position:relative;
+}
+.lang_action_5:after{
+	content:"Nombor";
+	display: block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	line-height: .5rem;
+	background:#fff;
+}
+.lang_action_6{
+	position:relative;
+}
+.lang_action_6:after{
+	content:"HantarSemula";
+	display: block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:#DE463E;
+	border-radius:.5rem ;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lang_action_7:after{
+	content:"Kod";
+	width:1.2rem;
+	position:absolute;
+	left:0;
+	left:.43rem;
+	background:#fff;
+}
+.lang_action_8:after{
+	content:"KataLaluan";
+	width:1.2rem;
+	position:absolute;
+	left:0;
+	left:.43rem;
+	background:#fff;
+}
+.lang_action_9:after{
+	content:"Pendaftaran";
+	position:absolute;
+	width:1.8rem;
+	left:40%;
+	background:#DF463E;
+}
+.lang_action_10{
+	width:5.8rem;
+	float:left;
+	position:relative;
+}
+.lang_action_10:after{
+	content:"Saya telah membaca dan bersetuju untuk";
+	position:absolute;
+	left:0;
+	background:#ededed;
+	line-height:1.04rem;
+}
+.lang_action_11{
+	float:left;
+	width:2.8rem;
+	height:.32rem;
+	line-height: .32rem;
+	position:relative;
+	margin-left:34%;
+}
+.lang_action_11:after{
+	content:"perjanjian pengguna";
+	display: block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:#ededed;
+	line-height:.32rem;
+}
+
+/*.lang_action_12:after{
+	content:"Select Country";
+	position:absolute;
+	left:36%;
+	background:#fff;
+}
+.lang_action_13,
+.lang_action_14{
+	position: relative;
+}
+.lang_action_13:after{
+	content:"China";
+	position:absolute;
+	left:.52rem;
+	background:#fff;
+}*/
+/*.lang_action_14:after{
+	content:"Malaysia";
+	position:absolute;
+	left:.52rem;
+	background:#fff;
+}*/

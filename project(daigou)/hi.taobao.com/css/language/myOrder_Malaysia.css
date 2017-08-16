@@ -1,0 +1,270 @@
+.lang_myOrder_10{
+	position:relative;
+}
+.lang_myOrder_10:after{
+	content:"Taobao Mall";
+	position:absolute;
+	left:0.25rem;
+	background:#fff;
+}
+.lang_myOrder_11{
+	position:relative;
+}
+.lang_myOrder_11:after{
+	content:"Proses";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_12{
+	position:relative;
+}
+.lang_myOrder_12:after{
+	content:"Jumlah (tidak termasuk Antarabangsa):";
+	position:absolute;
+	right:0;
+	width:5rem;
+	background:#fff;
+}
+.lang_myOrder_13{
+	position:relative;
+}
+.lang_myOrder_13:after{
+	content:"Mengapa tidak boleh membayar terus";
+	position:absolute;
+	left:0.4rem;
+	width:2.7rem;
+	background:#fff;
+}
+.lang_myOrder_hui_14{
+	position:relative;
+}
+.lang_myOrder_hui_14:after{
+	content:"Dibayar serta-merta";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#a4a4a4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_14{
+	position:relative;
+}
+.lang_myOrder_14:after{
+	content:"Dibayar serta-merta";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DF463E;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_15{
+	position:relative;
+}
+.lang_myOrder_15:after{
+	content:"Membatalkan Perintah";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
+}
+.lang_myOrder_16{
+	position:relative;
+}
+.lang_myOrder_16:after{
+	content:"Produk CD akan Mall";
+	position:absolute;
+	left:0.25rem;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
+}
+.lang_myOrder_17{
+	position:relative;
+}
+.lang_myOrder_17:after{
+	content:"Pembayaran";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_18{
+	position:relative;
+}
+.lang_myOrder_18:after{
+	content:"Jingdong Mall";
+	position:absolute;
+	left:0.25rem;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
+}
+.lang_myOrder_19{
+	position:relative;
+}
+.lang_myOrder_19:after{
+	content:"Dihantar";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_20{
+	position:relative;
+}
+.lang_myOrder_20:after{
+	content:"Pengeluaran Penghantaran";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_21{
+	position:relative;
+}
+.lang_myOrder_21:after{
+	content:"Platform Mall";
+	position:absolute;
+	left:0.25rem;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
+}
+.lang_myOrder_22{
+	position:relative;
+}
+.lang_myOrder_22:after{
+	content:"Menerima";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_23{
+	position:relative;
+}
+.lang_myOrder_23:after{
+	content:"Menerima";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DF463E;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_24{
+	position:relative;
+}
+.lang_myOrder_24:after{
+	content:"Logistics";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_25{
+	position:relative;
+}
+.lang_myOrder_25:after{
+	content:"Menilai";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_26{
+	position:relative;
+}
+.lang_myOrder_26:after{
+	content:"Lagi satu";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_myOrder_27{
+	position:relative;
+}
+.lang_myOrder_27:after{
+	content:"Bidang";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_28{
+	position:relative;
+}
+.lang_myOrder_28:after{
+	content:"Percuma";
+	position:absolute;
+	right:0;
+	width:1.1rem;
+	background:#fff;
+}
+.lang_myOrder_29{
+	position:relative;
+	height:.68rem!important;
+}
+.lang_myOrder_29:after{
+	content:"Pesanan pembelian Penerangan";
+	position:absolute;
+	left:0;
+	width:100%;
+	background:#fff;
+}
+
+.lang_myOrder_30{
+	position:relative;
+}
+.lang_myOrder_30:after{
+	content:"perintah pembayaran boleh disahkan selepas membeli pos dan duti kastam, pemprosesan memerlukan 1-3 hari perniagaan.";
+	position:absolute;
+	left:0.55rem;
+	top:0;
+	width:80%;
+	background:#fff;
+}
+.lang_myOrder_31{
+	position:relative;
+	top:.4rem;
+	z-index:100;
+}
+.lang_myOrder_31:after{
+	content:"Saya tahu";
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	background:#DF463E;
+	border-radius: 0 0 .2rem .2rem;
+}

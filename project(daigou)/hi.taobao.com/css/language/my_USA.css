@@ -1,0 +1,263 @@
+.lang_my_2:after{
+	content:"All orders";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_3:after{
+	content:"Pending";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_4:after{
+	content:"Payment";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_18:after{
+	content:"Postage";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_5:after{
+	content:"Delivered";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_6:after{
+	content:"Received";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_7:after{
+	content:"Carry out";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.lang_my_8:after{
+	content:"My Collection";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_9:after{
+	content:"My Distribution";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_10:after{
+	content:"My Wallet";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_11:after{
+	content:"My Discount Coupon";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_12:after{
+	content:"My Receipt Address Management";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_13:after{
+	content:"My Two-dimensional Code";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_14:after{
+	content:"Set Up";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_16{
+	height:.4rem!important;
+}
+.lang_index_14{
+	position:relative;
+}
+.lang_index_14:after{
+	content:"Home";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+
+}
+.lang_index_15{
+	position:relative;
+}
+.lang_index_15:after{
+	content:"Information";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+.lang_index_16{
+	position:relative;
+}
+.lang_index_16:after{
+	content:"Car";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+}
+.lang_index_17{
+	position:relative;
+}
+.lang_index_17:after{
+	content:"My";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+	color:#DF463E;
+}
+
+.lang_proInform_14{
+	position: relative;
+}
+.lang_proInform_14:after{
+	content:"Share";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}
+.lang_proInform_15{
+	position: relative;
+}
+.lang_proInform_15:after{
+	content:"Micro letter friends";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_16{
+	position: relative;
+}
+.lang_proInform_16:after{
+	content:"Circle of friends";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_17{
+	position: relative;
+}
+.lang_proInform_17:after{
+	content:"QQ";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_18{
+	position: relative;
+}
+.lang_proInform_18:after{
+	content:"Face Book";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_21{
+	position: relative;
+}
+.lang_proInform_21:after{
+	content:"Cancel";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}

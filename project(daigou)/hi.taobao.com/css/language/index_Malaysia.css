@@ -1,0 +1,183 @@
+.lang_index_2{
+	position:relative;
+}
+.lang_index_2:after{
+	content:"Masukkan kandungan carian";
+	position: absolute;
+	left:0;
+	background:#fff;
+	width:4rem;
+}
+
+#shouye .daigoupingtai p{
+	background-position-x: 1.8rem!important;
+}
+.lang_index_3{
+	position:relative;
+}
+.lang_index_3:after{
+	content:"Platform Pembelian";
+	position: absolute;
+	left:2.3rem;
+	background:#fff;
+}
+.huilv{
+	background-position-x: 1.7rem!important;
+}
+.huilv p{
+	background-position-x: 6.7rem!important;
+}
+.lang_index_4{
+	position:relative;
+}
+.lang_index_4:after{
+	content:"Kadar Pertukaran Masa sebenar";
+	position: absolute;
+	left:2.4rem;
+	background:#fff;
+}
+
+
+.lang_index_5{
+	position:relative;
+}
+.lang_index_5:after{
+	content:"RMB（Main）";
+	position: absolute;
+	left:0;
+	background:#fff;
+}
+.lang_index_6{
+	position:relative;
+}
+.lang_index_6:after{
+	content:"Membeli";
+	position: absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}
+.lang_index_7{
+	position:relative;
+}
+.lang_index_7:after{
+	content:"Jual";
+	position: absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}
+.lang_index_8{
+	position:relative;
+}
+.lang_index_8:after{
+	content:"RM";
+	position: absolute;
+	width:2rem;
+	background:#fff;
+}
+#shouye #classify .classify-p{
+	background-position-x: 2.4rem!important;
+}
+.lang_index_9{
+	position:relative;
+}
+.lang_index_9:after{
+	content:"Dolar AS";
+	position: absolute;
+	width:2rem;
+	background:#fff;
+}
+.lang_index_10{
+	position:relative;
+}
+.lang_index_10:after{
+	content:"Kategori Terbaik";
+	position: absolute;
+	left:2.9rem;
+	background:#69B6FF;
+}
+.lang_index_11{
+	position:relative;
+}
+.lang_index_11:after{
+	content:"Lebih";
+	position: absolute;
+	left:0;
+	background:#69B6FF;
+}
+.lang_index_12{
+	position:relative;
+}
+.lang_index_12:after{
+	content:"Ciri-ciri untuk membeli";
+	position: absolute;
+	left:2.6rem;
+	background:#fff;
+}
+#shouye #feature .feayure-p{
+	background-position-x: 2.2rem;
+}
+.lang_index_13{
+	position:relative;
+}
+.lang_index_13:after{
+	content:"Lebih";
+	position: absolute;
+	left:0;
+	background:#fff;
+}
+.lang_index_14{
+	position:relative;
+}
+.lang_index_14:after{
+	content:"Rumah";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+	color:#DF463E;
+}
+.lang_index_15{
+	position:relative;
+}
+.lang_index_15:after{
+	content:"Maklumat";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lang_index_16{
+	position:relative;
+}
+.lang_index_16:after{
+	content:"Kereta";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+}
+.lang_index_17{
+	position:relative;
+}
+.lang_index_17:after{
+	content:"Saya";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+}

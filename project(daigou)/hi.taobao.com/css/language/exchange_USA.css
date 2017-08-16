@@ -1,0 +1,46 @@
+.lang_exchange_1:after{
+	content:"Currency exchange";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+	
+}
+.lang_exchange_2:after{
+	content:"Exchange instructions";
+	position:absolute;
+	width:1.4rem;
+	left:.25rem;
+	background:#DE463E;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_exchange_5{
+	position:relative;
+}
+.lang_exchange_5:after{
+	content:"Confirmation of exchange";
+	width:100%;
+	position:absolute;
+	left:0;
+	background:#DE463E;
+}
+.lang_exchange_6:after{
+	content:"Exchange success";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+}
+.lang_exchange_9{
+	position:relative;
+}
+.lang_exchange_9:after{
+	content:'View my wallet';
+	width:100%;
+	position:absolute;
+	left:0;
+	background:#fff;
+	border-radius: .2rem;
+}

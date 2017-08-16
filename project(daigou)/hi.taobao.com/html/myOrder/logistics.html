@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html style="background:#ededed;">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/logistics.css" />
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+
+	</head>
+
+	<body>
+		<!--无物流-->
+		<section id="logistics-null">
+			<header class="null-header">
+				<span class="null-back"></span> <i class="lang_receipt_1">物流信息</i>
+			</header>
+			<div>
+				<p class="lang_receipt_2">当前没有物流信息</p>
+			</div>
+		</section>
+		<!--有物流-->
+		<section id="logistics-has">
+			<header class="has-header">
+				<span class="has-back"></span> <i class="lang_receipt_1">物流信息</i>
+			</header>
+
+			<ul class="list">
+				<li class="first-child">
+					<span class="circle"></span>
+					<div class="content">买家已签收，感谢使用EMS快递</div>
+					<div class="time">2016-11-12    09:48</div>
+				</li>
+				<li>
+					<span class="circle"></span>
+					<div class="content">广州市集散中心<span>已发货</span></div>
+					<div class="time">2016-11-12    09:48</div>
+				</li>
+				<li>
+					<span class="circle"></span>
+					<div class="content"><span>顺丰快递</span>佛山市禅城区新明二路营业点收件员<span>已揽件</span></div>
+					<div class="time">2016-11-12    09:48</div>
+				</li>
+				<li class="last-child">
+					<span class="circle"></span>
+					<div class="content">您的订单由佛山门店安排发货</div>
+					<div class="time">2016-11-12    09:48</div>
+				</li>
+
+			</ul>
+
+		</section>
+	</body>
+	<script type="text/javascript" src="../../js/swiper.js"></script>
+	<script type="text/javascript" src="../../js/iscroll.js"></script>
+	<script type="text/javascript">
+		//返回
+		$(".null-back,.has-back").on("tap",function(){
+			window.location.href = "myOrder.html"
+		})
+		//判断是否有物流信息
+		havaLogistics()
+		function havaLogistics() {
+			var has = $("#logistics-has .list li").length;
+			if(has == 0) {
+				$("#logistics-null").show();
+				$("#logistics-has").hide();
+				$("heml,body").css("background", "#fff")
+			} else {
+				$("#logistics-null").hide();
+				$("#logistics-has").show();
+				$("heml,body").css("background", "#ededed")
+			}
+		}
+		//语言
+		autoLanguage();
+		function autoLanguage() {
+			var getItem = localStorage.getItem("language");
+			if(localStorage.getItem("language") == "0") {
+				$(".lang_receipt_1").text("物流信息");
+				$(".lang_receipt_2").text("当前没有物流信息");
+			}else if(localStorage.getItem("language") == "1") {
+				$(".lang_receipt_1").text("Logistics Information");
+				$(".lang_receipt_2").text("There is currently no logistics information");
+			}else if(localStorage.getItem("language") == "2") {
+				$(".lang_receipt_1").text("Maklumat Logistik");
+				$(".lang_receipt_2").text("Terdapat kini belum ada maklumat logistik");
+			}
+		};
+	</script>
+
+</html>

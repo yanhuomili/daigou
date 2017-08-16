@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/denglu.css" />
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<style type="text/css">
+			.time {
+				position: absolute;
+				right: .22rem;
+				top: .15rem;
+				display: none;
+				width: 1.78rem;
+				height: .7rem;
+				font-size: .28rem;
+				color: #fff;
+				background: #df463e;
+				line-height: .7rem;
+				text-align: center;
+				border-radius: .1rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="forgert-header" class="lang_action_1">
+			<div class="forget-left"></div>
+			输入账号
+		</header>
+		<div id="forgert-infor">
+			<ul>
+				<li class="forget-country">国家(区号)<span>选择您所在的国家  (区号)</span></li>
+				<li><span class="lang_action_2">手机号</span><input type="text" placeholder="输入您的手机号" /><span class="forget-send-code lang_action_7" onclick="time(this)">发送验证码</span><i class="time">60</i></li>
+				<li><span class="lang_action_3">验证码</span><input type="text" placeholder="请输入验证码" /></li>
+				<li><span class="lang_action_4">新密码</span><input type="password" placeholder="请输入新密码，6-20位数" style="width:3.6rem;margin-right:1.83rem;" /></li>
+				<li><span class="lang_action_5">确认密码</span><input type="password" placeholder="请再次输入密码" style="width:3.6rem;margin-right:1.83rem;" /></li>
+			</ul>
+		</div>
+		<div id="forgert-btn" class="lang_action_6">确认修改</div>
+
+		<div id="choose-country">
+			<ul>
+				<li>选择国家</li>
+				<li class="choose-btn">中国</li>
+				<li class="choose-btn">马来西亚</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/main/forgetPaswOne.js"></script>
+	<script type="text/javascript">
+		//发送验证码
+		var wait = 60;
+
+		function time(o) {
+			$(".forget-send-code").hide();
+			$(".time").show();
+			if(wait == 0) {
+				o.removeAttribute("disabled");
+				/* o.value="获取验证码";*/
+				o.innerHTML = "获取验证码";
+				$(".forget-send-code").show();
+				$(".time").hide();
+				wait = 60;
+			} else {
+				o.setAttribute("disabled", true);
+				/* o.value="重新发送(" + wait + ")";*/
+				$(".time").text("重新发送(" + wait + ")")
+				wait--;
+				setTimeout(function() {
+					time(o)
+				}, 1000)
+			}
+		}
+	</script>
+
+</html>

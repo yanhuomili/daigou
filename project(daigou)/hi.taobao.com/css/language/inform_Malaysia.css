@@ -1,0 +1,61 @@
+.lang_inform_1:after{
+	content:"Berita";
+	width:100%;
+	height:.85rem;
+	background:#DE463E;
+	left:0;
+	position:absolute;
+}
+.lang_index_14{
+	position:relative;
+}
+.lang_index_14:after{
+	content:"Rumah";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+
+}
+.lang_index_15{
+	position:relative;
+}
+.lang_index_15:after{
+	content:"Maklumat";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	color:#DF463E;
+}
+.lang_index_16{
+	position:relative;
+}
+.lang_index_16:after{
+	content:"Kereta";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+}
+.lang_index_17{
+	position:relative;
+}
+.lang_index_17:after{
+	content:"Saya";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+}

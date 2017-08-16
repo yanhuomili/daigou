@@ -1,0 +1,46 @@
+.lang_exchange_1:after{
+	content:"Pertukaran mata wang";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+	
+}
+.lang_exchange_2:after{
+	content:"Huraian pertukaran";
+	position:absolute;
+	width:1.4rem;
+	left:.25rem;
+	background:#DE463E;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_exchange_5{
+	position:relative;
+}
+.lang_exchange_5:after{
+	content:"Mengesahkan Exchange";
+	width:100%;
+	position:absolute;
+	left:0;
+	background:#DE463E;
+}
+.lang_exchange_6:after{
+	content:"kejayaan pertukaran";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+}
+.lang_exchange_9{
+	position:relative;
+}
+.lang_exchange_9:after{
+	content:'Melihat dompet saya';
+	width:100%;
+	position:absolute;
+	left:0;
+	background:#fff;
+	border-radius: .2rem;
+}

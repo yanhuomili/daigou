@@ -1,0 +1,78 @@
+.lang_action_1{
+	position:relative;
+}
+.lang_action_1:after{
+	content:"Lupa kata laluan anda";
+	position:absolute;
+	left:33%;
+	background:#DE463E;
+}
+.lang_action_2{
+	position:relative;
+}
+.lang_action_2:after{
+	content:"Nombor";
+	position:absolute;
+	left:0;
+	background:#fff;
+}
+.lang_action_3{
+	position:relative;
+}
+.lang_action_3:after{
+	content:"Kod";
+	position:absolute;
+	left:0;
+	background:#fff;
+	width:1.2rem;
+}
+.lang_action_4{
+	position:relative;
+}
+.lang_action_4:after{
+	content:"Kata Laluan Baru";
+	position:absolute;
+	left:0;
+	width:1.5rem;
+	background:#fff;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lang_action_5{
+	position:relative;
+}
+.lang_action_5:after{
+	content:"Sahkan Kata Laluan";
+	position:absolute;
+	left:0;
+	width:1.5rem;
+	background:#fff;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lang_action_6{
+	position:relative;
+}
+.lang_action_6:after{
+	content:"Update Mengakui";
+	position:absolute;
+	left:30%;
+	background:#DE463E;
+}
+.lang_action_7{
+	position:relative;
+}
+.lang_action_7:after{
+	content:"HantarSemula";
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	background:#DE463E;
+	border-radius:.1rem;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

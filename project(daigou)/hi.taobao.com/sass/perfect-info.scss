@@ -1,0 +1,662 @@
+body,
+html {
+    background: #ededed;
+}
+#affirm-header,
+#pay-header,
+#pay-success-header,
+#perfect-header,
+#sub-list-header {
+    width: 100%;
+    height: 0.87rem;
+    border-bottom: 1px solid #e69490;
+    background: #df463e;
+    position: relative;
+    font-size: 0.32rem;
+    color: #fff;
+    line-height: 0.87rem;
+    text-align: center;
+    .affirm-back,
+    .pay-back,
+    .pay-success-back,
+    .perfect-back,
+    .sub-list-back {
+        float: left;
+        width: 0.87rem;
+        height: 0.87rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url("../img/index/fanhui@3x.png") no-repeat center;
+        background-size: 0.45rem 0.45rem;
+        z-index: 1000;
+    }
+}
+#perfect-main {
+    width: 100%;
+    overflow: hidden;
+    ul {
+        width: 100%;
+        overflow: hidden;
+        li {
+            width: 100%;
+            height: 1rem;
+            margin-bottom: 2px;
+            padding: 0 0.25rem 0 0.43rem;
+            box-sizing: border-box;
+            font-size: 0.28rem;
+            color: #666;
+            line-height: 1rem;
+            background: #fff;
+            float: left;
+            :-moz-placeholder {
+                /* Mozilla Firefox 4 to 18 */
+                color: #999;
+            }
+
+            ::-moz-placeholder {
+                /* Mozilla Firefox 19+ */
+                color: #999;
+            }
+            input:-ms-input-placeholder,
+            input::-webkit-input-placeholder{
+                color: #999;
+            }
+            input {
+                color: #999;
+            }
+            .perfect-put {
+                border: 0;
+                width: 4.3rem;
+                height: 1rem;
+                font-size: 0.3rem;
+                color: #999;
+                margin-right: 0.9rem;
+                padding-left: 0.1rem;
+                box-sizing: border-box;
+                float: right;
+                outline: none;
+            }
+        }
+        li:nth-of-type(3) {
+            background: #fff url("../img/other/mianbaoxie_xi_tianziliao@3x.png") no-repeat 7.14rem center;
+            background-size: 0.11rem 0.21rem;
+        }
+    }
+}
+#affirm-footer,
+#perfect-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #fff;
+    background: #df463e;
+}
+//确认订单
+#affirm-main {
+    width: 100%;
+    overflow: hidden;
+    .affirm-address {
+        width: 100%;
+        height: 1.7rem;
+        background: #fff url("../img/other/mianbaoxie_you_gouwuche@3x.png") no-repeat 7.14rem center;
+        background-size: 0.13rem 0.22rem;
+        .dingwei {
+            float: left;
+            width: 1.03rem;
+            height: 100%;
+            background: url("../img/other/dingwei_gouwuche@3x.png") no-repeat center;
+            background-size: 0.37rem 0.49rem;
+        }
+        p {
+            width: 5.62rem;
+            height: 0.26rem;
+            font-size: 0.26rem;
+            line-height: 0.26rem;
+            color: #333;
+            float: left;
+            padding-left: 8px;
+            padding-right: 4px;
+            box-sizing: border-box;
+            margin: 0.32rem 0.8rem 0.1rem 0;
+            span {
+                float: right;
+            }
+        }
+        .affirm-content {
+            padding-left: 8px;
+            box-sizing: border-box;
+            width: 5.62rem;
+            height: 0.76rem;
+            line-height: 0.38rem;
+            font-size: 0.28rem;
+            color: #333;
+            float: left;
+        }
+    }
+    .affirm-p {
+        width: 100%;
+        height: 0.26rem;
+        font-size: 0.26rem;
+        line-height: 0.26rem;
+        color: #999;
+        padding-left: 0.22rem;
+        box-sizing: border-box;
+        margin: 0.57rem 0 0.27rem;
+    }
+    .affirm-list {
+        width: 7.1rem;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 0.15rem;
+        padding: 0.08rem 0 0.09rem 0.01rem;
+        margin-bottom: 0.15rem;
+        overflow: hidden;
+        li {
+            width: 6.34rem;
+            height: 2.2rem;
+            margin: 0.13rem;
+            float: left;
+            a {
+                width: 2.2rem;
+                height: 2.2rem;
+                float: left;
+                margin-right: 0.32rem;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    float: left;
+                }
+            }
+            .affirm-title {
+                width: 3.82rem;
+                height: 0.32rem;
+                line-height: 0.32rem;
+                font-size: 0.32rem;
+                color: #333;
+                margin: 0.19rem 0 0.22rem;
+                word-break: break-all;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                float: left;
+            }
+            .affirm-press {
+                width: 3.82rem;
+                height: 0.26rem;
+                line-height: 0.26rem;
+                font-size: 0.26rem;
+                color: #999;
+                word-break: break-all;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                float: left;
+                margin-bottom: 0.61rem;
+            }
+            .affirm-money {
+                width: 3.82rem;
+                height: 0.45rem;
+                line-height: 0.45rem;
+                color: #666;
+                float: left;
+                i:nth-of-type(1) {
+                    font-size: 0.22rem;
+                    float: left;
+                }
+                i:nth-of-type(2) {
+                    font-size: 0.4rem;
+                    float: right;
+                    margin-right: 0.06rem;
+                    color: #2b363c;
+                }
+                span:nth-of-type(1) {
+                    font-size: 0.34rem;
+                    float: left;
+                    margin-left: 0.06rem;
+                }
+                span:nth-of-type(2) {
+                    font-size: 0.4rem;
+                    color: #2b363c;
+                    float: right;
+                }
+            }
+        }
+    }
+    .affirm-send {
+        width: 7.1rem;
+        height: 1rem;
+        border-radius: 0.15rem;
+        margin: 0 auto;
+        line-height: 1rem;
+        font-size: 0.32rem;
+        color: #999;
+        padding: 0 0.6rem 0 0.26rem;
+        box-sizing: border-box;
+        background: #fff url("../img/other/mianbaoxie_you_gouwuche@3x.png") no-repeat 6.74rem center;
+        background-size: 0.13rem 0.22rem;
+        margin-bottom: 0.29rem;
+        span {
+            float: right;
+            color: #333;
+        }
+    }
+    .affirm-price {
+        width: 100%;
+        overflow: hidden;
+        padding: 0 0.32rem 0 0.29rem;
+        box-sizing: border-box;
+        margin-bottom: 0.17rme;
+        li {
+            width: 100%;
+            height: 0.56rem;
+            line-height: 0.56rem;
+            font-size: 0.28rem;
+            float: left;
+            color: #666;
+            span {
+                float: right;
+                font-size: 0.34rem;
+                i {
+                    font-size: 0.26rem;
+                }
+            }
+        }
+        li:nth-of-type(4) {
+            font-size: 0.32rem;
+            color: #333;
+            span {
+                color: #df463e;
+                font-size: 0.34rem;
+                i {
+                    font-size: 0.26rem;
+                }
+            }
+        }
+    }
+}
+#affirm-fill {
+    width: 100%;
+    height: 1rem;
+}
+
+//选快递
+#affirm-postage {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.5);
+    ul {
+        width: 6.6rem;
+        height: 4.98rem;
+        background: #fff;
+        border-radius: 0.2rem;
+        padding: 0.42rem 0.63rem 0 0.52rem;
+        box-sizing: border-box;
+        margin: 3.39rem auto 0;
+        li {
+            width: 100%;
+            height: 1.39rem;
+            float: left;
+            .affitm-lump {
+                width: 4.46rem;
+                height: 100%;
+                float: left;
+                p:nth-of-type(1) {
+                    width: 100%;
+                    height: 0.36rem;
+                    font-size: 0.36rem;
+                    line-height: 0.36rem;
+                    color: #333;
+                    float: left;
+                    margin: 0.28rem 0 0.16rem;
+                }
+                p:nth-of-type(2) {
+                    width: 100%;
+                    height: 0.32rem;
+                    font-size: 0.32rem;
+                    line-height: 0.32rem;
+                    color: #999;
+                    float: left;
+                }
+            }
+            span {
+                float: right;
+                width: 0.45rem;
+                height: 100%;
+                background: url("../img/other/gou_kui_gouwuche@3x.png") no-repeat center;
+                background-size: 0.45rem 0.45rem;
+            }
+            .affitm-action {
+                background: url("../img/other/gou_hong_gouwuche@3x.png") no-repeat center;
+                background-size: 0.45rem 0.45rem;
+            }
+        }
+    }
+}
+//点击提交订单
+#affirm-postage {
+    //提交订单时显示的快递方式
+    display: none;
+}
+
+//提交订单成功   支付成功
+#pay-list,
+#submit-list {
+    display: block;
+}
+#pay-success,
+#sub-list-success {
+    display: none;
+    .pay-info,
+    .sub-list-info {
+        width: 7.1rem;
+        height: 5.69rem;
+        margin: 0.2rem auto 0;
+        background: #fff;
+        border-radius: 0.2rem;
+        .payt-info-main,
+        .sub-list-info-main {
+            width: 7.1rem;
+            height: 3.47rem;
+            border-radius: 0.2rem;
+            background: url("../img/my/beijing_wode@3x.png") no-repeat center;
+            background-size: 7.1rem 3.47rem;
+            img {
+                width: 1.44rem;
+                height: 1.44rem;
+                margin: 0.58rem 0 0.34rem 2.87rem;
+            }
+            .pay-img {
+                width: 1.78rem;
+                height: 1.37rem;
+                margin: 0.57rem 0 0.34rem 2.73rem;
+            }
+            p {
+                width: 100%;
+                height: 0.42rem;
+                font-size: 0.42rem;
+                color: #fff;
+                line-height: 0.42rem;
+                text-align: center;
+            }
+        }
+        .pay-shuoming,
+        .shuoming {
+            width: 100%;
+            height: 0.38rem;
+            font-size: 0.38rem;
+            line-height: 0.38rem;
+            color: #484848;
+            margin: 0.42rem 0 0.21rem;
+            padding-left: 0.44rem;
+            box-sizing: border-box;
+        }
+        .pay-shuoming-content,
+        .shuoming-content {
+            width: 100%;
+            height: 0.84rem;
+            line-height: 0.4rem;
+            font-size: 0.28rem;
+            color: #333;
+            padding: 0 0.44rem;
+            box-sizing: border-box;
+        }
+    }
+}
+#back-souye,
+#look-dingdan {
+    width: 7.08rem;
+    height: 0.88rem;
+    border-radius: 0.2rem;
+    font-size: 0.3rem;
+    line-height: 0.88rem;
+    text-align: center;
+    margin: 0 auto;
+}
+#back-souye {
+    color: #df463e;
+    border: 2px solid #df463e;
+    margin-top: 3.04rem;
+    margin-bottom: 0.22rem;
+}
+#look-dingdan {
+    color: #649ce0;
+    border: 2px solid #649ce0;
+}
+
+//支付
+#pay-list {
+    width: 100%;
+    overflow: hidden;
+    .pay-p {
+        width: 100%;
+        height: 0.26rem;
+        line-height: 0.26rem;
+        font-size: 0.26rem;
+        color: #929292;
+        padding-left: 0.2rem;
+        box-sizing: border-box;
+        margin: 0.38rem 0 0.27rem;
+    }
+    .pay-more-list {
+        width: 7.1rem;
+        overflow: hidden;
+        background: #fff;
+        border-radius: 0.2rem;
+        padding: 0.16rem 0.15rem 0 0.13rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+        li {
+            width: 6.68rem;
+            height: 1.1rem;
+            background: #fff6e0;
+            border-radius: 0.2rem;
+            margin: 0.07rem;
+            float: left;
+            padding: 0 0.28rem;
+            box-sizing: border-box;
+            .pay-title {
+                width: 100%;
+                height: 0.32rem;
+                line-height: 0.32rem;
+                font-size: 0.28rem;
+                color: #666;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                margin: 0.19rem 0 0.14rem;
+                span {
+                    float: right;
+                    font-size: 0.32rem;
+                    i {
+                        font-size: 0.22rem;
+                    }
+                }
+            }
+            .pay-edition {
+                width: 100%;
+                height: 0.26rem;
+                line-height: 0.26rem;
+                font-size: 0.24rem;
+                color: #999;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                span {
+                    float: right;
+                    font-size: 0.32rem;
+                    i {
+                        font-size: 0.22rem;
+                    }
+                }
+            }
+        }
+        .pay-price {
+            width: 6.68rem;
+            height: 1.04rem;
+            margin-top: 0.06rem;
+            margin-right: 0.07rem;
+            line-height: 1.04rem;
+            text-align: right;
+            font-size: 0.28rem;
+            float: left;
+            color: 333;
+            span {
+                color: #df463e;
+                font-size: 0.4rem;
+                margin-left: 0.15rem;
+                i {
+                    font-size: 0.26rem;
+                }
+            }
+        }
+    }
+    .pay-way {
+        width: 7.1rem;
+        overflow: hidden;
+        margin: 0 auto;
+        padding: 0.25rem 0.09rem 0.26rem 0.33rem;
+        box-sizing: border-box;
+        border-radius: 0.2rem;
+        background: #fff;
+        li {
+            width: 100%;
+            height: 1.02rem;
+            line-height: 1.02rem;
+            font-size: 0.32rem;
+            color: #333;
+            padding-left: 0.87rem;
+            box-sizing: border-box;
+            span {
+                float: right;
+                width: 1.02rem;
+                height: 1.02rem;
+                background: url("../img/other/gou_kui_gouwuche@3x.png") no-repeat center;
+                background-size: 0.45rem 0.45rem;
+            }
+            .span-action {
+                background: url("../img/other/gou_hong_gouwuche@3x.png") no-repeat center;
+                background-size: 0.45rem 0.45rem;
+            }
+        }
+        li:nth-of-type(1) {
+            background: url("../img/other/qianbao@3x.png") no-repeat left center;
+            background-size: 0.64rem 0.64rem;
+        }
+        li:nth-of-type(2) {
+            background: url("../img/other/malaiwangyin@3x.png") no-repeat left center;
+            background-size: 0.64rem 0.64rem;
+        }
+        li:nth-of-type(3) {
+            background: url("../img/other/zhifubao@3x.png") no-repeat left center;
+            background-size: 0.64rem 0.64rem;
+        }
+        li:nth-of-type(4) { 
+            background: url("../img/other/weixin@3x.png") no-repeat left center;
+            background-size: 0.64rem 0.64rem;
+        }
+    }
+}
+#pay-fill {
+    width: 100%;
+    height: 1rem;
+}
+#pay-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    font-size: 0.34rem;
+    background: #df463e;
+    color: #fff;
+    span {
+        margin-left: 0.2rem;
+        i {
+            margin-right: 0.07rem;
+        }
+    }
+}
+
+.choose-address {
+    display: none; //选择地址时显示
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index:2;
+    .choose-area,
+    .choose-city,
+    .choose-country,
+    .choose-province {
+        width: 6.6rem;
+        background: #fff;
+        margin: 0 auto;
+        overflow: hidden;
+        dd,
+        dt {
+            width: 100%;
+            height: 0.9rem;
+            line-height: 0.9rem;
+            border-bottom: 2px solid #ededed;
+        }
+        dt {
+            font-size: 0.36rem;
+            color: #df463e;
+            text-align: center;
+            position:relative;
+            background:#fff;
+            z-index: 10;
+        }
+        dd {
+            font-size: 0.32rem;
+            color: #333;
+            padding: 0 0.37rem 0 0.52rem;
+            box-sizing: border-box;
+        }
+    }
+    .choose-city,
+    .choose-country,
+    .choose-province {
+        dd {
+            background: url("../img/other/mianbaoxie_xi_tianziliao@3x.png") no-repeat 6.08rem center;
+            background-size: 0.11rem 0.21rem;
+        }
+    }
+    .choose-country {
+        display: block;
+        height: 2.74rem;
+        margin-top: 3.5rem;
+    }
+    .choose-area,
+    .choose-city,
+    .choose-province {
+        display: none;
+        height: 9.18rem;
+        margin-top: 1.43rem;
+        position:relative;
+    }
+}
+#province-wrapper,
+#city-wrapper,
+#area-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: .96rem;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    overflow: auto;
+}

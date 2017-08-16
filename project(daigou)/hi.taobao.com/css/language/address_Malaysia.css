@@ -1,0 +1,60 @@
+.lang_address_11{
+	position:relative;
+}
+.lang_address_11:after{
+	content:"Pilih negara";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+}
+.lang_address_12{
+	position:relative;
+}
+.lang_address_12:after{
+	content:"China";
+	position:absolute;
+	width:80%;
+	left:0.47rem;
+	background:#fff;
+}
+.lang_address_13{
+	position:relative;
+}
+.lang_address_13:after{
+	content:"Malaysia";
+	position:absolute;
+	width:80%;
+	left:0.47rem;
+	background:#fff;
+}
+.lang_address_14{
+	position:relative;
+}
+.lang_address_14:after{
+	content:"Pilih wilayah";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+}
+.lang_address_15{
+	position:relative;
+}
+.lang_address_15:after{
+	content:"Select City";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+}
+.lang_address_16{
+	position:relative;
+}
+.lang_address_16:after{
+	content:"Pilih kawasan";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+}

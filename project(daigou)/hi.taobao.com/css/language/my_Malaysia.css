@@ -1,0 +1,268 @@
+.lang_my_2:after{
+	content:"Semua Perintah";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_3:after{
+	content:"Proses";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_4:after{
+	content:"Pembayaran";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_18:after{
+	content:"Percuma";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_5:after{
+	content:"Penghantaran";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_6:after{
+	content:"Menerima";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_my_7:after{
+	content:"Lengkap";
+	position:absolute;
+	width:100%;
+	height:.28rem;
+	top:0.78rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.lang_my_8:after{
+	content:"Kegemaran saya";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_9:after{
+	content:"Pengedaran saya";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_10:after{
+	content:"Dompet saya";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_11:after{
+	content:"Kupon Saya";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_12:after{
+	content:"Penghantaran Management Alamat";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_13:after{
+	content:"Kod dua dimensi saya";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_14:after{
+	content:"Sediakan";
+	position:absolute;
+	left:1.54rem;
+	background:#fff;
+}
+.lang_my_16{
+	height:.4rem!important;
+}
+.lang_my_17{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap ;
+	padding-right:.3rem;
+}
+.lang_index_14{
+	position:relative;
+}
+.lang_index_14:after{
+	content:"Rumah";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+}
+
+.lang_proInform_14{
+	position: relative;
+}
+.lang_proInform_14:after{
+	content:"Kongsi";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}
+.lang_index_15{
+	position:relative;
+}
+.lang_index_15:after{
+	content:"Maklumat";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.lang_index_16{
+	position:relative;
+}
+.lang_index_16:after{
+	content:"Kereta";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+}
+.lang_index_17{
+	position:relative;
+}
+.lang_index_17:after{
+	content:"Saya";
+	position: absolute;
+	width:100%;
+	height:100%;
+	top:.06rem;
+	left:0;
+	background:#fff;
+	color:#DF463E;
+}
+
+.lang_proInform_15{
+	position: relative;
+}
+.lang_proInform_15:after{
+	content:"Kawan-kawan surat mikro";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_16{
+	position: relative;
+}
+.lang_proInform_16:after{
+	content:"Circle of friends";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_17{
+	position: relative;
+}
+.lang_proInform_17:after{
+	content:"QQ";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_18{
+	position: relative;
+}
+.lang_proInform_18:after{
+	content:"Face Book";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_21{
+	position: relative;
+}
+.lang_proInform_21:after{
+	content:"Dibatalkan";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}

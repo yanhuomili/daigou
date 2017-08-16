@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>修改记录表</title>
+	</head>
+	<body>
+	<script type="text/javascript">
+/*
+		 2017.5.22  �޸ļ�¼
+		
+		#footer {height: 1.2rem !important;}
+		#footer ul li {height: 100% !important;}
+		#footer ul li a {line-height: 100% !important;}
+		#footer span { display:inline-block; width:100%; height:100%;}
+		#footer span:after { position:absolute; top:-10%;  left: 50% !important;  transform: translate(-50%,0) !important; dispaly:inline-block; width:100%; height:100%;background:white;}
+		
+		
+		
+		英文状态my,顶部文字
+		#wrapper li span:after {     
+			height: 0.32rem;//高度由0.28改成0.32
+			line-height:0.32rem//增加行高
+		}
+		
+		
+		
+		2017.5.23
+		my_USA：56行开始
+		全部订单    	 	61  	All orders
+		待付款        	 	85		Pending payment
+		 待处理   	 	73   	To be processed/pending  
+		 待付邮费                   97   	Pending postage payment
+		待发货	    109		To be delivered
+		 待收货		121		To be received
+		 已完成		133		Completed				
+		 
+		pingtai.css  189，
+		问题：就是一个li里面有三个图片，第一个要定位，后面的又要接着垂直往下拍在他的后面
+		解决方法：在css里面判断当只有一个子元素的时候设置一定的优先级比较高的样式来解决问题。
+		.pro-left ul li:only-child img {
+		    position: relative !important;
+		}
+
+
+
+
+2017.5.24：
+	//此方案行不通
+		Order_for.css  32  //马来文我的，布局样式修改,js文件是myOrder.js
+		.order-nav ul {
+			display: -webkit-box;
+		    width: 13.8rem !important;//11.4改成13.8rem
+		    padding:0 0.25rem;
+		}  
+		Order_for.css  37
+		#order .order-nav ul li{  
+		    width: 1.7rem !important;
+		    display: -webkit-box;
+			-webkit-box-align: center;
+			-webkit-box-pack: center;
+			font-size: 0.15rem;//0.3改为0.15
+		    line-height: .3rem; //行高去掉
+		    float:left;//去掉	
+		}
+		
+	//马来文	
+	$('#order .order-nav ul li').html('<span></span>');//在里面添加插入span
+			$('.order-nav ul').css({//ul长度
+			    'width':' 13.8rem !important',
+			    'padding':'0 0.25rem',
+			})
+			$('#order .order-nav ul li').css({//固定里宽
+				'width': '1.7rem !important',
+				'line-height':'0.3rem',
+				'position':'relative'
+			})
+			
+			$('#order .order-nav ul li span').css({//给生span绝对定位
+				'position':'absolute',
+				'width':'100%',
+				'top':'50%',
+				'left':'50%',
+				'transform':'translate(-50%,-50%)',
+				'font-size':'0.15rem !important',
+				})
+			
+			$('#order .order-nav ul li span').css({'text-align':'center'})
+			$("#order .order-nav ul li:nth-child(1) span").html("Semua pesanan")
+			$("#order .order-nav ul li:nth-child(2) span").text("Pembayaran belum selesai")
+			$("#order .order-nav ul li:nth-child(3) span").text("Akan diproses")
+			$("#order .order-nav ul li:nth-child(4) span").text("Bayaran pos belum dibayar")
+			$("#order .order-nav ul li:nth-child(5) span").text("Akan dihantar")
+			$("#order .order-nav ul li:nth-child(6) span").text("Akan diterima")
+			$("#order .order-nav ul li:nth-child(7) span").text("Selesai")
+			$("head link:last-child").remove()
+			myOrderMalaysia();
+		}
+	};
+
+
+	//英文
+	$('#order .order-nav ul li').html('<span></span>');//在里面添加插入span
+			$('.order-nav ul').css({//ul长度
+			    'width':' 14.3rem !important',
+			    'padding':'0 0.25rem',
+			})
+			$('#order .order-nav ul li').css({//固定里宽
+				'width': '1.7rem !important',
+				'line-height':'0.3rem',
+				'position':'relative'
+			})
+			$('#order .order-nav ul li:nth-child(4)').css({'width':'2rem !important'})
+			$('#order .order-nav ul li span').css({//给生span绝对定位
+				'position':'absolute',
+				'width':'100%',
+				'top':'50%',
+				'left':'50%',
+				'transform':'translate(-50%,-50%)',
+				'font-size':'0.15rem !important',
+				'text-align':'center'
+			})
+			$("#order .order-nav ul li:nth-child(1) span").html("All orders")
+			$("#order .order-nav ul li:nth-child(2) span").text("Pending payment")
+			$("#order .order-nav ul li:nth-child(3) span").text("pending")
+			$("#order .order-nav ul li:nth-child(4) span").text("Pending postage payment")
+			$("#order .order-nav ul li:nth-child(5) span").text("To be delivered")
+			$("#order .order-nav ul li:nth-child(6) span").text("To be received")
+			$("#order .order-nav ul li:nth-child(7) span").text("Completed")
+			$("head link:last-child").remove()
+			myOrderUSA()
+		
+		
+		
+		//英文、马来文：立即购买进去图标被遮盖
+		productInform_Malaysia.css|productInform_USA.css   ：26
+		.lang_proInform_3:after{
+			opacity:0;//添加透明度
+		}
+			
+		
+上拉下拉刷新事件在information.js文件			
+
+
+箭头位置修改在my.js里面。
+		
+		
+点击购买开头定位：
+pingtai.css:
+
+#pingtai-info .title-share .title-info {
+	position:relative;//增加相对定位
+}
+#pingtai-info .title-share .title-info-hot::after{
+	position: absolute;//改为绝对定位
+    left: 0.35rem;
+    top: 0.08rem;
+}
+    
+			
+商品详情：		
+我的：	
+myOrder——malaysia.css:
+#order-has .order-has dl dd .aggregate-price .daiChuLi .why-pay{
+	padding:0.1rem 0 0 0.4rem;//改为
+}
+
+
+.lang_myOrder_13:after{
+	height:220%;//增加
+	top:-0.1rem;//增加
+	
+}
+
+热门分类：
+#more-list .more-list-pro li:nth-of-type(2){
+	overflow:hidden;//增加
+}
+
+
+
+购物：
+prefect-info.css:
+#affirm-postage ul li{
+	    height:35%;//改为35%
+}
+#affirm-postage ul li .affitm-lump p:nth-of-type(1){
+	去掉高和行高
+	font-size:0.32rem://行高改成0.32rem
+}
+
+立即购买-选择商品数量：
+pingtai.css:
+#pro-buy-action .pro-buy-condition{
+	height:4rem;//高度改为4rem
+}
+
+//移动端拖拽
+$(window).on('touchmove',function(ev){
+	var t=ev.targetTouches[0];//获取手指列表里面的第一个对象
+	var x=t.pageX;
+	var y=t.pageY;
+	bb.css({'top':(y-w)+'px','left':(x-w)+'px'})
+	console.log(x,y)
+})
+
+
+我的钱包：
+my-wallet.css:
+.chongzhi{
+	margin-top: 1.11rem;//上边距给为1.11rem
+}
+
+
+购物车-平台商品：
+第一个ul下面添加
+<span class="shopping-check" flag="false" data="831"></span>
+
+
+翻译：
+myCoupo.js:
+已失效                           找不到
+
+myExchange.js
+恭喜您，兑换成功 ！    找不到
+兑换成功                        找不到	
+您的兑换                         找不到
+
+shoppingFrist.js
+完善资料                       找不到
+
+
+address.js:
+#address .have-address .address-list ul li .ads-moren{
+	width:4.66rem;
+}
+
+新增收货地址管理
+myAddress.js:
+在英文和马来文状态下，第一行替换为：
+$(".lang_address_1").html('<span>Delivery address management</span>')
+$(".lang_address_1 span").css({'font-size':'0.25rem !important'})
+
+
+点击新建进去：
+address.js:
+header{
+	font-size:0.2rem;
+}
+
+
+新增收货地址
+header .lang_address_4, header .lang_address_5 {
+    font-size: 0.25rem;
+}
+
+
+手机号码：
+在 #add-address .add-info li选择器后面添加
+#add-address .add-info li .lang_address_7 {
+    display: inline-block;
+    height: 100%;
+    width: 1.16rem;
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+    line-height: 0.3rem !important;
+}
+
+#add-address .add-info li .lang_address_10 {
+    display: inline-block;
+    height: 100%;
+    width: 1.2rem;
+    padding-top: 0.2rem;
+    box-sizing: border-box;
+    line-height: 0.3rem !important;
+}
+
+
+
+
+myAddress.js:
+在英文和马来文语言下加：
+$('header .lang_address_4,header .lang_address_5').css({'font-size': '0.25rem !important'})//新增收货地址头部
+$('.add-info .lang_address_7,.add-info .lang_address_10').parent().css({'line-height':'0'})
+$('#add-address .add-info .lang_address_9').css({'line-height':'1rem !important'})
+$('.lang_address_7').css({
+	'display': 'inline-block',
+   'height': '100%',
+    'width': '1.16rem',
+    'padding-top': '0.1rem',
+    'box-sizing': 'border-box',
+    'line-height': '0.3rem !important',
+    'font-size':'0.2rem'
+})
+$('.lang_address_10').css({
+	'display': 'inline-block',
+    'height': '100%',
+    'width': '1.2rem',
+    'padding-top': '0.2rem',
+    'box-sizing': 'border-box',
+    'line-height': '0.3rem !important',
+    'font-size':'0.2rem'
+    
+})
+
+
+
+钱包-兑换货币：
+英文和马来文下：增加样式:
+#duihuan-main .duihuan-choose .have-money span:nth-of-type(1){
+	font-size:0.32rem;
+}
+#duihuan-main .duihuan-choose .have-money span:nth-of-type(2){
+	width:0.8rem;
+}
+#duihuan-main .duihuan-choose .have-money input{
+	width:2rem;
+}
+
+
+chongzhi-duihuan.css:
+#duihuan-main .duihuan-choose .money-duihuan span:nth-of-type(2){
+	padding-left:.6rem;//去掉
+	box-sizing:boder-box;//去掉
+	text-align:center;
+}
+
+在英文和马来文状态下加：
+$('#duihuan-main .duihuan-choose .have-money span:nth-of-type(1), #duihuan-main .duihuan-choose .money-duihuan span:nth-of-type(1)').css({'font-size':'0.32rem'})
+$('#duihuan-main .duihuan-choose .have-money span:nth-of-type(2), #duihuan-main .duihuan-choose .money-duihuan span:nth-of-type(2)').css({'width':'0.8rem'})
+$('#duihuan-main .duihuan-choose .have-money input, #duihuan-main .duihuan-choose .money-duihuan input').css({'width':'2rem'})	
+
+
+头像-账户安全
+英文状态：
+#oneself-password .change-pwd li{
+	font-size:0.22rem !important;
+}
+#oneself-password .change-pwd li:after{
+	width:28%;
+}
+
+
+英语状态下添加：
+$('#oneself-password .change-pwd li').css({'font-size':'0.22rem !important'})
+$('#oneself-password .change-pwd li:after').css({'width':'28% !important'})
+
+roder-for.css:
+#order-has .order-has dl dt{
+	line-height:0.8rem;
+}
+
+
+
+dingdan-detail.css:
+#detail-main ul p{
+	line-heght:0.84rem;
+}
+
+
+
+
+
+2017.6.8:
+productInfor.html里面增加列表
+.pro-nav里面增加
+	<li class="lang_proInform_add">评价商品</li>
+.pro-content里面增加：
+<div class="pro-center commentTap">
+	<ul>
+		<li>新添加的栏目</li>
+		<li>新添加的栏目</li>
+		<li>新添加的栏目</li>
+		<li>新添加的栏目</li>
+		<li>新添加的栏目</li>
+		<li>新添加的栏目</li>
+		<li>新添加的栏目</li>
+		<!--<li style="width:100;height:auto;"><img src="../../img/xinxi.png" style="width:100%;height:auto;float:left;"/></li>-->
+	</ul>
+</div>
+pingtai.css里面修改样式
+#pingtai-info .pro-nav ul li { width: 33.33%;}
+#pingtai-info .pro-nav ul .pro-nav-action:after { left: 50%;transform: translate(-50%,0); }
+
+
+
+myOrder.html里面增加：
+已完成里面增加一个按钮：
+<span class="commentNow">马上评论</span>
+order-for.css里面增加：
+#order-has .order-has dl dd .aggregate-price .commentNow{
+	float: right;
+	font-size: 0.26rem; 
+	width:1.56rem;
+	height:0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+	border: 0.01rem solid #cecece;
+	margin-right: 0.2rem;
+}
+
+
+
+
+
+
+2017.6.8：
+1.语言修改：
+common.js里面修改
+英语：language
+马来语：bahasa
+
+2.去掉扫一扫：
+index.css
+#shouye #header .sousou { width: 5.8rem;};
+#shouye #header .sousou .text { width: 5.8rem;};
+
+
+2017.6.9:
+特色惠购：
+html布局修改：
+<p class="price">
+	<span>&yen;500.14 <s>10</s></span>
+	<span class="shopCar">12</span>
+</p>
+
+css修改：
+#shouye #feature .feature-ul li {height: 2.3rem;}//高度改为2.3
+#shouye #feature .feature-ul li a { height: 2.3rem;}//高度改为2.3
+#shouye #feature .feature-ul li .price{}//行高去掉
+#shouye #feature .feature-ul li .price span { display: inline-block;width:100%;height:50%;  line-height: 0.5rem;}
+#shouye #feature .feature-ul li .price span s{color:#999;margin-left: 0.3rem;}
+#shouye #feature .feature-ul li .price .shopCar{color: #ccc; padding-left: 0.6rem;box-sizing: border-box;background: url(../img/shopCar.png) no-repeat 0 center;}
+#shouye #feature .feature-ul li .price .shopCar{background-size: 0.5rem;}
+
+
+
+
+*/		
+	</script>
+	</body>
+</html>

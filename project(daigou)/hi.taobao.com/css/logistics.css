@@ -1,0 +1,30 @@
+.fact-header, .has-header, .null-header { width: 100%; height: 0.87rem; border-bottom: 1px solid #e69490; line-height: 0.87rem; font-size: 0.34rem; color: #fff; text-align: center; position: relative; background: #df463e; }
+.fact-header .fact-back, .fact-header .has-back, .fact-header .null-back, .has-header .fact-back, .has-header .has-back, .has-header .null-back, .null-header .fact-back, .null-header .has-back, .null-header .null-back { width: 0.87rem; height: 0.87rem; background: url("../img/index/fanhui@3x.png") no-repeat center; background-size: 0.45rem; float: left; position: absolute; left: 0; top: 0; }
+
+#logistics-null { display: none; width: 100%; height: 100%; overflow: hidden; }
+#logistics-null div { width: 100%; height: 5.56rem; padding-top: 5.04rem; box-sizing: border-box; background: url("../img/my/wuwuliu@3x.png") no-repeat center 1.6rem; background-size: 3.05rem 3.09rem; }
+#logistics-null div p { width: 100%; height: 0.32rem; line-height: 0.32rem; color: #999; text-align: center; font-size: 0.32rem; }
+
+#logistics-has { display: block; width: 100%; overflow: hidden; background: #ededed; }
+#logistics-has .list { width: 6.3rem; margin: 0 auto; margin-top: .5rem; padding-left: .15rem; box-sizing: border-box; }
+#logistics-has .list li { width: 5.64rem; padding: 0 0 .9rem .46rem; border-left: 2px solid #bababa; color: #999; position: relative; left: 0; top: 0; }
+#logistics-has .list li .content { font-size: .32rem; line-height: .46rem; word-break: break-word; }
+#logistics-has .list li .time { font-size: .26rem; line-height: .26rem; }
+#logistics-has .list li .circle { float: left; width: .16rem; height: .16rem; border-radius: 100%; background: #bababa; position: absolute; left: -.09rem; top: .16rem; }
+#logistics-has .list li:first-child { color: #df463e; }
+#logistics-has .list li:first-child:after { display: block; content: ""; width: .4rem; height: .4rem; background: url(../img/other/gou_hong_gouwuche@3x.png) no-repeat; background-size: .4rem; position: absolute; left: -.22rem; top: -.04rem; }
+#logistics-has .list li:last-child { border-color: #ededed; }
+#logistics-has .list li:last-child:after { display: block; content: ""; width: .04rem; height: .2rem; background: #bababa; position: absolute; left: -.04rem; top: 0; }
+
+#logistics-fact { width: 100%; overflow: hidden; background: #ededed; }
+#logistics-fact .sub-list-info { width: 7.1rem; height: 5.69rem; margin: 0.2rem auto 0; background: #fff; border-radius: 0.2rem; }
+#logistics-fact .sub-list-info .sub-list-info-main { width: 7.1rem; height: 3.47rem; border-radius: 0.2rem; background: url("../img/my/beijing_wode@3x.png") no-repeat center; background-size: 7.1rem 3.47rem; }
+#logistics-fact .sub-list-info .sub-list-info-main img { width: 1.77rem; height: 1.38rem; margin: 0.58rem 0 0.2rem 2.5rem; }
+#logistics-fact .sub-list-info .sub-list-info-main p { width: 100%; height: 0.42rem; font-size: 0.42rem; color: #fff; line-height: 0.42rem; text-align: center; float: left; }
+#logistics-fact .sub-list-info .shuoming { width: 100%; height: 0.38rem; font-size: 0.38rem; line-height: 0.38rem; color: #484848; margin: 0.42rem 0 0.21rem; padding-left: 0.44rem; box-sizing: border-box; }
+#logistics-fact .sub-list-info .shuoming-content { width: 100%; height: 0.84rem; line-height: 0.4rem; font-size: 0.28rem; color: #333; padding: 0 0.44rem; box-sizing: border-box; }
+#logistics-fact #back-souye, #logistics-fact #look-dingdan { width: 7.08rem; height: 0.88rem; border-radius: 0.1rem; font-size: 0.3rem; line-height: 0.88rem; text-align: center; margin: 0 auto; }
+#logistics-fact #back-souye { color: #df463e; border: 2px solid #df463e; margin-top: 3.04rem; margin-bottom: 0.22rem; }
+#logistics-fact #look-dingdan { color: #649ce0; border: 2px solid #649ce0; margin-bottom: 0.66rem; }
+
+/*# sourceMappingURL=logistics.css.map */

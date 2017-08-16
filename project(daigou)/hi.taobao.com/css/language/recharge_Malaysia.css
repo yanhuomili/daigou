@@ -1,0 +1,145 @@
+.lang_recharge_1:after{
+	content:"Caj semula Wallet";
+	width:3.5rem;
+	position:absolute;
+	left:2rem;
+	background:#DF463E;
+}
+.lang_recharge_2{
+	position:relative;
+}
+.lang_recharge_2:after{
+	content:"Penerangan";
+	position:absolute;
+	width:1.4rem;
+	left:0.25rem;
+	background:#DF463E;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_recharge_4{
+	position:relative;
+}
+.lang_recharge_4:after{
+	content:"Caj semula berjaya";
+	position:absolute;
+	width:3.5rem;
+	left:2.5rem;
+	background:#DF463E;
+}
+.lang_recharge_6{
+	position:relative;
+}
+.lang_recharge_6:after{
+	content:"Caj semula berjaya";
+	position:absolute;
+	background:#fff;
+	left:0.44rem;
+}
+.lang_recharge_7{
+	position:relative;
+}
+.lang_recharge_7:after{
+	content:"Melihat dompet saya";
+	position:absolute;
+	width:100%;
+	background:#fff;
+	left:0;
+	border-radius:.2rem;
+}
+.lang_recharge_8{
+	position:relative;
+}
+.lang_recharge_8:after{
+	content:"Lihat kupon";
+	position:absolute;
+	width:100%;
+	background:#fff;
+	left:0;
+	border-radius:.2rem;
+}
+.lang_recharge_9{
+	position:relative;
+}
+.lang_recharge_9:after{
+	content:"Akaun:";
+	position:absolute;
+	width:100%;
+	background:#fff;
+	left:-0.2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_recharge_13{
+	position:relative;
+}
+.lang_recharge_13:after{
+	content:"Pembayaran";
+	position:absolute;
+	width:100%;
+	background:#ededed;
+	left:0.2rem;
+}
+.lang_recharge_14{
+	position:relative;
+}
+.lang_recharge_14:after{
+	content:"Dompet saya";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_15{
+	position:relative;
+}
+.lang_recharge_15:after{
+	content:"Malaysia perbankan dalam talian";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_16{
+	position:relative;
+}
+.lang_recharge_16:after{
+	content:"Alipay";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_17{
+	position:relative;
+}
+.lang_recharge_17:after{
+	content:"Micro-saluran berbayar";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_11{
+	position:relative;
+}
+.lang_recharge_11:after{
+	content:"Recharge over 1,000 yuan gift";
+	position:absolute;
+	left:0;
+	width:61%;
+	background:#fff;
+}
+.lang_recharge_21{
+	position:relative;
+}
+.lang_recharge_21:after{
+	content:"$ 20 coupon";
+	position:absolute;
+	left:120%;
+	width:116%;
+	background:#fff;
+	z-index: 1;
+}

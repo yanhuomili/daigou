@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		
+		<link rel="stylesheet" type="text/css" href="../../css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/zixun-xiangqing.css" />
+
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+
+	</head>
+
+	<body>
+		<header id="xiangqing-header">
+			<div class="xq-left"></div>
+			<span class="lang_inform_1">资讯详情</span>
+		</header>
+		<section id="xq-main">
+			<p class="xq-title">维吾尔族自治区第二届双赢摄影绘画书法展天才儿童亮相展会</p>
+			<p class="xq-time"><span>政治</span><time>2016-10-21 09:02</time></p>
+		</section>
+		<section id="xq-new-content">
+			<p><span>中国日报11月11日</span>电美国大选结果出炉后，希拉里·克林顿为什么等到第二天中午才发表败选演讲？据美国保守派网站“RED STATE”11月10日报道，希拉里当晚情绪崩溃，她一边嚎啕大哭、一边怪责总统奥巴马和联邦调查局（FBI）局长詹姆斯·科米是导致其总统梦碎的罪魁祸首。</p>
+			<img src="../../img/other/zixun-xq.png"/>
+			<p>最初，希拉里原定于9日上午9点半发表败选 演讲，后来推迟到10点半，最后直至11点半 才出现在众人面前。通常而言，败选演讲只 是说一些套话，不需要太多准备时间。因此， 当晚演讲时间一再延迟，被广泛解读为是希 拉里需要时间来平复情绪、恢复冷静。</p>
+			<div class="xq-zan">
+				<div class="xq-dianzan"><i></i><span>154</span></div>
+				<div class="xq-weiguan"><i></i><span>3442</span></div>
+			</div>
+		</section>
+		<div id="xq-fill"></div>
+		<section id="xq-pinglun">
+			<div class="xq-pinglunshu"><span class="lang_inform_2">评论</span><i>（<span>12</span>）</i></div>
+			<div class="xq-topic-main">
+				<dl class="xq-pinglun-people">
+					<dt><img class="people-picture" src="../../img/other/zixun-xq.png"/></dt>
+					<dd class="people-name"><span>TISSE MERIGRO</span><i><time>3</time>分钟前</i></dd>
+					<dd class="people-topic">新款式很好看，挺厚实的，在12~18度的冬天穿刚刚好。这个店家的衣服性价比都很高哦，下次还会回购。</dd>
+				</dl>
+				
+				<dl class="xq-pinglun-people">
+					<dt><img class="people-picture" src="../../img/other/zixun-xq.png"/></dt>
+					<dd class="people-name"><span>TISSE MERIGRO</span><i><time>5</time>分钟前</i></dd>
+					<dd class="people-topic">新款式很好看，挺厚实的，在12~18度的冬天穿刚刚好。这个店家的衣服性价比都很高哦，下次还会回购。</dd>
+				</dl>
+				
+				<dl class="xq-pinglun-people">
+					<dt><img class="people-picture" src="../../img/other/zixun-xq.png"/></dt>
+					<dd class="people-name"><span>TISSE MERIGRO</span><i><time>10</time>分钟前</i></dd>
+					<dd class="people-topic">新款式很好看，挺厚实的，在12~18度的冬天穿刚刚好。这个店家的衣服性价比都很高哦，下次还会回购。</dd>
+				</dl>
+				
+				<dl class="xq-pinglun-people">
+					<dt><img class="people-picture" src="../../img/other/zixun-xq.png"/></dt>
+					<dd class="people-name"><span>TISSE MERIGRO</span><i><time>10</time>分钟前</i></dd>
+					<dd class="people-topic">adsfasdffffffffffffffffffffffffffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb5555555555555555555555555555555555555554444444444444444444444444444444444444444444444444444444444444444444888888888888888888888888888888888888888888</dd>
+				</dl>
+			</div>
+		</section>
+		<div id="xq-fabu-fill"></div>
+		<section id="xq-fabu">
+			<p><input type="text"/></p>
+			<div class="fabu-btn lang_inform_3">发布</div>
+		</section>
+	</body>
+	<script type="text/javascript" src="../../js/swiper.js"></script>
+	<script type="text/javascript" src="../../js/iscroll.js"></script>
+	<script type="text/javascript">
+		//返回d2
+		$(".xq-left").on("tap",function(){
+			window.location.href = "../../information.html";
+		})
+		//点赞
+		$(".xq-dianzan").on("tap",function(){
+			var people = $(this).find("span").text()
+			var weiguan = $(".xq-weiguan").find("span").text()
+			$(this).find("i").css({"background":"url(../../img/other/dianzan_hong@3x.png) no-repeat center;","background-size":".35rem .35rem;"})
+			$(this).find("span").text(Number(people)+1);
+			$(".xq-weiguan").find("span").text(Number(weiguan)+1)
+		})
+		autoLanguage();
+		function autoLanguage(){
+			var getItem = localStorage.getItem("language");
+			if(localStorage.getItem("language") == "0"){
+				$(".lang_inform_1").text("资讯详情");
+				$(".lang_inform_2").text("评论");
+				$(".lang_inform_3").text("发布");
+			}else if(localStorage.getItem("language") == "1"){
+				$(".lang_inform_1").text("Information details");
+				$(".lang_inform_2").text("Comment");
+				$(".lang_inform_3").text("Release");
+			}else if(localStorage.getItem("language") == "2"){
+				$(".lang_inform_1").text("Butiran lanjut maklumat");
+				$(".lang_inform_2").text("Ulasan");
+				$(".lang_inform_3").text("Akhbar");
+			}
+		};
+	</script>
+</html>

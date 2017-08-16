@@ -1,0 +1,120 @@
+.lang_recharge_1:after{
+	content:"Purse recharge";
+	width:2.5rem;
+	position:absolute;
+	left:2.5rem;
+	background:#DF463E;
+}
+.lang_recharge_2{
+	position:relative;
+}
+.lang_recharge_2:after{
+	content:"Instructions";
+	position:absolute;
+	left:-0.2rem;
+	background:#DF463E;
+}
+.lang_recharge_4{
+	position:relative;
+}
+.lang_recharge_4:after{
+	content:"Recharge successful";
+	position:absolute;
+	width:3.5rem;
+	left:2.5rem;
+	background:#DF463E;
+}
+.lang_recharge_6{
+	position:relative;
+}
+.lang_recharge_6:after{
+	content:"Recharge successful";
+	position:absolute;
+	background:#fff;
+	left:0.44rem;
+}
+.lang_recharge_7{
+	position:relative;
+}
+.lang_recharge_7:after{
+	content:"View my wallet";
+	position:absolute;
+	width:100%;
+	background:#fff;
+	left:0;
+	border-radius:.2rem;
+}
+.lang_recharge_8{
+	position:relative;
+}
+.lang_recharge_8:after{
+	content:"View coupons";
+	position:absolute;
+	width:100%;
+	background:#fff;
+	left:0;
+	border-radius:.2rem;
+}
+.lang_recharge_9{
+	position:relative;
+}
+.lang_recharge_9:after{
+	content:"Account:";
+	position:absolute;
+	width:100%;
+	background:#fff;
+	left:-0.2rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_recharge_13{
+	position:relative;
+}
+.lang_recharge_13:after{
+	content:"Pay way";
+	position:absolute;
+	width:100%;
+	background:#ededed;
+	left:0.2rem;
+}
+.lang_recharge_14{
+	position:relative;
+}
+.lang_recharge_14:after{
+	content:"My wallet";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_15{
+	position:relative;
+}
+.lang_recharge_15:after{
+	content:"Malaysian online banking";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_16{
+	position:relative;
+}
+.lang_recharge_16:after{
+	content:"Pay with Ali-Pay";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_17{
+	position:relative;
+}
+.lang_recharge_17:after{
+	content:"WeChat payment";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}

@@ -1,0 +1,150 @@
+.lang_payFor_1{
+	position: relative;
+}
+.lang_payFor_1:after{
+	content:"Pembayaran";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+}
+.lang_payFor_2{
+	position: relative;
+}
+.lang_payFor_2:after{
+	content:"Maklumat Perintah";
+	position:absolute;
+	width:100%;
+	left:0.2rem;
+	background:#ededed;
+}
+.lang_payFor_3{
+	position: relative;
+}
+.lang_payFor_3:after{
+	content:"Pembayaran Lengkap";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_payFor_4{
+	position: relative;
+}
+.lang_payFor_4:after{
+	content:"Pembayaran Berjaya";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+}
+.lang_payFor_5{
+	position: relative;
+}
+.lang_payFor_5:after{
+	content:"Penerangan Membeli-belah";
+	position:absolute;
+	left:0.44rem;
+	background:#fff;
+}
+.lang_payFor_6{
+	position: relative;
+}
+
+.lang_payFor_6:after{
+	content:"Kami akan menguruskan penghantaran secepat mungkin, sila pembeli menjaga komunikasi telefon terbuka untuk menyatakan adik lelaki kali pertama untuk sampai kepada anda.";
+	position:absolute;
+	top:0;
+	left:0.44rem;
+	background:#fff;
+}
+#pay-success .pay-info{
+	height:6.4rem;
+}
+.lang_payFor_7{
+	position: relative;
+}
+.lang_payFor_7:after{
+	content:"Rumah";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	border-radius:.2rem;
+}
+.lang_payFor_8{
+	position: relative;
+}
+.lang_payFor_8:after{
+	content:"Lihat Pesanan";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	border-radius:.2rem;
+}
+.lang_payFor_10{
+	position: relative;
+}
+.lang_payFor_10:after{
+	content:"Jumlah yang perlu dibayar";
+	position:absolute;
+	width:29%;
+	right:0;
+	background:#fff;
+	border-radius:.2rem;
+}
+
+.lang_recharge_13{
+	position:relative;
+}
+.lang_recharge_13:after{
+	content:"Pembayaran";
+	position:absolute;
+	width:100%;
+	background:#ededed;
+	left:0.2rem;
+}
+.lang_recharge_14{
+	position:relative;
+}
+.lang_recharge_14:after{
+	content:"Dompet saya";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_15{
+	position:relative;
+}
+.lang_recharge_15:after{
+	content:"Malaysia perbankan dalam talian";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_16{
+	position:relative;
+}
+.lang_recharge_16:after{
+	content:"Alipay";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_17{
+	position:relative;
+}
+.lang_recharge_17:after{
+	content:"Micro-saluran berbayar";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}

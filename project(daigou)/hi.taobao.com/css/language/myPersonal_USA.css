@@ -1,0 +1,141 @@
+.lang_personal_8{
+	position:relative;
+}
+.lang_personal_8:after{
+	content:"Avatar";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_9{
+	position:relative;
+}
+.lang_personal_9:after{
+	content:"Nickname";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_10{
+	position:relative;
+}
+.lang_personal_10:after{
+	content:"Phone";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_11{
+	position:relative;
+}
+.lang_personal_11:after{
+	content:"ID number (optional)";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_12{
+	position:relative;
+}
+.lang_personal_12:after{
+	content:"Account security";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_13{
+	position:relative;
+}
+.lang_personal_13:after{
+	content:"Change Password";
+	position:absolute;
+	left:-1.4rem;
+	width:220%;
+	background:#fff;
+	color:#333;
+}
+.lang_personal_14{
+	position:relative;
+}
+.lang_personal_14:after{
+	content:"Odd phone";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+}
+.lang_personal_15{
+	position:relative;
+}
+.lang_personal_15:after{
+	content:"New phone";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+}
+.lang_personal_16{
+	position:relative;
+}
+.lang_personal_16:after{
+	content:"Code";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+}
+.lang_personal_17{
+	position:relative;
+}
+.lang_personal_17:after{
+	content:"Send code";
+	position:absolute;
+	left:0;
+	width:100%;
+	background:#DF463E;
+	border-radius: .1rem;
+}
+.lang_personal_18{
+	position:relative;
+}
+.lang_personal_18:after{
+	content:"Old password";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.lang_personal_19{
+	position:relative;
+}
+.lang_personal_19:after{
+	content:"New password";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.lang_personal_20{
+	position:relative;
+}
+.lang_personal_20:after{
+	content:"Confirm password";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}

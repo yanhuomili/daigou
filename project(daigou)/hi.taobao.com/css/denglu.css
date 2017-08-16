@@ -1,0 +1,59 @@
+@charset "UTF-8";
+html, body { background: #ededed; }
+
+#zhuce-header, #denglu-header { width: 100%; height: 0.88rem; background: #df463e; border-bottom: 1px solid #ee9c98; text-align: center; line-height: 0.87rem; font-size: 0.34rem; color: #fff; position: relative; }
+#zhuce-header .zhuce-right, #zhuce-header .denglu-right, #denglu-header .zhuce-right, #denglu-header .denglu-right { width: 1.49rem; height: .88rem; float: right; font-size: .3rem; color: #fff; position: absolute; right: 0; top: 0; z-index: 50; }
+#zhuce-header .language, #denglu-header .language { width: 0.8rem; height: .87rem; float: left; position: absolute; left: 0; top: 0; margin-left: .2rem; }
+#zhuce-header .language p, #denglu-header .language p { width: 0.58rem; height: 100%; float: left; font-size: 0.28rem; color: #fff; line-height: .88rem; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#zhuce-header .language i, #denglu-header .language i { width: 0.16rem; height: 100%; text-align: right; float: right; background: url("../img/index/xiala_shouye@3x.png") no-repeat 0 center; background-size: 0.14rem 0.08rem; }
+#zhuce-header .xiala, #denglu-header .xiala { position: absolute; top: 0.86rem; left: 0.2rem; z-index: 100; width: 2.1rem; height: 2.7rem; background: rgba(26, 23, 23, 0.9); color: #fff; font-size: 0.3rem; padding-left: 0.36rem; box-sizing: border-box; display: none; }
+#zhuce-header .xiala li, #denglu-header .xiala li { width: 100%; height: 0.9rem; line-height: 0.9rem; text-align: left; }
+#zhuce-header .action, #denglu-header .action { background: url("../img/index/gou_bai_shouye@3x.png") no-repeat 1.3rem center; background-size: 0.28rem 0.18rem; }
+
+#forgert-infor, #zhuc-infor, #dl-user { width: 100%; overflow: hidden; background: #fff; }
+#forgert-infor ul, #zhuc-infor ul, #dl-user ul { width: 100%; height: 100%; }
+#forgert-infor ul li, #zhuc-infor ul li, #dl-user ul li { width: 100%; height: 1rem; font-size: .3rem; color: #666; line-height: 1rem; padding-left: .43rem; box-sizing: border-box; float: right; border-top: 1px solid #ededed; position: relative; }
+#forgert-infor ul li input, #zhuc-infor ul li input, #dl-user ul li input { width: 3.34rem; height: .42rem; padding-left: .06rem; border: 0; outline: none; font-size: .32rem; color: #999; margin: .28rem 2.08rem 0 0; float: right; }
+#forgert-infor ul li input::-webkit-input-placeholder, #zhuc-infor ul li input::-webkit-input-placeholder, #dl-user ul li input::-webkit-input-placeholder { color: #999; font-size: .32rem; font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; }
+#forgert-infor ul li input::-webkit-input-placeholder, #zhuc-infor ul li input::-webkit-input-placeholder, #dl-user ul li input::-webkit-input-placeholder { color: #999; font-size: .32rem; font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; }
+#forgert-infor ul li input::-webkit-input-placeholder, #zhuc-infor ul li input::-webkit-input-placeholder, #dl-user ul li input::-webkit-input-placeholder { color: #999; font-size: .32rem; font-family: -apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; }
+#forgert-infor ul li:nth-of-type(1), #zhuc-infor ul li:nth-of-type(1), #dl-user ul li:nth-of-type(1) { border: 0; }
+
+#dl-forget { width: 100%; height: 1.22rem; padding-top: .33rem; box-sizing: border-box; }
+#dl-forget a { float: right; height: .32rem; margin-right: .22rem; color: #999; font-size: .26rem; line-height: .32rem; background: url(../img/other/wenhao_hong@3x.png) no-repeat left center; background-size: .32rem .32rem; padding-left: .42rem; box-sizing: border-box; }
+
+#forgert-btn, #zhuce-btn, #dl-btn { width: 7.1rem; height: 1rem; font-size: .36rem; line-height: 1rem; text-align: center; color: #fff; border-radius: .1rem; margin: 0 auto; background: #df463e; }
+
+/*************注册*****************/
+#zhuc-infor { width: 100%; height: 4.05rem; position: relative; left: 0; top: 0; margin-bottom: .67rem; }
+#zhuc-infor .send-code { position: absolute; right: .22rem; top: .15rem; display: block; width: 1.78rem; height: .7rem; font-size: .28rem; color: #fff; background: #df463e; line-height: .7rem; text-align: center; border-radius: .1rem; }
+#zhuc-infor .zhuce-country { background: url(../img/other/mianbaoxie_xi_tianziliao@3x.png) no-repeat 7.14rem center; background-size: .11rem .21rem; }
+#zhuc-infor .zhuce-country span { color: #999; font-size: .32rem; margin-left: .23rem; }
+
+#user-notes { width: 100%; height: 1.04rem; line-height: 1.04rem; font-size: .26rem; color: #999; }
+#user-notes i { float: left; width: .52rem; height: .52rem; background: url(../img/other/gou_hong_gouwuche@3x.png) no-repeat center; background-size: .45rem; margin: .26rem 3px 0 .32rem; }
+#user-notes a { color: #df463e; }
+
+#choose-country { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 100; background: rgba(0, 0, 0, 0.5); display: none; }
+#choose-country ul { width: 6.6rem; height: 2.74rem; background: #fff; margin: 0 auto; margin-top: 3.5rem; }
+#choose-country ul li { width: 100%; height: .9rem; border-top: 2px solid #ededed; line-height: .9rem; font-size: .32rem; color: #333; }
+#choose-country ul li:first-child { border: 0; font-size: .36rem; color: #df463e; text-align: center; }
+#choose-country ul li:nth-of-type(2), #choose-country ul li:nth-of-type(3) { padding-left: .52rem; box-sizing: border-box; }
+
+.zhuce-btn-prass { background: #b42b24 !important; }
+
+.zhuce-btn-error { background: #8f8f8f !important; }
+
+/****************忘记密码**********************/
+#forgert-header { width: 100%; height: 0.87rem; background: #df463e; border-bottom: 1px solid #ee9c98; text-align: center; line-height: 0.87rem; font-size: 0.32rem; color: #fff; position: relative; }
+#forgert-header .forget-left { position: absolute; left: 0; top: 0; z-index: 10; width: 0.87rem; height: 100%; float: left; background: url("../img/other/fanhui@3x.png") no-repeat center; background-size: 0.35rem 0.4rem; }
+
+#forgert-btn { margin-top: .74rem; }
+
+#forgert-infor { position: relative; left: 0; top: 0; }
+#forgert-infor li:nth-of-type(2) input, #forgert-infor li:nth-of-type(3) input { width: 3.69rem; margin-right: 1.75rem; }
+#forgert-infor .forget-send-code { position: absolute; right: .22rem; top: .15rem; display: block; width: 1.78rem; height: .7rem; font-size: .28rem; color: #fff; background: #df463e; line-height: .7rem; text-align: center; border-radius: .1rem; }
+#forgert-infor .forget-country { background: url(../img/other/mianbaoxie_xi_tianziliao@3x.png) no-repeat 7.14rem center; background-size: .11rem .21rem; }
+#forgert-infor .forget-country span { color: #999; font-size: .32rem; margin-left: .23rem; }
+
+/*# sourceMappingURL=denglu.css.map */

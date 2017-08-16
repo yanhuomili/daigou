@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>订单查询</title>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<script src="../../js/rem.js"></script>
+		<script src="../../js/zepto.js"></script>
+		<script src="../../js/event.js"></script>
+		<script src="../../js/touch.js"></script>
+		<style type="text/css">
+			html,body{
+				width:100%;
+				height:100%;
+			}
+			header{
+				width: 100%;
+				height: 0.87rem;
+				line-height: 0.87rem;
+				font-size: 0.34rem;
+				color: #fff;
+				background: #df463e;
+				position: fixed;
+				text-align: center;
+				z-index: 100;
+			}
+			header span{
+				width: 0.87rem;
+			    height: 0.87rem;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    float: left;
+			    background: url(../../img/index/fanhui@3x.png) no-repeat center;
+			    background-size: 0.45rem;
+			}
+			.head-fill{
+				width:100%;
+				height:.87rem;
+			}
+			.problem-main{
+				width:100%;
+				/*overflow: hidden;*/
+				padding: .8rem .45rem 0;
+				box-sizing: border-box;
+			}
+			.problem-main .search{
+				width:100%;
+				height:.8rem;
+				display: flex;
+				justify-content: center;
+				
+			}
+			.problem-main .search input{
+				width:5.4rem;
+				height:.76rem;
+				border: .01rem solid #ccc;
+				background: #f1f1f1;
+				font-size: .28rem;
+				text-indent: .2rem;
+				outline: 0 none;
+			}
+			.problem-main .search span{
+				display: inline-block;
+				width:1.2rem;
+				height:.8rem;
+				background: #df463e url(../../img/search1.png) no-repeat center center;
+				background-size: .37rem;
+			}
+			.problem-main .detail{
+				width:100%;
+				padding: .25rem 0 0 .2rem;
+				box-sizing: border-box;
+				font-size: .28rem;
+			}
+			.problem-main .detail h4{
+				font-weight: normal;
+				display: flex;
+				align-items: center;
+			}
+			.problem-main .detail h4 i{
+				display: inline-block;
+				width:.37rem;
+				height: .32rem;
+				background: url(../../img/info.png) no-repeat center center;
+				background-size: .37rem .32rem;
+				margin-right: .2rem;
+			}
+			.detail .process{
+				width:100%;
+				color: #999;
+			}
+			.detail .process dl{
+				width:100%;
+				height:2rem;
+				display: flex;
+				justify-content: center;
+			}
+			.detail .process dl dt{
+				width:.28rem;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				margin-right: 1rem;
+				
+			}
+			.detail .process dl dt i{
+				display: inline-block;
+				width:.16rem;
+				height:.16rem;
+				border: .06rem solid #f1f1f1;
+				border-radius: 50%;
+				box-shadow: 0 .06rem .06rem #ccc;
+				background: #ccc;
+				margin-bottom: .1rem;
+			}
+			.detail .process dl dt b{
+				display: inline-block;
+				width:.02rem;
+				height:1.5rem;
+				background: #ddd;
+			}
+			.detail .process dl dt .active{
+				background: #008000;
+			}
+			.detail .process dl dd{
+				width:5.8rem;
+			}
+			.detail .process dl dd p{
+				line-height: 1.5;
+				margin-bottom: .3rem;
+			}
+			.detail .process dl dd em{
+				font-style:normal ;
+				margin-left: .2rem;
+			}
+			.activeP{
+				color: #333;
+			}
+			.activeSpan{
+				color: #666;
+			}
+			@media only screen and (min-width: 680px) {
+				.wrap,header{
+					width: 680px;
+					margin: 0 auto;
+				}
+				.problem-main .detail h4{
+					padding-left: 2rem;
+				}
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<span class="problem-back"></span>
+				<i class="lang_pro_1">订单查询</i>
+			</header>
+			<div class="head-fill"></div>
+			<div class="problem-main">
+				<div class="search">
+					<input type="text" class="left" name="" id="" placeholder="请输入您的查询单号" />
+					<span></span>
+				</div>
+				<div class="detail">
+					<h4><i></i>本数据由此APP提供</h4>
+					<div class="process">
+						<dl>
+							<dt>
+								<i class="active"></i>
+								<b></b>
+							</dt>
+							<dd>
+								<p class="activeP">金华市【义乌转运中心】，正在发往【广州夏良转运中心】</p>
+								<span class="activeSpan"><time>2017-7-26</time> <em>18:00</em></span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<i class=""></i>
+								<b></b>
+							</dt>
+							<dd>
+								<p>金华市【义乌转运中心】，正在发往【广州夏良转运中心】</p>
+								<span><time>2017-7-26</time> <em>18:00</em></span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<i class=""></i>
+								<b></b>
+							</dt>
+							<dd>
+								<p>金华市【义乌转运中心】，正在发往【广州夏良转运中心】</p>
+								<span><time>2017-7-26</time> <em>18:00</em></span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>
+								<i class=""></i>
+								<b></b>
+							</dt>
+							<dd>
+								<p>金华市【义乌转运中心】，正在发往【广州夏良转运中心】</p>
+								<span><time>2017-7-26</time> <em>18:00</em></span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<!--添加常见问题的内容-->
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(".problem-back").on("tap",function(){
+			//在这里填写返回链接
+			window.location.href = "install.html"
+		})
+		autoLanguage();
+		function autoLanguage(){
+			var getItem = localStorage.getItem("language");
+			if(localStorage.getItem("language") == "0"){
+				$(".lang_pro_1").text("联系客服")
+				$(".lang_pro_2").text("发送")
+			}else if(localStorage.getItem("language") == "1"){
+				$(".lang_pro_1").text("Contact Customer Service")
+				$(".lang_pro_2").text("Send")
+			}else if(localStorage.getItem("language") == "2"){
+				$(".lang_pro_1").text("Perkhidmatan Pelanggan")
+				$(".lang_pro_2").text("Hantar")
+			}
+			
+			
+			
+		};
+	</script>
+</html>

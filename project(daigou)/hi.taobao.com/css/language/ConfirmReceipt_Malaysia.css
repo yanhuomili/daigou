@@ -1,0 +1,55 @@
+.lang_confirm_1{
+	position:relative;
+}
+.lang_confirm_1:after{
+	content:"Pengesahan Penerimaan";
+	position:absolute;
+	width:300%;
+	left:-1rem;;
+	background:#DE463E;
+}
+.lang_confirm_3{
+	position: relative;
+}
+.lang_confirm_3:after{
+	content:"Pengesahan penerimaan";
+	position:absolute;
+	width:100%;
+	left:0.2rem;
+	background:#fff;
+}
+.lang_confirm_4{
+	position: relative;
+}
+.lang_confirm_4:after{
+	content:"Produk anda telah menerima disahkan, anda boleh pulang ke rumah atau untuk melihat butiran pesanan";
+	position:absolute;
+	top:0;
+	left:0.44rem;
+	background:#fff;
+}
+.sub-list-info{
+	height:6.4rem;
+}
+.lang_confirm_5{
+	position: relative;
+}
+.lang_confirm_5:after{
+	content:"Rumah";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	border-radius:.2rem;
+}
+.lang_confirm_6{
+	position: relative;
+}
+.lang_confirm_6:after{
+	content:"Lihat Pesanan";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	border-radius:.2rem;
+}

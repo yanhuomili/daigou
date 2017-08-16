@@ -1,0 +1,71 @@
+.lang_active_1:after{
+	content:"LogMasuk";
+	display: block;
+	position:absolute;
+	top:0;
+	left:43%;
+	background:#DF463E;
+}
+.lang_active_2:after{
+	content:"Pendaftaran" ;
+	display: block;
+	position:absolute;
+	top:0;
+	right:.4rem;
+	background:#DE463E;
+}
+.lang_active_3:after{
+	content:"Akaun" ;
+	display: block;
+	position:absolute;
+	top:0;
+	background:#fff;
+}
+.lang_active_4:after{
+	content:"KataLaluan" ;
+	display: block;
+	position:absolute;
+	top:0;
+	background:#fff;
+}
+.lang_active_5{
+	float: left;
+	width:2.8rem;
+	height:100%;
+	position:relative;
+}
+.lang_active_5:after{
+	content:"Lupa kata laluan anda" ;
+	display: block;
+	position:absolute;
+	top:0;
+	background:#EDEDED;
+}
+.lang_active_6{
+	position: relative;
+}
+.lang_active_6:after{
+	content: "LogMasuk";
+	display: block;
+	position:absolute;
+	background:#DF463E;
+	top:0;
+	left:41%;
+}
+.lang_active_0{
+	position:relative;
+	
+}
+.lang_active_0:after{
+	content:"Malaysia";
+	display: block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	background:#DE463E;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+

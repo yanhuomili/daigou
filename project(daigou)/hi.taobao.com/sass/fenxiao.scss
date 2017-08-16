@@ -1,0 +1,160 @@
+#my-wallet,
+#fenxiao-top{
+    width:100%;
+    height:5.22rem;
+    background:url(../img/my/wodefenxiao_beijing@3x.png) ;
+    background-size:7.5rem 5.22rem;
+    .wallet-background,
+    .fenxiao-background{
+        width:100%;
+        height:3.64rem;
+        border-bottom:1px solid #ef697b;
+        .wallet-head,
+        .top-head{
+            width:100%;
+            height:.81rem;
+            position:relative;
+            left:0;
+            top:0;
+            line-height:.81rem;
+            text-align:center;
+            font-size:.32rem;
+            color:#fff;
+            .wallet-back,
+            .top-back{
+                width:.87rem; 
+                height:.81rem;
+                float:left;
+                position:absolute;
+                left:0;
+                top:0;
+                background:url(../img/index/fanhui@3x.png) no-repeat center;
+                background-size:.45rem .45rem;
+            }
+            .top-ruler{
+                width:1.37rem;
+                height:.81rem;
+                position:absolute;
+                right:0;
+                top:0;
+            }
+        }
+        p:nth-of-type(1){
+            width:100%;
+            height:.26rem;
+            line-height:.26rem;
+            text-align:center;
+            font-size:.26rem;
+            color:#fff;
+            margin:.48rem 0 .34rem 0;
+        }
+        p:nth-of-type(2){
+            width:100%;
+            height:.66rem;
+            line-height:.66rem;
+            text-align:center;
+            font-size:.66rem;
+            color:#fff;
+        }
+    }
+    .wallet-bg,
+    .fenxiao-bg{
+        width:100%;
+        height:1.58rem;
+        padding:0 .51rem;
+        box-sizing:border-box;
+        ul{
+            width:100%;
+            height:100%;
+            li{
+                width:50%;
+                height:100%;
+                float:left;
+                color:#fff;
+                p:nth-of-type(1){
+                    width:100%;
+                    height:.22rem;
+                    line-height:.22rem;
+                    font-size:.22rem;
+                    margin:.3rem 0 .23rem 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+                p:nth-of-type(2){
+                    width:100%;
+                    height:.5rem;
+                    line-height:.5rem;
+                    font-size:.5rem;
+                }
+            }
+            .fenxiao-fans{
+                padding-left:.64rem;
+                box-sizing:border-box;
+            }
+            .wallet-malai{
+                padding-left:.24rem;
+                box-sizing:border-box;
+            }
+        }
+    }
+}
+#fenxiao-list-title{
+    width:100%;
+    height:.83rem;
+    font-size:.26rem;
+    color:#999;
+    border-bottom:1px solid #e1e1e1;
+    padding:0 .5rem 0 .37rem;
+    box-sizing:border-box;
+    float:left;
+    li{
+        height:100%;
+        line-height:.83rem;
+        text-align:center;
+        float:left;
+    }
+}
+.common-1{
+    width:2.07rem;
+}
+.common-2{
+    width:2.59rem;
+}
+.common-3{
+    width:1.95rem;
+}
+#fenxiao-list{
+    width:100%;
+    overflow:hidden;
+    #awrapper{
+        width:100%;
+    }
+    .fenxiao-list-peo{
+        width:100%;
+        height:.99rem;
+        border-bottom:1px solid #e1e1e1;
+        padding:0 .5rem 0 .37rem;
+        box-sizing:border-box;
+        color:#333;
+        li{
+            height:100%;
+            line-height:.99rem;
+            text-align:center;
+            float:left;
+            overflow:hidden;
+            white-space:nowrap;
+            text-overflow:ellipsis;
+        }
+        .common-1{
+            font-size:.24rem;
+        }
+        .common-2{
+            font-size:.3rem;
+        }
+        .common-3{
+            font-size:.24rem;
+            color:#e36762;
+        }
+    }
+}

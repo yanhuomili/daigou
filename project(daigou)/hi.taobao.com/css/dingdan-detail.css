@@ -1,0 +1,36 @@
+#detail-main .detail-head { width: 100%; height: 0.87rem; background: #df463e; line-height: 0.87rem; text-align: center; color: #fff; position: fixed; left: 0; top: 0; z-index: 1000; font-size: 0.34rem; }
+#detail-main .detail-head .detail-back { width: 0.87rem; height: 0.87rem; position: absolute; left: 0; top: 0; background: url("../img/index/fanhui@3x.png") no-repeat center; background-size: 0.45rem; }
+#detail-main .detail-fill { width: 100%; height: .87rem; }
+#detail-main ul { width: 7.1rem; overflow: hidden; background: #fff; border-radius: .2rem; margin: 0 auto; margin-top: .2rem; }
+#detail-main ul p { width: 100%; height: .86rem; line-height: .86rem; font-size: .28rem; color: #666; border-bottom: 1px solid #ededed; padding-left: .74rem; box-sizing: border-box; }
+#detail-main .get-people .get-top { background: url(../img/my/shouhuoren_dingdan@3x.png) no-repeat 0.28rem center; background-size: .4rem; }
+#detail-main .get-people .get-name { width: 100%; height: .82rem; line-height: .82rem; font-size: .34rem; color: #333; padding: 0 .53rem 0 .74rem; box-sizing: border-box; margin-top: .1rem; }
+#detail-main .get-people .get-name .get-tel { float: right; margin-right: .16rem; }
+#detail-main .get-people .get-address { width: 100%; height: .8rem; line-height: .4rem; font-size: .3rem; color: #333; padding: 0 .53rem 0 .74rem; box-sizing: border-box; margin-bottom: .35rem; }
+#detail-main .dingdan-info .info-top { background: url(../img/my/dingdanxinxi_dingdan@3x.png) no-repeat 0.28rem center; background-size: .4rem; margin-bottom: .18rem; }
+#detail-main .dingdan-info li { width: 100%; height: .61rem; line-height: .61rem; font-size: .3rem; color: #999; padding-left: .74rem; box-sizing: border-box; }
+#detail-main .dingdan-info li span { color: #333; margin-left: .47rem; }
+#detail-main .dingdan-info li:last-child { margin-bottom: .18rem; }
+#detail-main .product-message .message-top { background: url(../img/my/dingdanxinxi_dingdan@3x.png) no-repeat 0.28rem center; background-size: .4rem; margin-bottom: .1rem; }
+#detail-main .product-message .product-list { width: 100%; overflow: hidden; }
+#detail-main .product-message .product-list dl { width: 100%; height: 1.78rem; padding: .13rem .48rem 0 .19rem; box-sizing: border-box; }
+#detail-main .product-message .product-list dl dt { width: 1.52rem; height: 1.52rem; float: left; margin-right: .31rem; }
+#detail-main .product-message .product-list dl dt img { width: 100%; height: 100%; float: left; }
+#detail-main .product-message .product-list dl dd { width: 4.6rem; float: left; }
+#detail-main .product-message .product-list dl .product-list-title { height: .37rem; line-height: .37rem; font-size: .28rem; color: #333; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#detail-main .product-message .product-list dl .product-list-banben { height: .39rem; line-height: .39rem; font-size: .24rem; color: #999; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin-bottom: .14rem; }
+#detail-main .product-message .product-list dl .product-list-price { height: .75rem; line-height: .75rem; color: #666; }
+#detail-main .product-message .product-list dl .product-list-price .list-span { float: left; font-size: .3rem; }
+#detail-main .product-message .product-list dl .product-list-price .list-span i { font-size: .22rem; }
+#detail-main .product-message .product-list dl .product-list-price .list-shu { float: right; font-size: .32rem; }
+#detail-main .product-message .product-list dl .product-list-price .list-shu i { font-size: .28rem; }
+#detail-main .product-message .message-bottom { width: 100%; height: .91rem; border-top: 1px solid #ededed; line-height: .91rem; font-size: .26rem; color: #999; padding: 0 .27rem 0 .24rem; box-sizing: border-box; margin-top: .11rem; }
+#detail-main .product-message .message-bottom .meass-price { float: right; font-size: .26rem; color: #333; }
+#detail-main .product-message .message-bottom .meass-price i { color: #DF463E; }
+#detail-main .product-message .message-bottom .meass-price i:nth-of-type(1) { font-size: .26rem; }
+#detail-main .product-message .message-bottom .meass-price .meass-price-shu { font-size: .38rem; }
+#detail-main #queren, #detail-main #look { width: 7.06rem; height: .96rem; border: 2px solid #df463e; line-height: .96rem; text-align: center; font-size: .34rem; margin: 0 auto; border-radius: .15rem; }
+#detail-main #queren { margin-top: .48rem; background: #df463e; color: #fff; }
+#detail-main #look { margin-top: .2rem; color: #df463e; margin-bottom: .66rem; }
+
+/*# sourceMappingURL=dingdan-detail.css.map */

@@ -1,0 +1,55 @@
+.lang_confirm_1{
+	position:relative;
+}
+.lang_confirm_1:after{
+	content:"Confirm Receipt";
+	position:absolute;
+	width:200%;
+	left:-0.54rem;;
+	background:#DE463E;
+}
+.lang_confirm_3{
+	position: relative;
+}
+.lang_confirm_3:after{
+	content:"Confirm receipt";
+	position:absolute;
+	width:100%;
+	left:0.2rem;
+	background:#fff;
+}
+.lang_confirm_4{
+	position: relative;
+}
+.lang_confirm_4:after{
+	content:"Your goods have been confirmed receipt, you can return to the home page or view the order details";
+	position:absolute;
+	top:0;
+	left:0.44rem;
+	background:#fff;
+}
+.sub-list-info{
+	height:6.4rem;
+}
+.lang_confirm_5{
+	position: relative;
+}
+.lang_confirm_5:after{
+	content:"Back Home";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	border-radius:.2rem;
+}
+.lang_confirm_6{
+	position: relative;
+}
+.lang_confirm_6:after{
+	content:"Check Order";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	border-radius:.2rem;
+}

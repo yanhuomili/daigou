@@ -1,0 +1,100 @@
+@charset "UTF-8";
+html { background: #ededed; }
+
+#daigou-main { width: 100%; height: 2rem; position: fixed; z-index: 10; background: #fff; }
+#daigou-main #daigou-search { width: 100%; height: 0.97rem; padding: 0.13rem 0 0 0.19rem; box-sizing: border-box; position: relative; }
+#daigou-main #daigou-search input { border: 0; width: 7.08rem; height: 0.66rem; float: left; border: 1px solid #dcdcdc; background: #dfdfdf url(../img/index/daigou-top.png) no-repeat 0.8rem center; background-size: 2px .29rem; padding: 0 .83rem 0 1.48rem; box-sizing: border-box; color: #000; outline: none; }
+#daigou-main #daigou-search .daigou-shuaxin { position: absolute; float: right; width: .81rem; height: .62rem; right: .24rem; top: 0.16rem; background: url(../img/index/daigou-shuaxin.png) no-repeat center; background-size: .39rem .39rem; }
+#daigou-main #daigou-search ul { position: absolute; left: .21rem; top: .16rem; width: 1.48rem; height: .62rem; }
+#daigou-main #daigou-search ul li:nth-of-type(1) { width: .68rem; height: 100%; background: url(../img/index/daigou-xing.png) no-repeat center; background-size: .4rem .39rem; float: left; }
+#daigou-main #daigou-search ul li:nth-of-type(2) { width: .54rem; height: 100%; background: url(../img/index/daigou-dun.png) no-repeat center; background-size: .34rem .36rem; float: right; }
+#daigou-main #daigou-nav { width: 100%; height: .84rem; }
+#daigou-main #daigou-nav ul { width: 100%; height: 100%; padding-top: .18rem; box-sizing: border-box; position: relative; overflow: hidden; margin-bottom: .11rem; }
+#daigou-main #daigou-nav ul li { width: 2.46rem; height: .66rem; float: left; line-height: .66rem; font-size: .3rem; color: #000; text-align: center; position: relative; }
+#daigou-main #daigou-nav ul li:nth-of-type(2) { border-left: 2px solid #e3e3e3; border-right: 2px solid #e3e3e3; }
+#daigou-main #daigou-nav ul .nav-action { color: #df463e; }
+#daigou-main #daigou-nav ul .nav-action:before { display: block; content: ""; width: 2.5rem; height: .05rem; background: url(../img/index/daigou-nav.png) repeat-x; position: absolute; top: -.18rem; left: 0; }
+
+.jibenxinxi .swiper-container { z-index: 10000; }
+.jibenxinxi .swiper-slide a { float: left; width: 7.5rem; height: 7.32rem; }
+.jibenxinxi .swiper-slide img { width: 100%; height: 100%; float: left; }
+.jibenxinxi .swiper-pagination-bullet { width: .18rem; height: .18rem; background: #c0d383; margin: 5rem; bottom: 2rem; }
+.jibenxinxi .swiper-pagination-bullet-active { background: #dd2727; }
+.jibenxinxi .jibenxinxi-tab { z-index: 10000; }
+
+.swiper-slide { width: 100%; overflow: hidden; }
+
+.tab-content { width: 100%; overflow: hidden; }
+
+.daigou-title { width: 100%; height: .88rem; line-height: .44rem; font-size: .32rem; color: #000; padding: 0 .2rem 0 .2rem; box-sizing: border-box; margin: .2rem 0 .3rem 0; overflow: hidden; word-break: break-word; }
+
+#daigou-fill { width: 100%; height: 1rem; }
+
+#daigou-footer { width: 100%; height: 1rem; background: #DF463E; color: #fff; font-size: .34rem; line-height: 1rem; text-align: center; position: fixed; left: 0; bottom: 0; z-index: 10000; }
+
+/*补充*/
+.diagou-content { width: 100%; overflow: hidden; padding: 0 0.2rem; box-sizing: border-box; background: #fff; }
+
+.diagou-price dd:nth-of-type(1) { width: 100%; height: .42rem; line-height: .42rem; color: #dd2727; }
+
+.diagou-price dd:nth-of-type(1) span:nth-of-type(1) { float: left; width: auto; height: 100%; font-size: .26rem; }
+
+.diagou-price dd:nth-of-type(1) span:nth-of-type(2) { float: left; width: auto; height: 100%; font-size: .34rem; }
+
+.diagou-price dd:nth-of-type(1) span:nth-of-type(3) { float: left; width: 1.05rem; height: .28rem; background: #fb6878; color: #fff; margin-top: .14rem; margin-left: .15rem; line-height: .28rem; font-size: .26rem; }
+
+.diagou-price dd:nth-of-type(2) { width: 100%; height: .7rem; line-height: .7rem; color: #888; font-size: .24rem; }
+
+.diagou-price dd:nth-of-type(3) { width: 100%; height: .26rem; color: #888; font-size: .24rem; line-height: .26rem; }
+
+.diagou-price dd:nth-of-type(3) span { float: left; width: 33.333%; height: 100%; }
+
+.diagou-price dd:nth-of-type(3) span:nth-of-type(2) { text-align: center; }
+
+.diagou-price dd:nth-of-type(3) span:nth-of-type(3) { text-align: right; }
+
+/*图片详情*/
+.pic-title-conf { width: 100%; height: 1.84rem; border-bottom: 2px solid #d6d6d6; }
+
+.pic-title-conf p { width: 100%; height: .98rem; line-height: .98rem; text-align: center; font-size: .3rem; color: #051b28; margin-top: .86rem; float: left; }
+
+.same-recommend { width: 100%; overflow: hidden; margin-top: .2rem; border-bottom: 2px solid #d6d6d6; }
+
+.same-recom { width: 100%; height: .8rem; line-height: .8rem; padding-left: .26rem; box-sizing: border-box; font-size: .24rem; background: #fff; color: #727272; }
+
+.same { width: 100%; overflow: hidden; }
+
+.same dd { width: 32.8%; height: 3.84rem; float: left; }
+
+.same dd:nth-of-type(2) { margin: 0 .06rem; }
+
+.img { width: 100%; height: 2.36rem; background: red; }
+
+.same dd p:nth-of-type(1) { width: 100%; height: .74rem; line-height: .38rem; font-size: .26rem; color: #243742; padding-left: .12rem; box-sizing: border-box; }
+
+.same dd p:nth-of-type(2) { width: 100%; height: .64rem; color: #dd2727; font-size: .26rem; line-height: .64rem; padding-left: .12rem; box-sizing: border-box; }
+
+.shop-activity { width: 100%; overflow: hidden; margin-top: .2rem; border-bottom: 2px solid #d6d6d6; padding-bottom: .18rem; background: #fff; }
+
+.product-picture { width: 100%; overflow: hidden; background: #fff; margin-top: 0.2rem; }
+
+.topic { width: 100%; overflow: hidden; padding: .2rem; box-sizing: border-box; box-sizing: border-box; background: #fff; }
+
+.topic dl { width: 100%; overflow: hidden; padding-bottom: .5rem; border-top: 2px solid #e5e5e5; border-bottom: 2px solid #e5e5e5; }
+
+.topic dt { width: 100%; height: .69rem; font-size: .24rem; color: #999; line-height: .69rem; margin-top: .35rem; }
+
+.topic dd { word-wrap: break-word; }
+
+.topic dt span:nth-of-type(2) { float: right; }
+
+/*用户评论*/
+.topic dd:nth-of-type(1) { width: 100%; overflow: hidden; line-height: .44rem; font-size: .26rem; color: #051b28; }
+
+/*掌柜回复*/
+.topic dd:nth-of-type(2) { width: 100%; overflow: hidden; font-size: .26rem; line-height: .38rem; padding: .24rem .16rem; box-sizing: border-box; background: #f0f0f0 url(../img/index/topic.png) no-repeat left top; background-size: 7.1rem .24rem; border-radius: 0 0 .08rem .08rem; }
+
+/*用户的图片*/
+.topic dd:nth-of-type(3) { width: 100%; overflow: hidden; padding: 0.12rem 0; box-sizing: border-box; font-size: .28rem; }
+
+/*# sourceMappingURL=daigou.css.map */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>常见问题</title>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<script src="../../js/rem.js"></script>
+		<script src="../../js/zepto.js"></script>
+		<script src="../../js/event.js"></script>
+		<script src="../../js/touch.js"></script>
+		<style type="text/css">
+			html,body{
+				width:100%;
+				height:100%;
+			}
+			header{
+				width: 100%;
+				height: 0.87rem;
+				line-height: 0.87rem;
+				font-size: 0.34rem;
+				color: #fff;
+				background: #df463e;
+				position: relative;
+				text-align: center;
+			}
+			header span{
+				width: 0.87rem;
+			    height: 0.87rem;
+			    position: absolute;
+			    left: 0;
+			    top: 0;
+			    float: left;
+			    background: url(../../img/index/fanhui@3x.png) no-repeat center;
+			    background-size: 0.45rem;
+			}
+			.problem-main{
+				width:100%;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<span class="problem-back"></span>
+			<i class="lang_pro_1">常见问题</i>
+		</header>
+		<div class="problem-main">
+			<!--添加常见问题的内容-->
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(".problem-back").on("tap",function(){
+			//在这里填写返回链接
+			window.location.href = "install.html"
+		})
+		autoLanguage();
+		function autoLanguage(){
+			var getItem = localStorage.getItem("language");
+			if(localStorage.getItem("language") == "0"){
+				$(".lang_pro_1").text("常见问题")
+			}else if(localStorage.getItem("language") == "1"){
+				$(".lang_pro_1").text("Common Problem")
+			}else if(localStorage.getItem("language") == "2"){
+				$(".lang_pro_1").text("Soalan-soalan yang kerap ditanya")
+			}
+		};
+	</script>
+</html>

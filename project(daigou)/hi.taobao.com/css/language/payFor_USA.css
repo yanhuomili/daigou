@@ -1,0 +1,138 @@
+.lang_payFor_1{
+	position: relative;
+}
+.lang_payFor_1:after{
+	content:"Payment";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+}
+.lang_payFor_2{
+	position: relative;
+}
+.lang_payFor_2:after{
+	content:"Order Information";
+	position:absolute;
+	width:100%;
+	left:0.2rem;
+	background:#ededed;
+}
+.lang_payFor_3{
+	position: relative;
+}
+.lang_payFor_3:after{
+	content:"Payment Completed";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_payFor_4{
+	position: relative;
+}
+.lang_payFor_4:after{
+	content:"Payment Successful";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#DE463E;
+}
+.lang_payFor_5{
+	position: relative;
+}
+.lang_payFor_5:after{
+	content:"Purchasing Instructions";
+	position:absolute;
+	left:0.44rem;
+	background:#fff;
+}
+.lang_payFor_6{
+	position: relative;
+}
+
+.lang_payFor_6:after{
+	content:"We will arrange for delivery as soon as possible, please keep the phone communication unobstructed, so that the first time the little brother can contact you.";
+	position:absolute;
+	top:0;
+	left:0.44rem;
+	background:#fff;
+}
+#pay-success .pay-info{
+	height:6.4rem;
+}
+.lang_payFor_7{
+	position: relative;
+}
+.lang_payFor_7:after{
+	content:"Back Home";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	border-radius:.2rem;
+}
+.lang_payFor_8{
+	position: relative;
+}
+.lang_payFor_8:after{
+	content:"Check Order";
+	position:absolute;
+	width:100%;
+	left:0;
+	background:#fff;
+	border-radius:.2rem;
+}
+.lang_recharge_13{
+	position:relative;
+}
+.lang_recharge_13:after{
+	content:"Pay way";
+	position:absolute;
+	width:100%;
+	background:#ededed;
+	left:0.2rem;
+}
+.lang_recharge_14{
+	position:relative;
+}
+.lang_recharge_14:after{
+	content:"My wallet";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_15{
+	position:relative;
+}
+.lang_recharge_15:after{
+	content:"Malaysian online banking";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_16{
+	position:relative;
+}
+.lang_recharge_16:after{
+	content:"Pay with Ali-Pay";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}
+.lang_recharge_17{
+	position:relative;
+}
+.lang_recharge_17:after{
+	content:"WeChat payment";
+	position:absolute;
+	width:70%;
+	background:#fff;
+	left:0.87rem;
+}

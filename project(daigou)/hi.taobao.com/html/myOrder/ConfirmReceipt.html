@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html style="background:#ededed;">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/logistics.css" />
+
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+
+	</head>
+
+	<body>
+		<!--确认收货-->
+		<section id="logistics-fact">
+			<header class="fact-header">
+				<span class="fact-back"></span> <i class="lang_confirm_1">确认收货</i>
+			</header>
+
+			<div class="sub-list-info">
+				<div class="sub-list-info-main">
+					<img src="../../img/my/querenshouhuo.png" />
+					<p class="lang_confirm_2">您已确认收货！</p>
+				</div>
+				<p class="shuoming lang_confirm_3">确认收货</p>
+				<p class="shuoming-content  lang_confirm_4">您的商品已经确认收货，您可以返回首页或查看订单详情</p>
+			</div>
+			<div id="back-souye" class=" lang_confirm_5">返回首页</div>
+			<div id="look-dingdan" class=" lang_confirm_6">查看订单</div>
+		</section>
+	</body>
+	<script type="text/javascript" src="../../js/swiper.js"></script>
+	<script type="text/javascript" src="../../js/iscroll.js"></script>
+	<script type="text/javascript">
+		//返回
+		$(".fact-back").on("tap",function(){
+			window.location.href = "myOrder.html"
+		})
+		//语言
+		autoLanguage();
+
+		function autoLanguage() {
+			var getItem = localStorage.getItem("language");
+			if(localStorage.getItem("language") == "0") {
+				$("head link:last-child").remove();
+				$(".lang_confirm_2").text("您已确认收货！")
+			} else if(localStorage.getItem("language") == "1") {
+				$("head link:last-child").remove();
+				$(".lang_confirm_2").text("You have confirmed receipt!")
+				confirmReceiptUSA()
+			} else if(localStorage.getItem("language") == "2") {
+				$("head link:last-child").remove();
+				$(".lang_confirm_2").text("Anda perlu mengesahkan penerimaan!")
+				confirmReceiptMalaysia()
+			}
+		};
+		function confirmReceiptUSA() {
+			var link = '<link rel="stylesheet" type="text/css" href="../../css/language/ConfirmReceipt_USA.css"/>';
+			$("head").append(link)
+		}
+
+		function confirmReceiptMalaysia() {
+			var link = '<link rel="stylesheet" type="text/css" href="../../css/language/ConfirmReceipt_Malaysia.css"/>';
+			$("head").append(link)
+		}
+	</script>
+
+</html>

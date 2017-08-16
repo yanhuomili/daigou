@@ -1,0 +1,115 @@
+body, html { background: #ededed; }
+
+#affirm-header, #pay-header, #pay-success-header, #perfect-header, #sub-list-header { width: 100%; height: 0.87rem; border-bottom: 1px solid #e69490; background: #df463e; position: relative; font-size: 0.32rem; color: #fff; line-height: 0.87rem; text-align: center; }
+#affirm-header .affirm-back, #affirm-header .pay-back, #affirm-header .pay-success-back, #affirm-header .perfect-back, #affirm-header .sub-list-back, #pay-header .affirm-back, #pay-header .pay-back, #pay-header .pay-success-back, #pay-header .perfect-back, #pay-header .sub-list-back, #pay-success-header .affirm-back, #pay-success-header .pay-back, #pay-success-header .pay-success-back, #pay-success-header .perfect-back, #pay-success-header .sub-list-back, #perfect-header .affirm-back, #perfect-header .pay-back, #perfect-header .pay-success-back, #perfect-header .perfect-back, #perfect-header .sub-list-back, #sub-list-header .affirm-back, #sub-list-header .pay-back, #sub-list-header .pay-success-back, #sub-list-header .perfect-back, #sub-list-header .sub-list-back { float: left; width: 0.87rem; height: 0.87rem; position: absolute; left: 0; top: 0; background: url("../img/index/fanhui@3x.png") no-repeat center; background-size: 0.45rem 0.45rem; z-index: 1000; }
+
+#perfect-main { width: 100%; overflow: hidden; }
+#perfect-main ul { width: 100%; overflow: hidden; }
+#perfect-main ul li { width: 100%; height: 1rem; margin-bottom: 2px; padding: 0 0.25rem 0 0.43rem; box-sizing: border-box; font-size: 0.28rem; color: #666; line-height: 1rem; background: #fff; float: left; }
+#perfect-main ul li :-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #999; }
+#perfect-main ul li ::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #999; }
+#perfect-main ul li input:-ms-input-placeholder, #perfect-main ul li input::-webkit-input-placeholder { color: #999; }
+#perfect-main ul li input { color: #999; }
+#perfect-main ul li .perfect-put { border: 0; width: 4.3rem; height: 1rem; font-size: 0.3rem; color: #999; margin-right: 0.9rem; padding-left: 0.1rem; box-sizing: border-box; float: right; outline: none; }
+#perfect-main ul li:nth-of-type(3) { background: #fff url("../img/other/mianbaoxie_xi_tianziliao@3x.png") no-repeat 7.14rem center; background-size: 0.11rem 0.21rem; }
+
+#affirm-footer, #perfect-footer { position: fixed; left: 0; bottom: 0; width: 100%; height: 1rem; font-size: 0.36rem; text-align: center; line-height: 1rem; color: #fff; background: #df463e; }
+
+#affirm-main { width: 100%; overflow: hidden; }
+#affirm-main .affirm-address { width: 100%; height: 1.7rem; background: #fff url("../img/other/mianbaoxie_you_gouwuche@3x.png") no-repeat 7.14rem center; background-size: 0.13rem 0.22rem; }
+#affirm-main .affirm-address .dingwei { float: left; width: 1.03rem; height: 100%; background: url("../img/other/dingwei_gouwuche@3x.png") no-repeat center; background-size: 0.37rem 0.49rem; }
+#affirm-main .affirm-address p { width: 5.62rem; height: 0.26rem; font-size: 0.26rem; line-height: 0.26rem; color: #333; float: left; padding-left: 8px; padding-right: 4px; box-sizing: border-box; margin: 0.32rem 0.8rem 0.1rem 0; }
+#affirm-main .affirm-address p span { float: right; }
+#affirm-main .affirm-address .affirm-content { padding-left: 8px; box-sizing: border-box; width: 5.62rem; height: 0.76rem; line-height: 0.38rem; font-size: 0.28rem; color: #333; float: left; }
+#affirm-main .affirm-p { width: 100%; height: 0.26rem; font-size: 0.26rem; line-height: 0.26rem; color: #999; padding-left: 0.22rem; box-sizing: border-box; margin: 0.57rem 0 0.27rem; }
+#affirm-main .affirm-list { width: 7.1rem; margin: 0 auto; background: #fff; border-radius: 0.15rem; padding: 0.08rem 0 0.09rem 0.01rem; margin-bottom: 0.15rem; overflow: hidden; }
+#affirm-main .affirm-list li { width: 6.34rem; height: 2.2rem; margin: 0.13rem; float: left; }
+#affirm-main .affirm-list li a { width: 2.2rem; height: 2.2rem; float: left; margin-right: 0.32rem; }
+#affirm-main .affirm-list li a img { width: 100%; height: 100%; float: left; }
+#affirm-main .affirm-list li .affirm-title { width: 3.82rem; height: 0.32rem; line-height: 0.32rem; font-size: 0.32rem; color: #333; margin: 0.19rem 0 0.22rem; word-break: break-all; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; float: left; }
+#affirm-main .affirm-list li .affirm-press { width: 3.82rem; height: 0.26rem; line-height: 0.26rem; font-size: 0.26rem; color: #999; word-break: break-all; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; float: left; margin-bottom: 0.61rem; }
+#affirm-main .affirm-list li .affirm-money { width: 3.82rem; height: 0.45rem; line-height: 0.45rem; color: #666; float: left; }
+#affirm-main .affirm-list li .affirm-money i:nth-of-type(1) { font-size: 0.22rem; float: left; }
+#affirm-main .affirm-list li .affirm-money i:nth-of-type(2) { font-size: 0.4rem; float: right; margin-right: 0.06rem; color: #2b363c; }
+#affirm-main .affirm-list li .affirm-money span:nth-of-type(1) { font-size: 0.34rem; float: left; margin-left: 0.06rem; }
+#affirm-main .affirm-list li .affirm-money span:nth-of-type(2) { font-size: 0.4rem; color: #2b363c; float: right; }
+#affirm-main .affirm-send { width: 7.1rem; height: 1rem; border-radius: 0.15rem; margin: 0 auto; line-height: 1rem; font-size: 0.32rem; color: #999; padding: 0 0.6rem 0 0.26rem; box-sizing: border-box; background: #fff url("../img/other/mianbaoxie_you_gouwuche@3x.png") no-repeat 6.74rem center; background-size: 0.13rem 0.22rem; margin-bottom: 0.29rem; }
+#affirm-main .affirm-send span { float: right; color: #333; }
+#affirm-main .affirm-price { width: 100%; overflow: hidden; padding: 0 0.32rem 0 0.29rem; box-sizing: border-box; margin-bottom: 0.17rme; }
+#affirm-main .affirm-price li { width: 100%; height: 0.56rem; line-height: 0.56rem; font-size: 0.28rem; float: left; color: #666; }
+#affirm-main .affirm-price li span { float: right; font-size: 0.34rem; }
+#affirm-main .affirm-price li span i { font-size: 0.26rem; }
+#affirm-main .affirm-price li:nth-of-type(4) { font-size: 0.32rem; color: #333; }
+#affirm-main .affirm-price li:nth-of-type(4) span { color: #df463e; font-size: 0.34rem; }
+#affirm-main .affirm-price li:nth-of-type(4) span i { font-size: 0.26rem; }
+
+#affirm-fill { width: 100%; height: 1rem; }
+
+#affirm-postage { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: rgba(0, 0, 0, 0.5); }
+#affirm-postage ul { width: 6.6rem; height: 4.98rem; background: #fff; border-radius: 0.2rem; padding: 0.42rem 0.63rem 0 0.52rem; box-sizing: border-box; margin: 3.39rem auto 0; }
+#affirm-postage ul li { width: 100%; height: 1.39rem; float: left; }
+#affirm-postage ul li .affitm-lump { width: 4.46rem; height: 100%; float: left; }
+#affirm-postage ul li .affitm-lump p:nth-of-type(1) { width: 100%; height: 0.36rem; font-size: 0.36rem; line-height: 0.36rem; color: #333; float: left; margin: 0.28rem 0 0.16rem; }
+#affirm-postage ul li .affitm-lump p:nth-of-type(2) { width: 100%; height: 0.32rem; font-size: 0.32rem; line-height: 0.32rem; color: #999; float: left; }
+#affirm-postage ul li span { float: right; width: 0.45rem; height: 100%; background: url("../img/other/gou_kui_gouwuche@3x.png") no-repeat center; background-size: 0.45rem 0.45rem; }
+#affirm-postage ul li .affitm-action { background: url("../img/other/gou_hong_gouwuche@3x.png") no-repeat center; background-size: 0.45rem 0.45rem; }
+
+#affirm-postage { display: none; }
+
+#pay-list, #submit-list { display: block; }
+
+#pay-success, #sub-list-success { display: none; }
+#pay-success .pay-info, #pay-success .sub-list-info, #sub-list-success .pay-info, #sub-list-success .sub-list-info { width: 7.1rem; height: 5.69rem; margin: 0.2rem auto 0; background: #fff; border-radius: 0.2rem; }
+#pay-success .pay-info .payt-info-main, #pay-success .pay-info .sub-list-info-main, #pay-success .sub-list-info .payt-info-main, #pay-success .sub-list-info .sub-list-info-main, #sub-list-success .pay-info .payt-info-main, #sub-list-success .pay-info .sub-list-info-main, #sub-list-success .sub-list-info .payt-info-main, #sub-list-success .sub-list-info .sub-list-info-main { width: 7.1rem; height: 3.47rem; border-radius: 0.2rem; background: url("../img/my/beijing_wode@3x.png") no-repeat center; background-size: 7.1rem 3.47rem; }
+#pay-success .pay-info .payt-info-main img, #pay-success .pay-info .sub-list-info-main img, #pay-success .sub-list-info .payt-info-main img, #pay-success .sub-list-info .sub-list-info-main img, #sub-list-success .pay-info .payt-info-main img, #sub-list-success .pay-info .sub-list-info-main img, #sub-list-success .sub-list-info .payt-info-main img, #sub-list-success .sub-list-info .sub-list-info-main img { width: 1.44rem; height: 1.44rem; margin: 0.58rem 0 0.34rem 2.87rem; }
+#pay-success .pay-info .payt-info-main .pay-img, #pay-success .pay-info .sub-list-info-main .pay-img, #pay-success .sub-list-info .payt-info-main .pay-img, #pay-success .sub-list-info .sub-list-info-main .pay-img, #sub-list-success .pay-info .payt-info-main .pay-img, #sub-list-success .pay-info .sub-list-info-main .pay-img, #sub-list-success .sub-list-info .payt-info-main .pay-img, #sub-list-success .sub-list-info .sub-list-info-main .pay-img { width: 1.78rem; height: 1.37rem; margin: 0.57rem 0 0.34rem 2.73rem; }
+#pay-success .pay-info .payt-info-main p, #pay-success .pay-info .sub-list-info-main p, #pay-success .sub-list-info .payt-info-main p, #pay-success .sub-list-info .sub-list-info-main p, #sub-list-success .pay-info .payt-info-main p, #sub-list-success .pay-info .sub-list-info-main p, #sub-list-success .sub-list-info .payt-info-main p, #sub-list-success .sub-list-info .sub-list-info-main p { width: 100%; height: 0.42rem; font-size: 0.42rem; color: #fff; line-height: 0.42rem; text-align: center; }
+#pay-success .pay-info .pay-shuoming, #pay-success .pay-info .shuoming, #pay-success .sub-list-info .pay-shuoming, #pay-success .sub-list-info .shuoming, #sub-list-success .pay-info .pay-shuoming, #sub-list-success .pay-info .shuoming, #sub-list-success .sub-list-info .pay-shuoming, #sub-list-success .sub-list-info .shuoming { width: 100%; height: 0.38rem; font-size: 0.38rem; line-height: 0.38rem; color: #484848; margin: 0.42rem 0 0.21rem; padding-left: 0.44rem; box-sizing: border-box; }
+#pay-success .pay-info .pay-shuoming-content, #pay-success .pay-info .shuoming-content, #pay-success .sub-list-info .pay-shuoming-content, #pay-success .sub-list-info .shuoming-content, #sub-list-success .pay-info .pay-shuoming-content, #sub-list-success .pay-info .shuoming-content, #sub-list-success .sub-list-info .pay-shuoming-content, #sub-list-success .sub-list-info .shuoming-content { width: 100%; height: 0.84rem; line-height: 0.4rem; font-size: 0.28rem; color: #333; padding: 0 0.44rem; box-sizing: border-box; }
+
+#back-souye, #look-dingdan { width: 7.08rem; height: 0.88rem; border-radius: 0.2rem; font-size: 0.3rem; line-height: 0.88rem; text-align: center; margin: 0 auto; }
+
+#back-souye { color: #df463e; border: 2px solid #df463e; margin-top: 3.04rem; margin-bottom: 0.22rem; }
+
+#look-dingdan { color: #649ce0; border: 2px solid #649ce0; }
+
+#pay-list { width: 100%; overflow: hidden; }
+#pay-list .pay-p { width: 100%; height: 0.26rem; line-height: 0.26rem; font-size: 0.26rem; color: #929292; padding-left: 0.2rem; box-sizing: border-box; margin: 0.38rem 0 0.27rem; }
+#pay-list .pay-more-list { width: 7.1rem; overflow: hidden; background: #fff; border-radius: 0.2rem; padding: 0.16rem 0.15rem 0 0.13rem; box-sizing: border-box; margin: 0 auto; }
+#pay-list .pay-more-list li { width: 6.68rem; height: 1.1rem; background: #fff6e0; border-radius: 0.2rem; margin: 0.07rem; float: left; padding: 0 0.28rem; box-sizing: border-box; }
+#pay-list .pay-more-list li .pay-title { width: 100%; height: 0.32rem; line-height: 0.32rem; font-size: 0.28rem; color: #666; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; margin: 0.19rem 0 0.14rem; }
+#pay-list .pay-more-list li .pay-title span { float: right; font-size: 0.32rem; }
+#pay-list .pay-more-list li .pay-title span i { font-size: 0.22rem; }
+#pay-list .pay-more-list li .pay-edition { width: 100%; height: 0.26rem; line-height: 0.26rem; font-size: 0.24rem; color: #999; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#pay-list .pay-more-list li .pay-edition span { float: right; font-size: 0.32rem; }
+#pay-list .pay-more-list li .pay-edition span i { font-size: 0.22rem; }
+#pay-list .pay-more-list .pay-price { width: 6.68rem; height: 1.04rem; margin-top: 0.06rem; margin-right: 0.07rem; line-height: 1.04rem; text-align: right; font-size: 0.28rem; float: left; color: 333; }
+#pay-list .pay-more-list .pay-price span { color: #df463e; font-size: 0.4rem; margin-left: 0.15rem; }
+#pay-list .pay-more-list .pay-price span i { font-size: 0.26rem; }
+#pay-list .pay-way { width: 7.1rem; overflow: hidden; margin: 0 auto; padding: 0.25rem 0.09rem 0.26rem 0.33rem; box-sizing: border-box; border-radius: 0.2rem; background: #fff; }
+#pay-list .pay-way li { width: 100%; height: 1.02rem; line-height: 1.02rem; font-size: 0.32rem; color: #333; padding-left: 0.87rem; box-sizing: border-box; }
+#pay-list .pay-way li span { float: right; width: 1.02rem; height: 1.02rem; background: url("../img/other/gou_kui_gouwuche@3x.png") no-repeat center; background-size: 0.45rem 0.45rem; }
+#pay-list .pay-way li .span-action { background: url("../img/other/gou_hong_gouwuche@3x.png") no-repeat center; background-size: 0.45rem 0.45rem; }
+#pay-list .pay-way li:nth-of-type(1) { background: url("../img/other/qianbao@3x.png") no-repeat left center; background-size: 0.64rem 0.64rem; }
+#pay-list .pay-way li:nth-of-type(2) { background: url("../img/other/malaiwangyin@3x.png") no-repeat left center; background-size: 0.64rem 0.64rem; }
+#pay-list .pay-way li:nth-of-type(3) { background: url("../img/other/zhifubao@3x.png") no-repeat left center; background-size: 0.64rem 0.64rem; }
+#pay-list .pay-way li:nth-of-type(4) { background: url("../img/other/weixin@3x.png") no-repeat left center; background-size: 0.64rem 0.64rem; }
+
+#pay-fill { width: 100%; height: 1rem; }
+
+#pay-footer { position: fixed; left: 0; bottom: 0; width: 100%; height: 1rem; line-height: 1rem; text-align: center; font-size: 0.34rem; background: #df463e; color: #fff; }
+#pay-footer span { margin-left: 0.2rem; }
+#pay-footer span i { margin-right: 0.07rem; }
+
+.choose-address { display: none; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; left: 0; top: 0; z-index: 2; }
+.choose-address .choose-area, .choose-address .choose-city, .choose-address .choose-country, .choose-address .choose-province { width: 6.6rem; background: #fff; margin: 0 auto; overflow: hidden; }
+.choose-address .choose-area dd, .choose-address .choose-area dt, .choose-address .choose-city dd, .choose-address .choose-city dt, .choose-address .choose-country dd, .choose-address .choose-country dt, .choose-address .choose-province dd, .choose-address .choose-province dt { width: 100%; height: 0.9rem; line-height: 0.9rem; border-bottom: 2px solid #ededed; }
+.choose-address .choose-area dt, .choose-address .choose-city dt, .choose-address .choose-country dt, .choose-address .choose-province dt { font-size: 0.36rem; color: #df463e; text-align: center; position: relative; background: #fff; z-index: 10; }
+.choose-address .choose-area dd, .choose-address .choose-city dd, .choose-address .choose-country dd, .choose-address .choose-province dd { font-size: 0.32rem; color: #333; padding: 0 0.37rem 0 0.52rem; box-sizing: border-box; }
+.choose-address .choose-city dd, .choose-address .choose-country dd, .choose-address .choose-province dd { background: url("../img/other/mianbaoxie_xi_tianziliao@3x.png") no-repeat 6.08rem center; background-size: 0.11rem 0.21rem; }
+.choose-address .choose-country { display: block; height: 2.74rem; margin-top: 3.5rem; }
+.choose-address .choose-area, .choose-address .choose-city, .choose-address .choose-province { display: none; height: 9.18rem; margin-top: 1.43rem; position: relative; }
+
+#province-wrapper, #city-wrapper, #area-wrapper { position: absolute; z-index: 1; top: .96rem; bottom: 0; left: 0px; width: 100%; overflow: auto; }
+
+/*# sourceMappingURL=perfect-info.css.map */

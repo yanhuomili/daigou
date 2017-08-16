@@ -1,0 +1,114 @@
+.lang_action_1:after{
+	content:"Register";
+	position:absolute;
+	top:0;
+	left:43%;
+	background:#DE463E;
+}
+.lang_action_2:after{
+	content:"Login";
+	position:absolute;
+	top:0;
+	right:.3rem;
+	background:#DE463E;
+}
+/*.lang_action_3:after{
+	content:"Country";
+	display: block;
+	width:1.4rem;
+	position:absolute;
+	top:0;
+	left:0.43rem;
+	background:#fff;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.lang_action_4{
+	position:relative;
+}
+.lang_action_4:after{
+	content:"Please Choose";
+	display: block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	line-height: .5rem;
+	top:0;
+	left:0;
+	background:#fff;
+}*/
+.lang_action_5{
+	position:relative;
+}
+.lang_action_5:after{
+	content:"Number";
+	display: block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	line-height: .5rem;
+	background:#fff;
+}
+.lang_action_6{
+	position:relative;
+}
+.lang_action_6:after{
+	content:"Resend";
+	display: block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background:#DE463E;
+	border-radius:.5rem ;
+}
+.lang_action_7:after{
+	content:"Code";
+	width:1.2rem;
+	position:absolute;
+	left:0;
+	left:.43rem;
+	background:#fff;
+}
+.lang_action_8:after{
+	content:"Password";
+	width:1.2rem;
+	position:absolute;
+	left:0;
+	left:.43rem;
+	background:#fff;
+}
+.lang_action_9:after{
+	content:"Register";
+	position:absolute;
+	width:1.8rem;
+	left:40%;
+	background:#DF463E;
+}
+.lang_action_10{
+	width:3.5rem;
+	float:left;
+	position:relative;
+}
+.lang_action_10:after{
+	content:"I have read and agreed to";
+	position:absolute;
+	left:0;
+	background:#ededed;
+	line-height:1.04rem;
+}
+.lang_action_11{
+	float:left;
+	width:2.3rem;
+	position:relative;
+}
+.lang_action_11:after{
+	content:"user agreement";
+	position:absolute;
+	left:0;
+	background:#ededed;
+	line-height:1.04rem;
+}

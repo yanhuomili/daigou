@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html style="background:#ededed;">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/dingdan-detail.css" />
+		
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		
+	</head>
+
+	<body>
+		<section id="passConfirm">
+			<div>请输入密码</div>
+			<p>(若非本人操作请在获得该账户主人的授权下操作,若非本人操作请在获得该账户主人的授权下操作)</p>
+			<input type="password" name="password" id="password" placeholder="请输入密码" />
+			<span class="sure">确认</span>
+		</section>
+		<style type="text/css">
+			#passConfirm{
+				width:80%;
+				height:3.8rem;
+				background: #f1f1f1;
+				position: fixed;
+				top: 2rem;
+				left: 10%;
+				z-index: 999;
+				font-size: 0.28rem;
+				padding:0 0.3rem;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction:column;
+				align-items: center;
+				justify-content: center;
+				/*display: none;*/
+			}
+			#passConfirm>div{
+				font-size: 0.36rem;
+			}
+			#passConfirm>p{
+				font-size: 0.22rem;
+				color: #666;
+				margin: 0.3rem 0;
+			}
+			#passConfirm>input{
+				height: 0.4rem;
+				font-size: 0.22rem;
+				outline: 0 none;
+			}
+			#passConfirm>.sure{
+				width:2rem;
+				font-size: 0.32rem;
+				height:0.8rem;
+				line-height: 0.8rem;
+				border: 0;
+				text-align: center;
+				margin-top: 0.2rem;
+				background: #FB6878;
+				color: #eee;
+				border-radius: 0.1rem;
+			}
+		</style>
+		<section id="detail-main">
+			<header class="detail-head">
+				<span class="detail-back"></span>
+				<i class="lang_orderInfor_1">订单详情</i>
+			</header>
+			<div class="detail-fill"></div>
+			<ul class="get-people">
+				<p class="get-top infor01">收货人信息</p>
+				<li class="get-name">李小龙<span class="get-tel">13556458710</span></li>
+				<li class="get-address">广东省广州市天河区五山街华南农业大学华山区12栋312</li>
+			</ul>
+			<ul class="dingdan-info">
+				<p class="info-top infor02">订单信息</p>
+				<li><span class="infor infor03">订单编号</span><span>806465424489</span></li>
+				<li><span class="infor infor04">下单时间</span><span>2016年6月21日    14:16</span></li>
+				<li><span class="infor infor05">付款时间</span><span>2016年6月22日    09:51</span></li>
+				<li><span class="infor infor06">发货地址</span><span>广西桂林</span></li>
+				<li><span class="infor infor07">订单状态</span><span class="">代收款</span></li>
+			</ul>
+			<ul class="product-message">
+				<p class="message-top infor07 shop-tit01">淘宝商城</p>
+				<li class="product-list">
+					<dl>
+						<dt><img src="../../img/index/feature-list-1.png"/></dt>
+						<dd class="product-list-title">书籍-设计师的自我修养</dd>
+						<dd class="product-list-banben">2016年出版版本</dd>
+						<dd class="product-list-price"><span class="list-span"><i>&yen;</i><span class="danjia">500.14</span></span><span class="list-shu"><i>X</i><span class="shuliang">1</span></span>
+						</dd>
+					</dl>
+				</li>
+				<p class="message-top infor07 shop-tit02">唯品会商城</p>
+				<li class="product-list">
+					<dl>
+						<dt><img src="../../img/index/feature-list-1.png"/></dt>
+						<dd class="product-list-title">书籍-设计师的自我修养</dd>
+						<dd class="product-list-banben">2016年出版版本</dd>
+						<dd class="product-list-price"><span class="list-span"><i>&yen;</i><span class="danjia">500.14</span></span><span class="list-shu"><i>X</i><span class="shuliang">1</span></span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../../img/index/feature-list-1.png"/></dt>
+						<dd class="product-list-title">书籍-设计师的自我修养</dd>
+						<dd class="product-list-banben">2016年出版版本</dd>
+						<dd class="product-list-price"><span class="list-span"><i>&yen;</i><span class="danjia">500.14</span></span><span class="list-shu"><i>X</i><span class="shuliang">1</span></span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../../img/index/feature-list-1.png"/></dt>
+						<dd class="product-list-title">书籍-设计师的自我修养</dd>
+						<dd class="product-list-banben">2016年出版版本</dd>
+						<dd class="product-list-price"><span class="list-span"><i>&yen;</i><span class="danjia">500.14</span></span><span class="list-shu"><i>X</i><span class="shuliang">1</span></span>
+						</dd>
+					</dl>
+				</li>
+				<p class="message-top infor07 shop-tit03">京东商城</p>
+				<li class="product-list">
+					<dl>
+						<dt><img src="../../img/index/feature-list-1.png"/></dt>
+						<dd class="product-list-title">书籍-设计师的自我修养</dd>
+						<dd class="product-list-banben">2016年出版版本</dd>
+						<dd class="product-list-price"><span class="list-span"><i>&yen;</i><span class="danjia">500.14</span></span><span class="list-shu"><i>X</i><span class="shuliang">1</span></span>
+						</dd>
+					</dl>
+				</li>
+				<p class="message-top infor07 shop-tit04">平台商城</p>
+				<li class="product-list">
+					<dl>
+						<dt><img src="../../img/index/feature-list-1.png"/></dt>
+						<dd class="product-list-title">书籍-设计师的自我修养</dd>
+						<dd class="product-list-banben">2016年出版版本</dd>
+						<dd class="product-list-price"><span class="list-span"><i>&yen;</i><span class="danjia">500.14</span></span><span class="list-shu"><i>X</i><span class="shuliang">1</span></span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="../../img/index/feature-list-1.png"/></dt>
+						<dd class="product-list-title">书籍-设计师的自我修养</dd>
+						<dd class="product-list-banben">2016年出版版本</dd>
+						<dd class="product-list-price"><span class="list-span"><i>&yen;</i><span class="danjia">500.14</span></span><span class="list-shu"><i>X</i><span class="shuliang">1</span></span>
+						</dd>
+					</dl>
+				</li>
+				<li class="message-bottom"><span class="meass-price"><span class="lang_myOrderinfor_12">共计（不含邮费）：</span><i>&yen;</i><i class="meass-price-shu">500.12</i></span></li>
+			</ul>
+			<div id="queren" class="lang_orderInfor_2">确认订单</div>
+			<div id="look" class="lang_orderInfor_3">查看订单</div>
+		</section>
+
+	</body>
+	<script type="text/javascript" src="../../js/accounting.min.js"></script>
+	<script type="text/javascript">
+		price();
+
+		function price() {
+			var length = $(".product-list dl").length,
+				danJia, shuLiang, productZongJi, zongJi = 0;
+			for(var i = 0; i < length; i++) {
+				danJia = $(".product-list dl .danjia").eq(i).text();
+				shuLiang = $(".product-list dl .shuliang").eq(i).text();
+				productZongJi = Number(danJia) * Number(shuLiang);
+				zongJi += productZongJi;
+			}
+			$(".meass-price-shu").text((accounting.formatMoney(zongJi).replace(/\$/, "")))
+		}
+		//查看订单详情
+		$("#look").on("tap", function() {
+			window.location.href = "myOrder.html"
+		})
+		//确认订单
+		$("#queren").on("tap", function() {
+
+		})
+		//返回按钮
+		$(".detail-back").on("tap", function() {
+			window.location.href = "myOrder.html"
+		})
+		//语言
+		autoLanguage();
+
+		function autoLanguage() {
+			var getItem = localStorage.getItem("language");
+			if(localStorage.getItem("language") == "0") {
+				$(".lang_orderInfor_1").text("取消订单")
+				$(".lang_orderInfor_2").text("去付邮费")
+				$(".lang_orderInfor_3").text("提醒发货")
+				$(".lang_orderInfor_4").text("查看物流")
+				$(".lang_orderInfor_5").text("确认收货")
+				$(".lang_orderInfor_6").text("再来一单")
+				
+				$(".infor01").text("收货人信息")
+				$(".infor02").text("订单信息")
+				$(".infor03").text("订单编号")
+				$(".infor04").text("下单时间")
+				$(".infor05").text("付款时间")
+				$(".infor06").text("发货地址")
+				$(".infor07").text("订单状态")
+
+			} else if(localStorage.getItem("language") == "1") {
+				$(".lang_orderInfor_1").text("Confirm Order")
+				$(".lang_orderInfor_2").text("To pay postage")
+				$(".lang_orderInfor_3").text("Check Order")
+				$(".lang_orderInfor_4").text("View Logistics")
+				$(".lang_orderInfor_5").text("Confirm receipt")
+				$(".lang_orderInfor_6").text("Another one")
+				
+				$(".infor01").text("recipient information")
+				$(".infor02").text("order information")
+				$(".infor03").text("Order number")
+				$(".infor04").text("order time")
+				$(".infor05").text("Payment time")
+				$(".infor06").text("delivery address")
+				$(".infor07").text("Order Status")
+				
+				myOrderUSA()
+			} else if(localStorage.getItem("language") == "2") {
+				$(".lang_orderInfor_1").text("Sahkan Pesanan")
+				$(".lang_orderInfor_2").text("Membayar bayaran pos")
+				$(".lang_orderInfor_3").text("Ingatkan penghantaran")
+				$(".lang_orderInfor_3").text("Lihat Logistics")
+				$(".lang_orderInfor_3").text("Pengesahan penerimaan")
+				$(".lang_orderInfor_3").text("Lagi satu")
+				
+				$(".infor01").text("maklumat Penerima")
+				$(".infor02").text("Maklumat perintah")
+				$(".infor03").text("Nombor pesanan")
+				$(".infor04").text("Order Masa")
+				$(".infor05").text("masa pembayaran")
+				$(".infor06").text("alamat penghantaran")
+				$(".infor07").text("Status pesanan")
+				
+				myOrderMalaysia()
+			}
+		};
+		function myOrderUSA(){
+		var link = '<link rel="stylesheet" type="text/css" href="../../css/language/myOrder_USA.css"/>';
+		$("head").append(link)
+	}
+	function myOrderMalaysia(){
+		var link = '<link rel="stylesheet" type="text/css" href="../../css/language/myOrder_Malaysia.css"/>';
+		$("head").append(link)
+	}
+	</script>
+
+</html>

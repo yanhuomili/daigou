@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/my.css" />
+
+
+		<script type="text/javascript" src="js/zepto.js"></script>
+		<script type="text/javascript" src="js/event.js"></script>
+		<script type="text/javascript" src="js/touch.js"></script>
+		<script type="text/javascript" src="js/rem.js"></script>
+		<script type="text/javascript" src="js/ajax.js"></script>
+		<style type="text/css">
+			#wrapper{
+			    position: relative;
+			    width: 100%;
+			    z-index: 1;
+			    left: 0px;
+			    overflow: auto!important;
+			}
+			#wrapper ul {
+				width:8.8rem!important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="grayLayout">
+			<ul>
+				<li><p><i><img src="img/my/zhongguo_yuan@3x.png"/></i>人民币</p><span></span></li>
+				<li><p><i><img src="img/my/malaixiya_yuan@3x.png"/></i>马来西亚币</p><span></span></li>
+				<li><p><i><img src="img/my/malaixiya_yuan@3x.png"/></i>美元</p><span></span></li>
+			</ul>
+		</div>
+		<style type="text/css">
+			.grayLayout{
+				width:100%;
+				height:100vh;
+				background: rgba(0,0,0,0.5);
+				position: fixed;
+				top: 0;
+				z-index: 100;
+				font-size: 0.28rem;
+			}
+			.grayLayout>ul{
+				width:6.5rem;
+				height:4.5rem;
+				background: #fff;
+				border: 0.01rem solid #ccc;
+				border-radius: 0.2rem;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				padding: 0.6rem 0.5rem;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.grayLayout>ul>li{
+				width:100%;
+				height:0.8rem;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			.grayLayout>ul>li p{
+				display: flex;
+				align-items: center;
+			}
+			.grayLayout>ul>li i{
+				display: inline-block;
+				width:0.8rem;
+				height:0.8rem;
+				margin-right: 0.3rem;
+			}
+			.grayLayout>ul>li i img{
+				width:100%;
+				height:100%;
+			}
+			.grayLayout>ul>li span{
+				width:0.3rem;
+				height:0.3rem;
+				background: url(img/my/qianbao-hui-gou.jpg) no-repeat center center;
+				background-size: 0.3rem;
+			}
+			.grayLayout>ul>li .active{
+				background: url(img/my/qianbao-red-gou.jpg) no-repeat center center;
+				background-size: 0.3rem;
+			}
+		</style>
+		<script type="text/javascript">
+			$('.grayLayout ul li').singleTap(function(){
+				var index=$(this).index();
+				$(this).addClass('action').siblings().removeClass('action');
+				$(this).find('span').addClass('active').parents('li').siblings().find('span').removeClass('active')
+//				$('.grayLayout').hide();
+				
+			})
+		</script>
+		<div id="shouye-main">
+			<!--我的-->
+			<section id="my">
+				<header id="my-header">
+					<div class="user-img"><img src="img/my/touxiang.png" /></div>
+					<span class="ziliao"></span>
+					<p class="user-name">特丽丝</p>
+					<p class="suer-money"><i class="lang_my_1">钱包余额：</i><span class="user-shu">3054</span><i class="lang_my_15">元</i></p>
+				</header>
+				<nav id="wrapper">
+					<ul id="scroller">
+						<li><span class="lang_my_2">全部订单</span></li>
+						<li><span  class="lang_my_3">待处理</span><span class="my-nav-active"></span></li>
+						<li><span class="lang_my_4">待付款</span><span class="my-nav-active"></span></li>
+						<li><span class="lang_my_18">待付邮费</span><span class="my-nav-active"></span></li>
+						<li><span class="lang_my_5">待发货</span><span class="my-nav-active"></span></li>
+						<li><span class="lang_my_6">待收货</span><span class="my-nav-active"></span></li>
+						<li><span class="lang_my_7">已完成</span><span class="my-nav-active"></span></li>
+					</ul>
+				</nav>
+				<div id="my-other">
+					<ul>
+						<li class="mycollect lang_my_8">我的收藏</li>
+						<li class="distribution lang_my_9">我的分销</li>
+						<li class="wallet lang_my_10">我的钱包</li>
+						<li class="coupon lang_my_11">我的优惠券</li>
+						<li class="address lang_my_12">收货地址管理</li>
+						<li class="scan lang_my_13">我的二维码</li>
+						<li class="install lang_my_14">设置</li>
+					</ul>
+				</div>
+			</section>
+			<div id="fill"></div>
+
+		</div>
+		<footer id="footer">
+			<ul>
+				<li class="footer-shouye"><a href="index.html"><span class="lang_index_14">首页</span></a></li>
+				<li class="footer-zixun"><a href="information.html"><span class="lang_index_15">资讯</span></a></li>
+				<li class="footer-shop"><a href="shoppingCar.html"><span class="lang_index_16">购物车</span></a></li>
+				<li class="footer-my"><a href="my.html"><span class="lang_index_17">我的</span></a></li>
+			</ul>
+		</footer>
+		<!--我的页面中我的二维码 分享-->
+		<div id="my-share-scan">
+			<ul>
+				<span class="my-scan-close"></span>
+				<li><img src="img/my/my-scan.png" /></li>
+				<li class="lang_my_16">让朋友扫一扫，即可成为我的粉丝</li>
+				<li i class="lang_my_17">分享我的二维码</li>
+			</ul>
+		</div>
+		<!--分享链接-->
+
+		<div id="share-link">
+			<div class="share-condition">
+				<p class="lang_proInform_14">分享</p>
+				<div id="wrapper">
+					<ul id="scroller">
+						<li class="lang_proInform_15">微信好友</li>
+						<li class="lang_proInform_16">微信朋友圈</li>
+						<li class="lang_proInform_17">QQ好友</li>
+						<li class="lang_proInform_18">脸书</li>
+						<li>Google+</li>
+						<li>MSN</li>
+					</ul>
+				</div>
+				<div class="share-btn lang_proInform_21">取消</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/main/my.js"></script>
+
+</html>

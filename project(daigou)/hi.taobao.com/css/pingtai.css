@@ -1,0 +1,82 @@
+@charset "UTF-8";
+#head-fill { width: 100%; height: .88rem; }
+
+#pingtai-header { width: 100%; height: 0.87rem; background: #df463e; line-height: 0.87rem; font-size: 0.32rem; color: #fff; text-align: center; position: fixed; left: 0; top: 0; z-index: 100; }
+#pingtai-header .pt-hd-left { width: 0.87rem; height: 0.87rem; float: left; background: url("../img/my/fanhui@3x.png") no-repeat center; background-size: 0.45rem; position: absolute; left: 0; top: 0; z-index: 50; }
+#pingtai-header .pt-hd-right { width: 1.85rem; height: 100%; float: right; margin-right: 0.1rem; position: absolute; right: 0; top: 0; z-index: 50; }
+#pingtai-header .pt-hd-right ul { width: 100%; height: 100%; }
+#pingtai-header .pt-hd-right ul li { width: 50%; height: 100%; float: left; }
+#pingtai-header .pt-hd-right ul li:nth-of-type(1) { background: url("../img/my/jinrugouwuche@3x.png") no-repeat center; background-size: 0.45rem; }
+#pingtai-header .pt-hd-right ul li:nth-of-type(2) { background: url("../img/my/shoucang.png") no-repeat center; background-size: 0.45rem; }
+#pingtai-header .pt-hd-right ul .shoucang-action { background: url("../img/my/shoucang_huang@3x.png") no-repeat center !important; background-size: 0.45rem !important; }
+
+.swiper-container { width: 100%; height: 5.6rem; }
+.swiper-container .swiper-wrapper { width: 100%; height: 100%; }
+.swiper-container .swiper-wrapper .swiper-slide { width: 100%; height: 100%; }
+.swiper-container .swiper-wrapper .swiper-slide img { width: 100%; height: 100%; }
+
+#pingtai-info { width: 100%; overflow: hidden; }
+#pingtai-info .title-share { width: 100%; height: 1.07rem; padding: 0.31rem 0 0.27rem; box-sizing: border-box; }
+#pingtai-info .title-share .title-info { width: 5.75rem; height: auto; float: left; padding-left: 0.76rem; box-sizing: border-box; font-size: 0.34rem; color: #333; line-height: 0.5rem; }
+#pingtai-info .title-share .title-info-hot::after { display: inline-block; content: "热"; width: 0.33rem; height: 0.33rem; border-radius: 0.06rem; background: #df463e; line-height: 0.33rem; text-align: center; color: #fff; font-size: 0.24rem; position: relative; left: -3.72rem; top: -0.03rem; }
+#pingtai-info .title-share .share { width: 1.73rem; height: 100%; float: right; line-height: 0.5rem; display: inline-block; border-left: 2px solid #d7d7d7; padding-left: 0.83rem; box-sizing: border-box; background: url("../img/index/fenxiang@3x.png") no-repeat 0.39rem center; background-size: 0.28rem 0.28rem; font-size: 0.28rem; color: #666; }
+#pingtai-info .product-info { width: 100%; height: 1.16rem; font-size: 0.28rem; border-bottom: 1px solid #e1e1e1; line-height: 0.38rem; color: #999; padding: 0 0.49rem 0 0.31rem; box-sizing: border-box; word-break: break-all; overflow: hidden; }
+#pingtai-info .pro-nav { width: 100%; height: 0.81rem; background: #fff; }
+#pingtai-info .pro-nav ul { width: 100%; height: 100%; padding: 0 0.65rem 0 0.55rem; box-sizing: border-box; }
+#pingtai-info .pro-nav ul li { width: 33.33%; height: 0.78rem; font-size: 0.3rem; color: #666; line-height: 0.78rem; text-align: center; float: left; }
+#pingtai-info .pro-nav ul .pro-nav-action { color: #df463e; position: relative; left: 0; top: 0; }
+#pingtai-info .pro-nav ul .pro-nav-action:after { content: ""; display: block; width: 0.56rem; height: 0.04rem; background: #df463e; position: absolute; top: 0.78rem; left: 50%;transform: translate(-50%,0); }
+#pingtai-info .pro-nav-fixed { position: fixed; z-index: 100; top: .87rem; }
+#pingtai-info .pro-content { width: 100%; overflow: hidden; margin-top: 0.2rem; }
+#pingtai-info .pro-content .pro-left { width: 100%; }
+#pingtai-info .pro-content .pro-left ul { padding: 0 0.5rem 0 0.46rem; box-sizing: border-box; }
+#pingtai-info .pro-content .pro-left ul li { width: 100%; }
+#pingtai-info .pro-content .pro-left ul li img { width: 100%; }
+
+#pingtai-info .pro-content .pro-center { display: none; width: 100%; }
+#pingtai-info .pro-content .pro-center ul { width: 100%; padding: 0 0.5rem 0 0.46rem; box-sizing: border-box; }
+#pingtai-info .pro-content .pro-center ul li { width: 100%; height: 0.76rem; line-height: 0.76rem; font-size: 0.3rem; color: #333; }
+#pingtai-info .pro-content .pro-center ul li span { float: right; font-size: 0.26rem; color: #666; }
+
+#pingtai-info .pro-content .pro-right { display: none; width: 100%; }
+#pingtai-info .pro-content .pro-right ul { width: 100%; padding: 0 0.5rem 0 0.46rem; box-sizing: border-box; }
+#pingtai-info .pro-content .pro-right ul li { width: 100%; height: 0.76rem; line-height: 0.76rem; font-size: 0.3rem; color: #333; }
+#pingtai-info .pro-content .pro-right ul li span { float: right; font-size: 0.26rem; color: #666; }
+
+#pro-fill { width: 100%; height: 1.01rem; }
+
+#pro-buy { width: 100%; height: 1rem; border-top: 1px solid #e1e1e1; padding: 0.18rem 0 0 0.51rem; box-sizing: border-box; position: fixed; left: 0; bottom: 0; background: #fff; }
+#pro-buy .pro-price { width: 2.86rem; height: 0.66rem; float: left; line-height: 0.66rem; font-size: 0.4rem; color: #df463e; }
+#pro-buy .pro-price i { font-size: 0.26rem; margin-right: 0.08rem; }
+#pro-buy div { float: left; font-size: 0.3rem; text-align: center; }
+#pro-buy .add-shop-car { width: 1.98rem; height: 0.62rem; line-height: 0.62rem; font-size: 0.3rem; color: #df463e; border: 2px solid #df463e; margin-right: 0.13rem; }
+#pro-buy .pro-buy { width: 1.8rem; height: 0.66rem; line-height: 0.66rem; color: #fff; background: #df463e; }
+
+#pro-buy-action { width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 100; background: rgba(0, 0, 0, 0.5); display: none; }
+#pro-buy-action .pro-buy-condition { width: 100%; height: 7.66rem; background: #fff; position: absolute; left: 0; bottom: 0; }
+#pro-buy-action .pro-buy-condition .pro-close { float: right; width: .45rem; height: .45rem; background: url(../img/index/guanbi_xuanguige@3x.png) no-repeat center; background-size: .45rem .45rem; margin: .38rem .4rem .23rem 6.76rem; }
+#pro-buy-action .pro-buy-condition .pro-shu, #pro-buy-action .pro-buy-condition .pro-color, #pro-buy-action .pro-buy-condition .pro-volume { width: 100%; height: 1.88rem; padding-left: .48rem; box-sizing: border-box; float: left; }
+#pro-buy-action .pro-buy-condition .pro-shu dt, #pro-buy-action .pro-buy-condition .pro-color dt, #pro-buy-action .pro-buy-condition .pro-volume dt { width: 100%; height: .26rem; line-height: .26rem; font-size: .26rem; color: #999; margin-bottom: .24rem; }
+#pro-buy-action .pro-buy-condition .pro-shu dd, #pro-buy-action .pro-buy-condition .pro-color dd, #pro-buy-action .pro-buy-condition .pro-volume dd { width: 1.5rem; height: .56rem; border: 1px solid #cecece; float: left; margin-right: .2rem; font-size: .3rem; color: #333; line-height: .56rem; text-align: center; }
+#pro-buy-action .pro-buy-condition .pro-shu .pro-action, #pro-buy-action .pro-buy-condition .pro-color .pro-action, #pro-buy-action .pro-buy-condition .pro-volume .pro-action { background: #df463e; border-color: #df463e; color: #fff; }
+#pro-buy-action .pro-buy-condition .pro-shu dd:nth-of-type(1) { width: .51rem; height: .58rem; background: url(../img/index/jian_xuanguige@3x.png) no-repeat center; background-size: .51rem .58rem; }
+#pro-buy-action .pro-buy-condition .pro-shu dd:nth-of-type(2) { width: 2.08rem; height: .56rem; border: 1px solid #cecece; font-size: .3rem; color: #333; }
+#pro-buy-action .pro-buy-condition .pro-shu dd:nth-of-type(3) { width: .51rem; height: .58rem; background: url(../img/index/jia_xuanguige@3x.png) no-repeat center; background-size: .51rem .58rem; }
+#pro-buy-action .pro-buy-condition .pro-btn { width: 100%; height: .96rem; background: #df463e; line-height: .96rem; text-align: center; font-size: .38rem; color: #fff; float: left; }
+
+#share-link { width: 100%; height: 100%; position: fixed; left: 0; top: 0; background: rgba(0, 0, 0, 0.5); z-index: 100; display: none; overflow: hidden; }
+#share-link .share-condition { width: 100%; height: 4.55rem; background: #fff; position: absolute; left: 0; bottom: 0; }
+#share-link .share-condition #wrapper { width: 100%; height: 2.45rem; position: relative; }
+#share-link .share-condition #wrapper #scroller { position: absolute; transform: translate(0px, 0px); }
+#share-link .share-condition p { width: 100%; height: 1.09rem; text-align: center; line-height: 1.09rem; font-size: .4rem; color: #333; }
+#share-link .share-condition ul { width: 9rem; height: 2.45rem; padding: 0 .15rem 0 .08rem; box-sizing: border-box; float: left; }
+#share-link .share-condition ul li { width: 16.66667%; height: 2.1rem; text-align: center; font-size: .22rem; color: #999; padding-top: 1.83rem; box-sizing: border-box; float: left; }
+#share-link .share-condition ul li:nth-of-type(1) { background: url(../img/index/weixinhaoyou_fenxiang@3x.png) no-repeat center; background-size: 1.1rem 1.1rem; }
+#share-link .share-condition ul li:nth-of-type(2) { background: url(../img/index/pengyouquan_fenxiang@3x.png) no-repeat center; background-size: 1.1rem 1.1rem; }
+#share-link .share-condition ul li:nth-of-type(3) { background: url(../img/index/QQ_fenxiang@3x.png) no-repeat center; background-size: 1.1rem 1.1rem; }
+#share-link .share-condition ul li:nth-of-type(4) { background: url(../img/index/facebook_fenxiang@3x.png) no-repeat center; background-size: 1.1rem 1.1rem; }
+#share-link .share-condition ul li:nth-of-type(5) { background: url(../img/index/Gjia_fenxiang@3x.png) no-repeat center; background-size: 1.1rem 1.1rem; }
+#share-link .share-condition ul li:nth-of-type(6) { background: url(../img/index/msn_fenxiang@3x.png) no-repeat center; background-size: 1.1rem 1.1rem; }
+#share-link .share-btn { width: 100%; height: 1rem; border-top: 1px solid #ededed; font-size: .4rem; color: #999; text-align: center; line-height: 1rem; float: left; }
+
+/*# sourceMappingURL=pingtai.css.map */

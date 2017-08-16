@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html style="background:#ededed;">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/order-for.css" />
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<script type="text/javascript" src="../../js/fx.js"></script>
+		<style type="text/css">
+			.order-nav{
+				position: relative;
+				overflow: scroll;
+			}
+			.order-nav ul{
+				width:12rem!important;
+				position:absolute;
+				transform:translateX(-0px);
+			}
+			.order-nav ul li{
+				margin-right:.2rem;
+			}
+			/*改*/
+			#order-has .order-has dl dd{
+				padding-top:0;
+			}
+			#order-has .order-has .shop-tit {
+			    width: 100%;
+			    height: .86rem;
+			    line-height: .86rem;
+			    font-size: .28rem;
+			    padding: 0 .27rem 0 .25rem;
+			    box-sizing: border-box;
+			    color: #666;
+			}
+			#order .order-nav ul li{
+				/*display: -webkit-box;
+				-webkit-box-align: center ;*/
+			}
+			
+		</style>
+	</head>
+
+	<body>
+
+		<section id="order">
+			<header class="order-head">
+				<span class="order-back"></span> <i class="lang_myOrder_1">我的订单</i>
+			</header>
+			<nav class="order-nav">
+				<ul>
+					<li class="order-action lang_myOrder_3"><i>全部</i></li>
+					<li class="nav-same lang_myOrder_4"><i>待处理</i></li>
+					<li class="nav-same lang_myOrder_5"><i>待付款</i></li>
+					<li class="nav-same lang_myOrder_6"><i>待付邮费</i></li>
+					<li class="nav-same lang_myOrder_7"><i>待发货</i></li>
+					<li class="lang_myOrder_8"><i>待收货</i></li>
+					<li class="lang_myOrder_9"><i>已完成</i></li>
+				</ul>
+			</nav>
+		</section>
+		<div id="order-fill"></div>
+		<!--没有订单-->
+		<section id="order-null">
+			<div class="order-null-content">
+				<div class="order-null-main">
+					<p class="lang_myOrder_2">当前没有订单信息</p>
+				</div>
+			</div>
+
+		</section>
+		<!--有订单-->
+		<section id="order-has" class="swiper-container">
+			<div class="swiper-wrapper">
+
+				<div class="order-has swiper-slide">
+					<dl>
+						<dt class="lang_myOrder_10"><span class="lang_myOrder_11">待处理</span></dt>
+						<dd>
+							<div class="shop">
+								<p class="shop-tit shop-tit01">淘宝商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="shop">
+								<p class="shop-tit shop-tit02">唯品会商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="aggregate-price">
+								<p><span class="gongji">500.12</span><i class="price-i">&yen;</i><span class="price-first lang_myOrder_12">共计（不含邮费）：</span></p>
+								<p class="daiChuLi"><span class="why-pay lang_myOrder_13">为何不能马上付款？</span><i class="right-away lang_myOrder_hui_14">马上支付</i><span class="remove-dingdan lang_myOrder_15">取消订单</span></p>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="lang_myOrder_16"><span class="lang_myOrder_17">待付款</span></dt>
+						<dd>
+							<div class="shop">
+								<p class="shop-tit shop-tit01">淘宝商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="shop">
+								<p class="shop-tit shop-tit02">唯品会商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="aggregate-price">
+								<p><span class="gongji">500.12</span><i class="price-i">&yen;</i><span class="price-first lang_myOrder_12">共计（不含邮费）：</span></p>
+								<p class="daiFuKuan"><i class="FuKuan-right-away lang_myOrder_14">马上支付</i><span class="FuKuan-remove-dingdan remove-dingdan lang_myOrder_15">取消订单</span></p>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="lang_myOrder_18"><span class="lang_myOrder_19">待发货</span></dt>
+						<dd>
+							<div class="shop">
+								<p class="shop-tit shop-tit01">淘宝商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="shop">
+								<p class="shop-tit shop-tit01">淘宝商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="aggregate-price">
+								<p><span class="gongji">500.12</span><i class="price-i">&yen;</i><span class="price-first lang_myOrder_12">共计（不含邮费）：</span></p>
+								<p class="daiFaHuo"><span class="FaHuo-dingdan lang_myOrder_20">提现发货</span></p>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="lang_myOrder_21"><span class="lang_myOrder_22">待收货</span></dt>
+						<dd>
+							<div class="shop">
+								<p class="shop-tit">淘宝商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+
+							<div class="aggregate-price">
+								<p><span class="gongji">500.12</span><i class="price-i">&yen;</i><span class="price-first lang_myOrder_12">共计（不含邮费）：</span></p>
+								<p class="daiShouHuo"><i class="ShouHuo-right-away lang_myOrder_23">确认收货</i><span class="ShouHuo-remove-dingdan lang_myOrder_24">查看物流</span></p>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="lang_myOrder_10"><span class="lang_myOrder_25">待评价</span></dt>
+						<dd>
+							<div class="shop">
+								<p class="shop-tit">淘宝商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="shop">
+								<p class="shop-tit">淘宝商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="aggregate-price">
+								<p><span class="gongji">500.12</span><i class="price-i">&yen;</i><span class="price-first lang_myOrder_12">共计（不含邮费）：</span></p>
+								<p class="daiPingJia"><i class="PingJia-right-away ShouHuo-remove-dingdan lang_myOrder_24">查看物流</i><span class="PingJia-remove-dingdan lang_myOrder_26">再来一单</span></p>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt class="lang_myOrder_10"><span class="lang_myOrder_27">已完成</span></dt>
+						<dd>
+							<div class="shop">
+								<p class="shop-tit">淘宝商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="aggregate-price">
+								<p><span class="gongji">500.12</span><i class="price-i">&yen;</i><span class="price-first lang_myOrder_12">共计（不含邮费）：</span></p>
+								<p class="daiPingJia"><i class="PingJia-right-away ShouHuo-remove-dingdan lang_myOrder_24">查看物流</i><span class="commentNow">马上评论</span><span class="PingJia-remove-dingdan lang_myOrder_26">再来一单</span></p>
+							</div>
+						</dd>
+						
+					</dl>
+					<dl>
+						<dt class="lang_myOrder_10"><span class="lang_myOrder_28">待付邮费</span></dt>
+						<dd>
+							<div class="shop">
+								<p class="shop-tit">淘宝商城</p>
+								<ul>
+									<li class="product-img"><img src="../../img/index/feature-list-1.png" /></li>
+									<li class="product-title">书籍-设计师的自我修养</li>
+									<li class="product-edition">2016年出版版本</li>
+									<li class="product-price"><span><i>&yen;</i>500.14</span><span><i>x</i>1</span></li>
+								</ul>
+							</div>
+							<div class="aggregate-price">
+								<p><span class="gongji">500.12</span><i class="price-i">&yen;</i><span class="price-first lang_myOrder_12">共计（不含邮费）：</span></p>
+								<p class="daiPingJia"><i class="PingJia-right-away ShouHuo-remove-dingdan lang_myOrder_24">查看物流</i><span class="PingJia-remove-dingdan lang_myOrder_26">再来一单</span></p>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!--待处理-->
+				<div class="order-has swiper-slide">
+					
+				</div>
+				<!--待付款-->
+				<div class="order-has swiper-slide">
+					
+				</div>
+				<!--待付邮费-->
+				<div class="order-has swiper-slide">
+					
+				</div>
+				<!--待发货-->
+				<div class="order-has swiper-slide">
+					
+				</div>
+				<!--待收货-->
+				<div class="order-has swiper-slide">
+					
+				</div>
+				<!--已完成-->
+				<div class="order-has swiper-slide">
+					
+				</div>
+			</div>
+		</section>
+		<!--订单说明-->
+		<section id="daigou-instruction" >
+			<ul>
+				<span></span>
+				<li></li>
+				<li class="lang_myOrder_29">代购订单说明</li>
+				<li class="lang_myOrder_30">代购订单需确认邮费及关税后才能付款，处理需要1到3个工作日。</li>
+				<li class="lang_myOrder_31">我知道了</li>
+				
+			</ul>
+		</section>
+	</body>
+	<script type="text/javascript" src="../../js/swiper.js"></script>
+	<script type="text/javascript" src="../../js/iscroll.js"></script>
+	<script type="text/javascript" src="../../js/main/myOrder.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.commentNow').on('singleTap',function(){
+				window.location.href="comment.html";
+			})
+		})
+	</script>
+</html>

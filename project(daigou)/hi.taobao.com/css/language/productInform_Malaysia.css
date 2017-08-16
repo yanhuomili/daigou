@@ -1,0 +1,175 @@
+.lang_proInform_1{
+	position:relative;
+}
+.lang_proInform_1:after{
+	content:"Maklumat Produk";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#DE463E;
+}
+.lang_proInform_2{
+	position:relative;
+}
+.lang_proInform_2:after{
+	content:"Kongsi";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0.83rem;
+	background:#fff;
+}
+.lang_proInform_3{
+	position:relative;
+}
+.lang_proInform_3:after{
+	content:"Menambah Troli Membeli-belah";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_proInform_4{
+	position:relative;
+}
+.lang_proInform_4:after{
+	content:"Beli Sekarang";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#DE463E;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_proInform_7{
+	position:relative;
+}
+.lang_proInform_7:after{
+	content:"kapasiti";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}
+.lang_proInform_8{
+	position: relative;
+}
+.lang_proInform_8:after{
+	content:"Warna";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}
+
+
+.lang_proInform_12{
+	position: relative;
+}
+.lang_proInform_12:after{
+	content:"Kuantiti";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}
+.lang_proInform_13{
+	position: relative;
+}
+.lang_proInform_13:after{
+	content:"Lengkap";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#DF463E;
+}
+.lang_proInform_14{
+	position: relative;
+}
+.lang_proInform_14:after{
+	content:"Kongsi";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}
+.lang_proInform_15{
+	position: relative;
+}
+.lang_proInform_15:after{
+	content:"Kawan-kawan surat mikro";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_16{
+	position: relative;
+}
+.lang_proInform_16:after{
+	content:"Circle of friends";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_17{
+	position: relative;
+}
+.lang_proInform_17:after{
+	content:"QQ";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+.lang_proInform_18{
+	position: relative;
+}
+.lang_proInform_18:after{
+	content:"Face Book";
+	position:absolute;
+	width:100%;
+	height:20%;
+	left:0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	background:#fff;
+}
+
+.lang_proInform_21{
+	position: relative;
+}
+.lang_proInform_21:after{
+	content:"Dibatalkan";
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	background:#fff;
+}

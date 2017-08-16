@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html style="background:#ededed;">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/chongzhi-duihuan.css" />
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<style type="text/css">
+			.wallet-1{
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--兑换-->
+		<div id="duihuan-main">
+			<header class="duihuan-head lang_exchange_1">
+				<span class="duihuan-back"></span> 货币兑换
+				<span class="duihuan-ruler lang_exchange_2">兑换说明</span>
+			</header>
+			<div class="duihuan-main-fill"></div>
+			<div class="duihuan-choose">
+				<!--持有货币-->
+				<div class="have-money duihuan-action">
+					<p class="title">持有货币</p>
+					<span class="haveBtn first-btn lang_exchange_13">人民币</span><i></i>
+					<span>&yen;</span>
+					<input style="background:#DF463E;color:#fff;" type="number" value="0" />
+				</div>
+				<!--兑换货币-->
+				<div class="money-duihuan other_1">
+					<p class="title">兑换货币</p>
+					<span class="moneyBtn">马来西亚</span><i></i>
+					<span>RM</span>
+					<input type="number" value="0" readonly="readonly" />
+				</div>
+				<div class="money-duihuan other_2">
+					<p class="title">兑换货币</p>
+					<span class="moneyBtn">美元</span><i></i>
+					<span>&#36;</span>
+					<input type="number" value="0" readonly="readonly" />
+				</div>
+
+			</div>
+			<p class="duihuan-all"><i class="lang_exchange_3">当前人民币余额为</i><i>985.54</i>元，<span class="lang_exchange_4">全部兑换</span></p>
+			<div class="duihuan-list">
+				<ul id="wallet-list-title">
+					<li class="wallet-1 lang_wallet_7">实时汇率</li>
+					<li class="wallet-2 lang_wallet_8">买进</li>
+					<li class="wallet-3 lang_wallet_9">卖出</li>
+				</ul>
+				<section id="wallet-list">
+					<ul class="wallet-list-peo">
+						<li class="wallet-1 malai lang_wallet_10">马来西亚币</li>
+						<li class="wallet-2">0.6545</li>
+						<li class="wallet-3">1.6059</li>
+					</ul>
+
+					<ul class="wallet-list-peo">
+						<li class="wallet-1 meiyuan lang_wallet_11">美元</li>
+						<li class="wallet-2">5.1457</li>
+						<li class="wallet-3">20.1457</li>
+					</ul>
+				</section>
+			</div>
+			<div class="duhuan-fill"></div>
+			<div class="over-duihuan lang_exchange_5">确认兑换</div>
+			<!--选择币种-->
+			<div class="xuanze">
+				<ul>
+					<li>
+						<p class="lang_exchange_10">人民币</p><span class="xuanze-action"></span><i>&yen;</i>
+					</li>
+					<li>
+						<p class="lang_exchange_11">美元</p><span></span><i>&#36;</i>
+					</li>
+					<li>
+						<p class="lang_exchange_12">马来西亚</p><span></span><i>RM</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--兑换成功-->
+		<div id="duihuan-success">
+			<header class="duihuan-head lang_exchange_6">
+				<span class="duihuan-back"></span> 兑换成功
+			</header>
+			<div class="duihuan-main-fill"></div>
+
+			<div class="duihuan-info">
+				<div class="duihuan-info-main">
+					<img class="duihuan-img" src="../../img/my/duihuanchenggong@3x.png" />
+					<p class="lang_exchange_7">恭喜您, 兑换成功!</p>
+				</div>
+				<p class="duihuan-shuoming lang_exchange_8">兑换成功</p>
+				<p class="duihuan-shuoming-content china"><i class="lang_exchange_14">您兑换的</i><span class="duihuan-qianbao">[<i>131.12</i>元美元]</span><i class="lang_exchange_15">已成功存入我的钱包，请前往查看。</i></p>
+			</div>
+			<div id="duihuan-souye" class="lang_exchange_9">查看我的钱包</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/main/myExchange.js"></script>
+
+</html>

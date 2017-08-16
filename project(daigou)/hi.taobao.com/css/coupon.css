@@ -1,0 +1,39 @@
+html { background: #ededed; }
+
+.coupon-top { width: 100%; overflow: hidden; position: fixed; top: 0; left: 0; z-index: 10; }
+.coupon-top #coupon-head { width: 100%; height: 0.87rem; font-size: 0.32rem; line-height: 0.87rem; text-align: center; position: relative; left: 0; top: 0; background: #df463e; color: #fff; }
+.coupon-top #coupon-head span { float: left; width: 0.87rem; height: 0.87rem; position: absolute; left: 0; top: 0; background: url("../img/index/fanhui@3x.png") no-repeat center; background-size: 0.45rem 0.45rem; }
+.coupon-top .coupon-nav { width: 100%; height: 0.9rem; padding: 0 0.93rem 0 0.78rem; box-sizing: border-box; background: #fff; border-bottom: 1px solid #ededed; }
+.coupon-top .coupon-nav li { width: 50%; height: 0.9rem; float: left; line-height: 0.9rem; text-align: center; font-size: 0.3rem; color: #666; position: relative; }
+.coupon-top .coupon-nav .coupon-nav-action { color: #df463e; }
+.coupon-top .coupon-nav .coupon-nav-action:after { display: block; width: 0.44rem; height: 0.04rem; content: ""; background: #df463e; margin-left: 50%; position: absolute; left: -.22rem; bottom: 0; }
+
+#coupon-fill { width: 100%; height: 1.77rem; }
+
+#coupon-content { width: 100%; overflow: hidden; }
+#coupon-content .user-coupon { width: 7.5rem; padding-top: 0.2rem; box-sizing: border-box; }
+#coupon-content .user-coupon ul { width: 100%; overflow: hidden; }
+#coupon-content .user-coupon ul li { width: 7.1rem; height: 2.1rem; border-radius: 0.2rem; margin: 0 auto 0.25rem; padding: 0.6rem 0.34rem 0; box-sizing: border-box; }
+#coupon-content .user-coupon ul li i { float: left; font-size: 0.4rem; width: 0.45rem; height: 0.4rem; line-height: 0.4rem; }
+#coupon-content .user-coupon ul li .user-shu { float: left; font-size: 1.1rem; width: 1.77rem; height: 0.87rem; line-height: 0.87rem; }
+#coupon-content .user-coupon ul li p { float: right; text-align: right; }
+#coupon-content .user-coupon ul li p:nth-of-type(1) { height: 0.36rem; line-height: 0.36rem; margin-bottom: 0.2rem; font-size: 0.36rem; }
+#coupon-content .user-coupon ul li p:nth-of-type(2) { height: 0.28rem; line-height: 0.28rem; font-size: 0.28rem; float: right; color: #999; }
+#coupon-content .user-coupon ul li p:nth-of-type(2) span { margin-left: 0.19rem; }
+#coupon-content .user-coupon ul .user-hong { color: #df463e; background: url("../img/my/youhuiquan_hong@3x.png"); background-size: 7.1rem 2.1rem; }
+#coupon-content .user-coupon ul .user-lan { color: #69b6ff; background: url("../img/my/youhuiquan_lan@3x.png"); background-size: 7.1rem 2.1rem; }
+#coupon-content .null-coupon { overflow: hidden; width: 7.5rem; padding-top: 0.2rem; box-sizing: border-box; }
+#coupon-content .null-coupon ul { width: 100%; overflow: hidden; }
+#coupon-content .null-coupon ul li { width: 7.1rem; height: 2.1rem; border-radius: 0.2rem; margin: 0 auto 0.25rem; padding: 0.6rem 0.34rem 0; box-sizing: border-box; background: url("../img/my/youhuiquan_kui@3x.png"); background-size: 7.1rem 2.1rem; color: #bfbfbf; position: relative; left: 0; top: 0; }
+#coupon-content .null-coupon ul li i { float: left; font-size: 0.4rem; width: 0.45rem; height: 0.4rem; line-height: 0.4rem; }
+#coupon-content .null-coupon ul li .null-shu { float: left; font-size: 1.1rem; width: 1.77rem; height: 0.87rem; line-height: 0.87rem; }
+#coupon-content .null-coupon ul li p { float: right; text-align: right; }
+#coupon-content .null-coupon ul li p:nth-of-type(1) { height: 0.36rem; line-height: 0.36rem; margin-bottom: 0.2rem; font-size: 0.36rem; }
+#coupon-content .null-coupon ul li p:nth-of-type(2) { height: 0.28rem; line-height: 0.28rem; font-size: 0.28rem; float: right; }
+#coupon-content .null-coupon ul li p:nth-of-type(2) span { margin-left: 0.19rem; }
+#coupon-content #kong-coupon { display: none; width: 100%; height: 5.22rem; background: url("../img/my/wudizhi@3x.png") no-repeat center 0.6rem; background-size: 3.44rem 3.61rem; padding-top: 4.22rem; box-sizing: border-box; }
+#coupon-content #kong-coupon p { width: 100%; height: 0.32rem; font-size: 0.32rem; line-height: 0.32rem; text-align: center; color: #c6c6c6; margin-top: .2rem; }
+
+.yiguoqi, .yishiyong { width: 1.85rem; height: 1.02rem; position: absolute; top: 0; left: 2.36rem; }
+
+/*# sourceMappingURL=coupon.css.map */

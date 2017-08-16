@@ -1,0 +1,23 @@
+@charset "UTF-8";
+html，body { background: #fff !important; }
+
+.veiw-head, .inst-head { width: 100%; height: 0.87rem; line-height: 0.87rem; font-size: 0.34rem; color: #fff; background: #df463e; position: relative; text-align: center; }
+.veiw-head .veiw-back, .veiw-head .inst-back, .inst-head .veiw-back, .inst-head .inst-back { width: 0.87rem; height: 0.87rem; position: absolute; left: 0; top: 0; float: left; background: url("../img/index/fanhui@3x.png") no-repeat center; background-size: 0.45rem; }
+
+.back-login { width: 7.04rem; height: .96rem; border: 2px solid #df463e; font-size: .34rem; line-height: .96rem; text-align: center; color: #df463e; border-radius: .1rem; position: absolute; bottom: .54rem; left: .21rem; }
+
+#install { display: block; width: 100%; height: 100%; background: #fff; }
+#install .tuisong { width: 100%; height: 0.9rem; line-height: 0.9rem; font-size: 0.3rem; color: #333; background: #fff; padding: 0 0.68rem 0 0.66rem; box-sizing: border-box; margin-bottom: .1rem; }
+#install .tuisong .tuisong-kaiguan { position: relative; float: right; right: 0; top: 0; width: 1.03rem; height: .63rem; background: #afafaf; border: 1px solid #afafaf; margin-top: .12rem; border-radius: .32rem; }
+#install .tuisong .tuisong-kaiguan div { width: .58rem; height: .58rem; background: #fff; float: left; border-radius: 50%; margin-top: 0.03rem; }
+#install .other-question { width: 100%; height: 3rem; background: #fff; }
+#install .other-question li { width: 83%; height: 1rem; line-height: 1rem; font-size: 0.3rem; color: #333; background: #fff; margin: 0 0.68rem 0 0.66rem; border-bottom: 1px solid gainsboro; }
+#install .other-question li:nth-of-type(1) span { float: right; }
+
+#veiw { display: none; width: 100%; height: 100%; background: #ededed; position: relative; left: 0; top: 0; }
+#veiw textarea { width: 100%; height: 7.2rem; border: 0; resize: none; padding: 0.28rem 0.28rem 0.63rem 0.32rem; box-sizing: border-box; font-size: .3rem; outline: none; color: #999; background: #fff; }
+#veiw p { width: 100%; height: .63rem; line-height: .26rem; font-size: .26rem; text-align: right; color: #999; padding: .14rem .3rem .23rem 0; box-sizing: border-box; background: #fff; position: relative; left: 0; bottom: 0.9rem; }
+#veiw p span { float: right; width: .26rem; height: 100%; line-height: .26rem; font-size: .26rem; }
+#veiw .tijiao { width: 100%; height: 1rem; line-height: 1rem; font-size: .34rem; color: #fff; text-align: center; background: #df463e; position: fixed; left: 0; bottom: 0; }
+
+/*# sourceMappingURL=my-install.css.map */

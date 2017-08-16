@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../../css/pingtai.css" />
+
+		<style type="text/css">
+			.pro-left ul li:nth-of-type(1){
+				position: relative;
+			}
+			.pro-left ul li:nth-of-type(1) video{
+				margin:0 auto;
+				width:100%;
+				height:auto;
+			}
+			.pro-left ul li:nth-of-type(1) img{
+				position:absolute;
+				width:100%;
+				height:100%;
+				left:0;
+				top:0;
+				border:1px solid #fff;
+				opacity:1;
+				filter:alpha(opacity=100);
+				z-index:1;
+			}
+			
+			.pro-buy-condition{
+				bottom:.8rem!important;
+				overflow: auto;
+				z-index: 100;
+			}
+			.pro-btn{
+				position: fixed!important;
+				bottom:0;
+				left:0;
+			}
+			.close{
+				width:100%;
+				height:1rem;
+				position:fixed;
+				z-index:100;
+				background:#fff;
+			}
+			.pro-buy-fill{
+				width:100%;
+				height:1rem;
+			}
+			.pro-buy-condition dl{
+				margin-top:.3rem;
+			}
+			.pro-buy-condition dl dd{
+				width:auto!important;
+				padding:0 .2rem;
+				box-sizing:border-box;
+				margin-top:.2rem;
+			}
+			.pro-shu{
+				margin-top:.3rem;
+			}
+			
+			.shoucang{
+				background: url(../../img/my/shoucang_huang@3x.png) no-repeat center!important;
+    			background-size: 0.45rem!important;
+			}
+		</style>
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+
+	</head>
+
+	<body>
+		<header id="pingtai-header">
+			<span class="pt-hd-left"></span>
+			<div class="pt-hd-center lang_proInform_1">商品详情</div>
+			<div class="pt-hd-right">
+				<ul>
+					<li></li>
+					<li class="shoucang"></li>
+				</ul>
+			</div>
+		</header>
+		<div id="head-fill"></div>
+		<!--轮播图-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="../../img/index/pingtai-pic-1.png" />
+				</div>
+				<div class="swiper-slide">
+					<img src="../../img/index/pingtai-pic-1.png" />
+				</div>
+			</div>
+			<!-- Add Pagination -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<div id="pingtai-info">
+			<div class="title-share">
+				<div class="title-info title-info-hot">
+					米勒洗衣机/J-FYU78
+				</div>
+				<span class="share  lang_proInform_2">分享</span>
+			</div>
+			<div class="product-info">
+				荣获2013年最佳销售奖，HAIER/海尔XQG80-B12726滚筒洗衣机8公斤全自动家用变频电机
+			</div>
+			<div class="pro-nav">
+				<ul>
+					<li class="pro-nav-action lang_proInform_5">图文详情</li>
+					<!--1增加li，2改li宽度每个为33.33%，3改定位,4增加对应列表-->
+					<li class="lang_proInform_add">评价商品</li>
+					<li class="lang_proInform_6">商品参数</li>
+				</ul>
+			</div>
+			<div class="pro-content">
+				<div class="pro-left commentTap">
+					<ul>
+						<li align="center">
+							<video id="play" controls="controls" src="http://115.231.144.56/12/l/f/x/w/lfxwzonflrbdmydmvxuwqifacgnecd/he.yinyuetai.com/2D8401398CAE5C28898348CA22FD84A3.mp4" ></video>
+							<img  src="../../img/index/opacity.png"/>
+						</li>
+						<li>
+							<img src="../../img/index/feature-list-2.png"/>
+							<img src="../../img/index/feature-list-2.png"/>
+							<img src="../../img/index/feature-list-2.png"/>
+							<img src="../../img/index/feature-list-2.png"/>
+							<img src="../../img/index/feature-list-2.png"/>
+							<img src="../../img/index/feature-list-2.png"/>
+							<img src="../../img/index/feature-list-2.png"/>
+						</li>
+					</ul>
+				</div>
+				<div class="pro-center commentTap">
+					<dl class="personComment">
+						<dt>
+							<i class="pic"><img src="../../img/my/malaixiya_yuan@3x.png"/></i>
+							<span class="name">南国寒冬风情</span>
+						</dt>
+						<dd class="commentText">
+							商品不错，下次再来，物流超快，服务周到
+						</dd>
+					</dl>
+					<dl class="personComment">
+						<dt>
+							<i class="pic"><img src="../../img/my/malaixiya_yuan@3x.png"/></i>
+							<span class="name">南国寒冬风情</span>
+						</dt>
+						<dd class="commentText">
+							商品不错，下次再来，物流超快，服务周到,不返红包我就差评，商品不错，下次再来，物流超快，服务周到,不返红包我就差评，
+						</dd>
+					</dl>
+					<dl class="personComment">
+						<dt>
+							<i class="pic"><img src="../../img/my/malaixiya_yuan@3x.png"/></i>
+							<span class="name">南国寒冬风情</span>
+						</dt>
+						<dd class="commentText">
+							商品不错，下次再来，物流超快，服务周到
+						</dd>
+					</dl>
+				</div>
+				<style type="text/css">
+					.commentTap{
+						padding: 0.15rem 0.3rem;
+						box-sizing: border-box;	
+						background: #f1f1f1;
+					}
+					.personComment{
+						padding: 0 0.1rem;
+						box-sizing: border-box;
+						width:100%;
+						background: #fff;
+						font-size: 0.26rem;
+						margin-bottom: 0.1rem;
+					}
+					.personComment dt{
+						width:100%;
+						height:1.5rem;
+						display: flex;
+						justify-content: flex-start;
+						align-items: center;
+					}
+					.personComment dt .pic{
+						width:1.2rem;
+						height:1.2rem;
+						margin-right: 0.3rem;
+					}
+					.personComment dt .pic img{
+						width:100%;
+						height:100%;
+						display: block;
+					}
+					.personComment dd{
+						padding: 0.1rem 0;
+						box-sizing: border-box;
+					}
+				</style>
+				<div class="pro-right commentTap">
+					<ul>
+						<!--<li>产品名称<span>HAIER/海尔 XQG80-B1272</span></li>
+						<li>洗衣机品牌<span>HAIER/海尔</span></li>
+						<li>产品类型<span>滚筒洗衣机</span></li>
+						<li>使用方式<span>全自动</span></li>
+						<li>能效等级<span>其他/OTHER</span></li>
+						<li>电机类型<span>变频电机</span></li>-->
+						<!--<li><img src=""/></li>-->
+						<li style="width:100;height:auto;"><img src="../../img/xinxi.png" style="width:100%;height:auto;float:left;"/></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<div id="pro-fill"></div>
+		<div id="pro-buy" style="z-index:5;">
+			<p class="pro-price"><i>&yen;</i><span>500.14</span></p>
+			<div class="add-shop-car lang_proInform_3">加入购物车</div>
+			<div class="pro-buy lang_proInform_4">立即购买</div>
+			<!--<div style="width:50%;height:0.66rem;line-height: .6rem;background:gainsboro;color:gray;">已下架</div>
+			<div style="width:50%;height:0.66rem;line-height: .6rem;background:gainsboro;color:gray;">仓库不足</div>-->
+		</div>
+
+		<!--点击 加入购物车  或者  点击购买  时的  状态-->
+
+		<div id="pro-buy-action">
+			<div class="pro-buy-condition">
+				<div class="close"><span class="pro-close"></span></div>
+				<div class="pro-buy-fill"></div>
+				<dl class="pro-volume">
+					<dt class="lang_proInform_7">选择容量</dt>
+					<dd>5L</dd>
+					<dd class="pro-action">10L</dd>
+					<dd>15L</dd>
+				</dl>
+				<dl class="pro-color">
+					<dt class="lang_proInform_8">选择颜色</dt>
+					<dd class="pro-action lang_proInform_9">红</dd>
+					<dd class="lang_proInform_10">黄</dd>
+					<dd class="lang_proInform_11">橙</dd>
+				</dl>
+				<dl class="pro-color">
+					<dt class="lang_proInform_8">选择颜色</dt>
+					<dd class="pro-action lang_proInform_9">红</dd>
+					<dd class="lang_proInform_10">黄</dd>
+					<dd class="lang_proInform_11">橙</dd>
+				</dl>
+				<dl class="pro-color">
+					<dt class="lang_proInform_8">选择颜色</dt>
+					<dd class="pro-action lang_proInform_9">红</dd>
+					<dd class="lang_proInform_10">黄</dd>
+					<dd class="lang_proInform_11">橙</dd>
+				</dl>
+				<dl class="pro-color">
+					<dt class="lang_proInform_8">选择颜色</dt>
+					<dd class="pro-action lang_proInform_9">红</dd>
+					<dd class="lang_proInform_10">黄</dd>
+					<dd class="lang_proInform_11">橙</dd>
+				</dl>
+				<dl class="pro-color">
+					<dt class="lang_proInform_8">选择颜色</dt>
+					<dd class="pro-action lang_proInform_9">红</dd>
+					<dd class="lang_proInform_10">黄</dd>
+					<dd class="lang_proInform_11">橙</dd>
+				</dl>
+				<dl class="pro-shu">
+					<dt class="lang_proInform_12">选择数量</dt>
+					<dd class="pro-shu-jian"></dd>
+					<dd class="pro-shu-show"><input style="float:left;width:100%;height:100%;text-align: center;border:0;outline: none;" type="number" name="" id="" value="1" /></dd>
+					<dd class="pro-shu-jia"></dd>
+				</dl>
+				<div class="pro-btn  lang_proInform_13">完成</div>
+			</div>
+		</div>
+
+		<!--分享链接-->
+
+		<div id="share-link">
+			<div class="share-condition">
+				<p class="lang_proInform_14">分享</p>
+				<div id="wrapper">
+					<ul id="scroller">
+						<li class="lang_proInform_15">微信好友</li>
+						<li class="lang_proInform_16">微信朋友圈</li>
+						<li class="lang_proInform_17">QQ好友</li>
+						<li class="lang_proInform_18">脸书</li>
+						<li>Google+</li>
+						<li>MSN</li>
+					</ul>
+				</div>
+				<div class="share-btn lang_proInform_21">取消</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../js/swiper.js"></script>
+	<script type="text/javascript" src="../../js/iscroll.js"></script>
+	<script type="text/javascript" src="../../js/common.js"></script>
+	<script type="text/javascript" src="../../js/main/productInfor.js"></script>
+	<script type="text/javascript">
+		$(".pt-hd-right li:nth-of-type(2)").on("touchstart",function(){
+			if($(this).hasClass("shoucang")){
+				$(this).removeClass("shoucang")
+			}else{
+				$(this).addClass("shoucang");
+			}
+		})
+	</script>
+
+</html>

@@ -1,0 +1,144 @@
+.lang_personal_8{
+	position:relative;
+}
+.lang_personal_8:after{
+	content:"Potret kepala";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_9{
+	position:relative;
+}
+.lang_personal_9:after{
+	content:"Nickname";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_10{
+	position:relative;
+}
+.lang_personal_10:after{
+	content:"Nombor";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_11{
+	position:relative;
+}
+.lang_personal_11:after{
+	content:"Nombor ID (pilihan)";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_12{
+	position:relative;
+}
+.lang_personal_12:after{
+	content:"Keselamatan akaun";
+	position:absolute;
+	left:0.44rem;
+	width:40%;
+	background:#fff;
+}
+.lang_personal_13{
+	position:relative;
+}
+.lang_personal_13:after{
+	content:"Perubahan kata laluan";
+	position:absolute;
+	left:-1.4rem;
+	width:220%;
+	background:#fff;
+	color:#333;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.lang_personal_14{
+	position:relative;
+}
+.lang_personal_14:after{
+	content:"Old Telefon";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+}
+.lang_personal_15{
+	position:relative;
+}
+.lang_personal_15:after{
+	content:"Nombor telefon baru";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+}
+.lang_personal_16{
+	position:relative;
+}
+.lang_personal_16:after{
+	content:"Kod pengesahan";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+}
+.lang_personal_17{
+	position:relative;
+}
+.lang_personal_17:after{
+	content:"Hantar kod";
+	position:absolute;
+	left:0;
+	width:100%;
+	background:#DF463E;
+	border-radius: .1rem;
+}
+.lang_personal_18{
+	position:relative;
+}
+.lang_personal_18:after{
+	content:"Lama";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.lang_personal_19{
+	position:relative;
+}
+.lang_personal_19:after{
+	content:"Baru";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.lang_personal_20{
+	position:relative;
+}
+.lang_personal_20:after{
+	content:"Sahkan kata laluan";
+	position:absolute;
+	left:0.44rem;
+	width:22%;
+	background:#fff;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}

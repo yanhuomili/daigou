@@ -1,0 +1,33 @@
+#my-wallet, #fenxiao-top { width: 100%; height: 5.22rem; background: url(../img/my/wodefenxiao_beijing@3x.png); background-size: 7.5rem 5.22rem; }
+#my-wallet .wallet-background, #my-wallet .fenxiao-background, #fenxiao-top .wallet-background, #fenxiao-top .fenxiao-background { width: 100%; height: 3.64rem; border-bottom: 1px solid #ef697b; }
+#my-wallet .wallet-background .wallet-head, #my-wallet .wallet-background .top-head, #my-wallet .fenxiao-background .wallet-head, #my-wallet .fenxiao-background .top-head, #fenxiao-top .wallet-background .wallet-head, #fenxiao-top .wallet-background .top-head, #fenxiao-top .fenxiao-background .wallet-head, #fenxiao-top .fenxiao-background .top-head { width: 100%; height: .81rem; position: relative; left: 0; top: 0; line-height: .81rem; text-align: center; font-size: .32rem; color: #fff; }
+#my-wallet .wallet-background .wallet-head .wallet-back, #my-wallet .wallet-background .wallet-head .top-back, #my-wallet .wallet-background .top-head .wallet-back, #my-wallet .wallet-background .top-head .top-back, #my-wallet .fenxiao-background .wallet-head .wallet-back, #my-wallet .fenxiao-background .wallet-head .top-back, #my-wallet .fenxiao-background .top-head .wallet-back, #my-wallet .fenxiao-background .top-head .top-back, #fenxiao-top .wallet-background .wallet-head .wallet-back, #fenxiao-top .wallet-background .wallet-head .top-back, #fenxiao-top .wallet-background .top-head .wallet-back, #fenxiao-top .wallet-background .top-head .top-back, #fenxiao-top .fenxiao-background .wallet-head .wallet-back, #fenxiao-top .fenxiao-background .wallet-head .top-back, #fenxiao-top .fenxiao-background .top-head .wallet-back, #fenxiao-top .fenxiao-background .top-head .top-back { width: .87rem; height: .81rem; float: left; position: absolute; left: 0; top: 0; background: url(../img/index/fanhui@3x.png) no-repeat center; background-size: .45rem .45rem; }
+#my-wallet .wallet-background .wallet-head .top-ruler, #my-wallet .wallet-background .top-head .top-ruler, #my-wallet .fenxiao-background .wallet-head .top-ruler, #my-wallet .fenxiao-background .top-head .top-ruler, #fenxiao-top .wallet-background .wallet-head .top-ruler, #fenxiao-top .wallet-background .top-head .top-ruler, #fenxiao-top .fenxiao-background .wallet-head .top-ruler, #fenxiao-top .fenxiao-background .top-head .top-ruler { width: 1.37rem; height: .81rem; position: absolute; right: 0; top: 0; }
+#my-wallet .wallet-background p:nth-of-type(1), #my-wallet .fenxiao-background p:nth-of-type(1), #fenxiao-top .wallet-background p:nth-of-type(1), #fenxiao-top .fenxiao-background p:nth-of-type(1) { width: 100%; height: .26rem; line-height: .26rem; text-align: center; font-size: .26rem; color: #fff; margin: .48rem 0 .34rem 0; }
+#my-wallet .wallet-background p:nth-of-type(2), #my-wallet .fenxiao-background p:nth-of-type(2), #fenxiao-top .wallet-background p:nth-of-type(2), #fenxiao-top .fenxiao-background p:nth-of-type(2) { width: 100%; height: .66rem; line-height: .66rem; text-align: center; font-size: .66rem; color: #fff; }
+#my-wallet .wallet-bg, #my-wallet .fenxiao-bg, #fenxiao-top .wallet-bg, #fenxiao-top .fenxiao-bg { width: 100%; height: 1.58rem; padding: 0 .51rem; box-sizing: border-box; }
+#my-wallet .wallet-bg ul, #my-wallet .fenxiao-bg ul, #fenxiao-top .wallet-bg ul, #fenxiao-top .fenxiao-bg ul { width: 100%; height: 100%; }
+#my-wallet .wallet-bg ul li, #my-wallet .fenxiao-bg ul li, #fenxiao-top .wallet-bg ul li, #fenxiao-top .fenxiao-bg ul li { width: 50%; height: 100%; float: left; color: #fff; }
+#my-wallet .wallet-bg ul li p:nth-of-type(1), #my-wallet .fenxiao-bg ul li p:nth-of-type(1), #fenxiao-top .wallet-bg ul li p:nth-of-type(1), #fenxiao-top .fenxiao-bg ul li p:nth-of-type(1) { width: 100%; height: .22rem; line-height: .22rem; font-size: .22rem; margin: .3rem 0 .23rem 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#my-wallet .wallet-bg ul li p:nth-of-type(2), #my-wallet .fenxiao-bg ul li p:nth-of-type(2), #fenxiao-top .wallet-bg ul li p:nth-of-type(2), #fenxiao-top .fenxiao-bg ul li p:nth-of-type(2) { width: 100%; height: .5rem; line-height: .5rem; font-size: .5rem; }
+#my-wallet .wallet-bg ul .fenxiao-fans, #my-wallet .fenxiao-bg ul .fenxiao-fans, #fenxiao-top .wallet-bg ul .fenxiao-fans, #fenxiao-top .fenxiao-bg ul .fenxiao-fans { padding-left: .64rem; box-sizing: border-box; }
+#my-wallet .wallet-bg ul .wallet-malai, #my-wallet .fenxiao-bg ul .wallet-malai, #fenxiao-top .wallet-bg ul .wallet-malai, #fenxiao-top .fenxiao-bg ul .wallet-malai { padding-left: .24rem; box-sizing: border-box; }
+
+#fenxiao-list-title { width: 100%; height: .83rem; font-size: .26rem; color: #999; border-bottom: 1px solid #e1e1e1; padding: 0 .5rem 0 .37rem; box-sizing: border-box; float: left; }
+#fenxiao-list-title li { height: 100%; line-height: .83rem; text-align: center; float: left; }
+
+.common-1 { width: 2.07rem; }
+
+.common-2 { width: 2.59rem; }
+
+.common-3 { width: 1.95rem; }
+
+#fenxiao-list { width: 100%; overflow: hidden; }
+#fenxiao-list #awrapper { width: 100%; }
+#fenxiao-list .fenxiao-list-peo { width: 100%; height: .99rem; border-bottom: 1px solid #e1e1e1; padding: 0 .5rem 0 .37rem; box-sizing: border-box; color: #333; }
+#fenxiao-list .fenxiao-list-peo li { height: 100%; line-height: .99rem; text-align: center; float: left; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+#fenxiao-list .fenxiao-list-peo .common-1 { font-size: .24rem; }
+#fenxiao-list .fenxiao-list-peo .common-2 { font-size: .3rem; }
+#fenxiao-list .fenxiao-list-peo .common-3 { font-size: .24rem; color: #e36762; }
+
+/*# sourceMappingURL=fenxiao.css.map */

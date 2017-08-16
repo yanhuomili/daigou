@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html style="background:#ededed;">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>代购平台</title>
+
+		<link rel="stylesheet" type="text/css" href="../../css/common.css" />
+		<style type="text/css">
+			body{
+				font-size: 0.26rem;
+			}
+			.comment-head { width: 100%; height: 0.87rem; background: #df463e; line-height: 0.87rem; text-align: center; color: #fff; position: fixed; left: 0; top: 0; z-index: 1000; font-size: 0.34rem; }
+			.comment-head .comment-back { width: 0.87rem; height: 0.87rem; position: absolute; left: 0; top: 0; background: url("../img/index/fanhui@3x.png") no-repeat center; background-size: 0.45rem; }
+			.comment-fill { width: 100%; height: .87rem; }
+			.container{
+				width:100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.comment{
+				width:100%;	
+				padding:0 0.3rem;
+				box-sizing: border-box;
+				margin-bottom: 0.2rem;
+				background:#fff;
+			}
+			.comment dl{
+				width:100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.comment dl dt{
+				width:100%;
+				height:1.6rem;
+				border-bottom: 0.01rem solid #f1f1f1;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				font-size: 0.32rem;
+				color: #007AFF;
+			}
+			.comment dl dt .pic{
+				width:1.5rem;
+				height:1.5rem;
+				margin-right: 0.3rem;
+			}
+			.comment dl dt .pic img{
+				width:1.5rem;
+				height:1.5rem;
+				display: block;
+			}
+			
+			.comment dl dd{
+				width:100%;
+				border-bottom: 0.01rem solid #f1f1f1;
+			}
+			.comment dl dd textarea{
+				outline: 0 none;
+				width:98%;
+				height:1.6rem;
+				border: 0;
+				resize: none;
+				letter-spacing: 0.01rem;
+				font-size: 0.28rem;
+				text-indent: 0.5rem;
+			}	
+			.commentBtn{
+				display: inline-block;
+				width:2rem;
+				height:0.6rem;
+				line-height: 0.6rem;
+				text-align: center;
+				border-radius: 0.1rem;
+				background: #4ba60f;
+				color: #fff;
+				margin: 0 auto;
+			}
+		</style>
+
+		<script type="text/javascript" src="../../js/zepto.js"></script>
+		<script type="text/javascript" src="../../js/event.js"></script>
+		<script type="text/javascript" src="../../js/touch.js"></script>
+		<script type="text/javascript" src="../../js/ajax.js"></script>
+		<script type="text/javascript" src="../../js/rem.js"></script>
+		
+	</head>
+
+	<body>
+		<header class="comment-head">
+			<span class="comment-back"></span>
+			<i class="lang_orderInfor_1">评论商品</i>
+		</header>
+		<div class="comment-fill"></div>
+		<section class="container">
+			<div class="comment">
+				<dl>
+					<dt>
+						<i class="pic"><img src="../../../../../../农康微信号/project/img/fruits.jpg"/></i>
+						<span class="text">唯品会购物商城</span>
+					</dt>
+					<dd class="detail">
+						<textarea name="" rows="" cols="" placeholder="请将您的感受写下来反馈给我们。"></textarea>
+					</dd>
+				</dl>
+			</div>
+			<div class="comment">
+				<dl>
+					<dt>
+						<i class="pic"><img src="../../../../../../农康微信号/project/img/fruits.jpg"/></i>
+						<span class="text">唯品会购物商城</span>
+					</dt>
+					<dd class="detail">
+						<textarea class="bb" name="" rows="" cols="" placeholder="请将您的感受写下来反馈给我们。"></textarea>
+						
+					</dd>
+				</dl>
+			</div>
+			<span class="commentBtn">一键评论</span>
+		</section>
+
+		
+		<script type="text/javascript">
+			$(function(){
+				//返回按钮
+				$('.comment-back').on('singleTap',function(){
+//					window.history.go(-1);
+					window.location.href = "myOrder.html"
+				})
+				
+				//一键评论
+				$('.commentBtn').on('singleTap',function(){
+//					alert('dsfs')
+					val=$('.bb').val();
+					alert(val)
+				})
+				
+				
+				
+			})
+		</script>
+	</body>
+	
+	
+	
+	<!--productInfor.html:
+		pingtai.css:
+		productInfo.js:
+	
+	1.
+	<li class="lang_proInform_add">评价商品</li>
+	
+	#pingtai-info .pro-nav ul li { width: 33.33%;}
+	#pingtai-info .pro-nav ul .pro-nav-action:after {left: 50%;transform: translate(-50%,0);}
+	
+	
+	$(".pro-nav ul li").on("tap",function(){
+		$(this).addClass("pro-nav-action").siblings().removeClass("pro-nav-action");
+		var index=$(this).index();
+		$('.commentTap').eq(index).show().siblings().hide();
+		
+//		if($(this).index() == 0){
+//			$(".pro-left").show();
+//			$(".pro-right").hide();
+//		}else{
+//			$(".pro-left").hide();
+//			$(".pro-right").show();
+//		}
+		
+	})
+	
+	2.
+	<div class="pro-center commentTap">
+		<dl class="personComment">
+			<dt>
+				<i class="pic"><img src="../../img/my/malaixiya_yuan@3x.png"/></i>
+				<span class="name">南国寒冬风情</span>
+			</dt>
+			<dd class="commentText">
+				商品不错，下次再来，物流超快，服务周到
+			</dd>
+		</dl>
+		<dl class="personComment">
+			<dt>
+				<i class="pic"><img src="../../img/my/malaixiya_yuan@3x.png"/></i>
+				<span class="name">南国寒冬风情</span>
+			</dt>
+			<dd class="commentText">
+				商品不错，下次再来，物流超快，服务周到,不返红包我就差评，商品不错，下次再来，物流超快，服务周到,不返红包我就差评，
+			</dd>
+		</dl>
+		<dl class="personComment">
+			<dt>
+				<i class="pic"><img src="../../img/my/malaixiya_yuan@3x.png"/></i>
+				<span class="name">南国寒冬风情</span>
+			</dt>
+			<dd class="commentText">
+				商品不错，下次再来，物流超快，服务周到
+			</dd>
+		</dl>
+	</div>
+	<style type="text/css">
+		.commentTap{
+			padding: 0.15rem 0.3rem;
+			box-sizing: border-box;	
+			background: #f1f1f1;
+		}
+		.personComment{
+			padding: 0 0.1rem;
+			box-sizing: border-box;
+			width:100%;
+			background: #fff;
+			font-size: 0.26rem;
+			margin-bottom: 0.1rem;
+		}
+		.personComment dt{
+			width:100%;
+			height:1.5rem;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+		.personComment dt .pic{
+			width:1.2rem;
+			height:1.2rem;
+			margin-right: 0.3rem;
+		}
+		.personComment dt .pic img{
+			width:100%;
+			height:100%;
+			display: block;
+		}
+		.personComment dd{
+			padding: 0.1rem 0;
+			box-sizing: border-box;
+		}
+	</style>
+	
+-->
+	
+</html>
